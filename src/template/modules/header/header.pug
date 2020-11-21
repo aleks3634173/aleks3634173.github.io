@@ -1,1 +1,48 @@
-.header header
+- var menu = [
+-   {
+-     name: 'Home',
+-     link: "/"
+-   },
+-   {
+-     name: 'About',
+-     link: "#"
+-   },
+-   {
+-     name: 'Expertise',
+-     link: "#"
+-   },
+-   {
+-     name: 'Teams',
+-     link: "#"
+-   },
+-   {
+-     name: 'Works',
+-     link: "#"
+-   },
+-   {
+-     name: 'People say',
+-     link: "#"
+-   },
+-   {
+-     name: 'Contact',
+-     link: "#"
+-   }
+- ];
+
+.header
+  .container
+    .row.header__inner
+      .col-2
+        a.logo(href="/")
+          figure.logo__img
+            img(src="/assets/img/content/logo.png" alt="logo")
+          p.logo__text tajam
+      .col-9
+        nav.nav
+          each item, index in menu.length ? menu : ['There are no values']
+            if index == 0
+              li.nav__item.nav__item--current
+                a(href!=item.link)= item.name
+            else
+              li.nav__item
+                a(href!=item.link)= item.name

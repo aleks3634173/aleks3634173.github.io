@@ -1,13 +1,12 @@
 .page 
   position: relative
-  min-width: 300px
   font-family: $defFont
   font-size: $baseFontSize+px
-  font-weight: 300
+  font-weight: $baseFontWeight
   color: $def
   line-height: 140%
   min-width: 340px
-  background-color: #FBFBF9
+  background-color: #FFF
   
 *::placeholder
   color: inherit
@@ -19,7 +18,7 @@
 
 *::selection
   color: #fff
-  background-color: #DB9B8F
+  background-color: $blue
 
 // body input:focus:required:invalid,
 // body textarea:focus:required:invalid
@@ -27,3 +26,86 @@
 // body input:required:valid,
 // body textarea:required:valid
 //   color: #666
+
+h1
+  font-family: "PlayfairDisplay", sans-serif
+  font-size: 32px
+  font-weight: 800
+  letter-spacing: 0.32px
+p
+  font-size: 14px
+  font-weight: 300
+  line-height: 24px
+.section
+  &__title
+    text-align: center
+    width: 100%
+    margin-bottom: 30px
+    position: relative
+    padding-bottom: 22px
+    &:last-child
+      margin-bottom: 0
+    &:before
+      content: ''
+      display: block
+      width: 50px
+      height: 1px
+      background-color: #00e0d0
+      position: absolute
+      bottom: 0px
+      left: 50%
+      transform: translateX(-50%)
+    h1
+      color: white
+      line-height: 31px
+  &--dark
+    position: relative
+    .container
+      z-index: 1
+      position: relative
+    p
+      color: rgba(255, 255, 255, 0.7)
+    &:before
+      content: ''
+      display: block
+      background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%)
+      opacity: 0.85
+      position: absolute
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+
+.logo
+  display: flex
+  align-items: center
+  transition: opacity $trst linear
+  &__img
+    +size(128, 50)
+    img
+      max-width: none
+  &:hover
+    opacity: 0.5
+  &:active
+    opacity: 0.7
+
+  
+.btn
+  min-width: 120px
+  border: 1px solid $blue
+  box-sizing: border-box
+  text-align: center
+  transition: background $trst, opacity $trst, color $trst linear
+  padding: 14px 15px 13px
+  color: #00e0d0
+  font-family: "HammersmithOne"
+  font-size: 16px
+  line-height: 12px
+  font-weight: 400
+  border-radius: 4px
+  text-transform: uppercase
+  &:hover
+    background-color: $blue
+    color: white
+  &:active
+    opacity: .7

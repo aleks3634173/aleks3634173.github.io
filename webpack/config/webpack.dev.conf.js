@@ -21,6 +21,14 @@ module.exports = merge(baseWebpackConfig, {
           {
             loader: 'css-loader',
           },
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                config: 'webpack/utils/postcss.config.js'
+              }
+            }
+          },
           'sass-loader',
         ]
       },
@@ -76,7 +84,7 @@ module.exports = merge(baseWebpackConfig, {
         version: false,
     },
     hot: true,
-    //host: '192.168.1.5', // your local ip
+    host: '192.168.43.94', // your local ip
     open: 'Chrome',
     contentBase: PATHS.dist.path,
     proxy: {
