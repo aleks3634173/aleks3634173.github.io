@@ -84,7 +84,7 @@ module.exports = merge(baseWebpackConfig, {
         version: false,
     },
     hot: true,
-    host: '192.168.43.94', // your local ip
+//    host: '192.168.43.94', // your local ip
     open: 'Chrome',
     contentBase: PATHS.dist.path,
     proxy: {

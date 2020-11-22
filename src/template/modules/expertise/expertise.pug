@@ -1,0 +1,19 @@
+- var cardsName = [
+-   "WEB DESIGN & DEVELOPMENT",
+-   "BRANDING IDENTITY",
+-   "MOBILE APP",
+-   "SEARCH ENGINE OPTIMIZATION",
+-   "GAME DEVELOPMENT",
+-   "MADE WITH LOVE"
+- ];
+.expertise.section
+  .container
+    .row.expertise__inner
+      .col-12.expertise__title.section__title
+        h2 EXPERTISE
+        p Lorem ipsum dolor sit amet proin gravida nibh vel velit
+      .col-12.expertise__list
+        .row
+          each value, index in cardsName.length ? cardsName : ['There are no values']
+            .col-4.expertise__card
+              +expertise-card(index + 1, value)
