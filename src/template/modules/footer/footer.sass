@@ -1,0 +1,139 @@
+.footer
+  background-image: url(~_images/content/footer.png)
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  padding: 70px 0
+  &__logo
+    margin-bottom: 22px
+  &__text
+    color: white
+    font-size: 14px
+    font-weight: 300
+    line-height: 26px
+    letter-spacing: 0.35px
+  &__subtitle
+    font-size: 15px
+    font-weight: 800
+    line-height: 26px
+    text-transform: uppercase
+    letter-spacing: 0.75px
+    color: white
+    margin-bottom: 26px
+    margin-top: 14px
+  &__mailing
+    margin-bottom: 27px
+  &__bottom
+    margin-top: 58px
+    justify-content: space-between
+  &__copyright
+    color: #ffffff
+    font-weight: 400
+    line-height: 26px
+    letter-spacing: 0.35px
+    text-align: right
+  &__nav
+    justify-content: space-between
+    li
+      line-height: 26px
+.mailing
+  display: flex
+  &__placeinput
+    input
+      border: 1px solid rgba(255, 255, 255, 0.5)
+      padding: 13px 16px 14px
+      color: white
+      flex-grow: 1
+      background-color: transparent
+      &::placeholder
+        color: rgba(255, 255, 255, 0.75)
+        font-family: Roboto
+        font-size: 14px
+        font-weight: 300
+        line-height: 26px
+        letter-spacing: 0.7px
+      &:focus
+        border: 1px solid $blue
+    .error__text
+      bottom: -15px
+      background-color: transparent
+  &__button
+    cursor: pointer
+    background-color: rgba(255, 255, 255, 0.5)
+    margin-left: 10px
+    width: 70px
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: background $trst, opacity $trst linear
+    &:hover
+      background-color: $blue
+    &:active
+      opacity: .7
+.icon-mailing
+   @include sprite($mailing)
+.soc-icons
+  display: flex
+  align-items: center
+  &__item
+    width: 35px
+    height: 35px
+    border: 1px solid #ffffff
+    border-radius: 50%
+    margin-right: 8px
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: border $trst
+    &:last-child
+      margin-right: 0
+    svg
+      fill: white
+      transition: fill $trst
+    &:hover
+      border-color: $blue
+      svg
+        fill: $blue
+.svg--fc
+  +size(10, 16)
+.svg--tw
+  +size(18, 15)
+.svg--db
+  +size(16)
+.svg--inst
+  +size(18)
+.svg--gp
+  +size(21, 20)
+.svg--yt
+  +size(20, 15)
+.contacts
+  &__item
+    display: flex
+    margin-bottom: 15px
+    transition: opacity $trst linear
+    &:last-child
+      margin-bottom: 0
+    &:hover
+      p
+        color: $blue
+      svg
+        fill: $blue
+    &:active
+      opacity: .7
+  svg
+    transition: fill $trst linear
+  p
+    transition: color $trst linear
+  &__icon
+    width: 100%
+    max-width: 20px
+    height: 20px
+    margin-right: 9px
+    margin-top: 5px
+    .svg--tel
+      fill: white
+      +size(17)
+    .svg--map
+      fill: white
+      +size(14, 19)
+      

@@ -1,0 +1,15 @@
+mixin field(placeholder, name, type, mod)
+  label.placeinput(class!= mod)
+    input.field(type!= type name!= name)
+    .place_holder= placeholder
+    .error__text This field is required
+mixin field-error(placeholder, name, type, mod)
+  label.placeinput(class!= mod)
+    input.field.error(type!= type name!= name)
+    .place_holder= placeholder
+    .error__text This field is required
+mixin textarea(placeholder, name, mod)
+  label.placetextarea(class!= mod)
+    textarea.textarea.callback__textarea(name= name)
+    .place_holder= placeholder
+    .error__text This field is required

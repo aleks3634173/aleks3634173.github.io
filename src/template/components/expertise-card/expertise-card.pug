@@ -2,5 +2,6 @@ mixin expertise-card(index, title)
   .expertise-card
     .expertise-card__img
       .icon(class!="icon-expertise" + index)
-    h3.expertise-card__title= title
-    p.expertise-card__text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+    .expertise-card__textContent
+      h3= title
+      p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.

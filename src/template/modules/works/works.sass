@@ -1,0 +1,54 @@
+.works
+  &__more
+    color: #413d4b
+    font-family: Roboto
+    font-size: 14px
+    font-weight: 300
+    // Text style for "See All Pr"
+    letter-spacing: 0.7px
+    display: flex
+    align-items: center
+    transition: color $trst
+    &-arrow
+      border: 1px solid #413d4b
+      border-top-color: transparent
+      border-left-color: transparent
+      transform: rotate(-45deg)
+      width: 9px
+      height: 9px
+      margin-left: 10px
+      border-radius: 2px
+      transition: border $trst
+    &:hover
+      color: $blue
+      .works__more-arrow
+        border-color: $blue
+        border-top-color: transparent
+        border-left-color: transparent
+  &__header
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__footer
+    text-align: center
+  &__list
+    margin-top: 70px 
+    margin-bottom: 70px 
+    padding: 0
+    overflow: hidden
+    max-width: 1600px
+    .row
+      margin: 0
+  &__item
+    font-size: 0
+    line-height: 0
+    padding: 0
+    padding-top: 12.5%
+    position: relative
+    overflow: hidden
+    img
+      +absolute-center()
+      transition: transform $trst
+    &:hover
+      img
+        transform: translate(-50%, -50%) scale(1.2)

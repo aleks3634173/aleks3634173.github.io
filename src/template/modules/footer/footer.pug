@@ -1,1 +1,63 @@
-.footer footer
+- var menu = [
+-   {
+-     name: 'HELP',
+-     link: "/"
+-   },
+-   {
+-     name: 'TERMS & CONDITION',
+-     link: "#"
+-   },
+-   {
+-     name: 'PRIVACY',
+-     link: "#"
+-   }
+- ];
+footer.footer.section--dark
+  .container
+    .row.footer__top
+      .col-4
+        a.footer__logo.logo(href="/")
+          figure.logo__img
+            img(src="/assets/img/content/logo.png" alt="logo")
+        p.footer__text lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
+      .col-4
+        h3.footer__subtitle OUR STUDIO
+        .footer__contacts.contacts
+          a.contacts__item(href="#")
+            .contacts__icon
+              +svg('map')
+            p.footer__text.contacts__content Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia
+          a.contacts__item(href="tel:(+62)21-22243333")
+            .contacts__icon
+              +svg('tel')
+            p.footer__text.contacts__content (+62) 21-2224 3333
+      .col-4
+        h3.footer__subtitle STAY IN TOUCH
+        form.footer__mailing.mailing.form(action="/" method="post")
+          label.placeinput.mailing__placeinput(class!= mod)
+            input.field(placeholder="Subscribe our newsletter" name="email" type="email")
+            .place_holder= placeholder
+            .error__text This field is required
+          button.mailing__button
+            .icon-mailing
+        .footer__soc-icons.soc-icons
+          a.soc-icons__item(href="#")
+            +svg('fc')
+          a.soc-icons__item(href="#")
+            +svg('tw')
+          a.soc-icons__item(href="#")
+            +svg('db')
+          a.soc-icons__item(href="#")
+            +svg('inst')
+          a.soc-icons__item(href="#")
+            +svg('gp')
+          a.soc-icons__item(href="#")
+            +svg('yt')
+    .row.footer__bottom
+      .col-4
+        .footer__nav.nav
+          each item, index in menu.length ? menu : ['There are no values']
+            li.nav__item
+              a(href!=item.link)= item.name
+      .col-4
+        p.footer__copyright Copyright © 2015 - Tajem Creative

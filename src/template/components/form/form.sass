@@ -1,0 +1,101 @@
+.textarea
+  border: 1px solid rgba(0, 0, 0, 0.1)
+  box-sizing: border-box
+  padding: 12px 20px 11px
+  line-height: 20px
+  font-weight: normal
+  font-size: 14px
+  resize: none
+  outline: none
+  color: #413d4b
+  transition: border .2s linear
+  background: white
+  width: 100%
+  height: 200px
+.place_holder  
+    left: 20px
+    cursor: text   
+    position: absolute
+    top: 13px   
+    display: inline
+    font-weight: normal
+    font-size: 14px
+    line-height: 22px
+    color: rgba(65, 61, 75, 0.5)
+    z-index: 1
+    pointer-events: none
+    transition: all .2s linear
+    border-radius: 2px
+
+.placeinput.active .place_holder
+  position: absolute
+  top: -7px
+  padding: 0 2px
+  background-color: white
+  font-weight: normal
+  font-size: 11px
+  line-height: 15px
+
+.placeinput input.error + .place_holder + .error__text
+     display: block
+.placeinput.active input
+    border: 1px solid $blue
+
+.placeinput
+  position: relative
+  input.error
+    border: 1px solid #FF0000
+    &:focus
+      border: 1px solid #FF0000
+   
+ 
+
+
+.placetextarea.active .place_holder
+    position: absolute
+    top: -7px
+    padding: 0 2px
+    background-color: white
+    font-weight: normal
+    font-size: 11px
+    line-height: 15px
+.placetextarea textarea.error + .place_holder + .error__text
+     display: block
+.placetextarea.active textarea
+    border: 1px solid $blue
+
+.placetextarea
+  position: relative
+  textarea.error
+    border: 1px solid #FF0000
+    &:focus
+      border: 1px solid #FF0000
+   
+    & + label + place_holder + .placetextarea__svg
+      display: inline
+  .error__text
+    bottom: 0px
+
+.field
+  border: 1px solid rgba(0, 0, 0, 0.1)
+  box-sizing: border-box
+  font-weight: normal
+  font-size: 14px
+  color: #292929
+  outline: none
+  width: 100%
+  transition: border .2s linear
+  background: white
+  padding: 12px 20px 11px
+  line-height: 20px
+.error__text
+  position: absolute
+  bottom: -5px
+  padding: 0 2px
+  background-color: white
+  left: 20px
+  font-weight: normal
+  font-size: 11px
+  line-height: 15px
+  color: #EB2F2F
+  display: none
