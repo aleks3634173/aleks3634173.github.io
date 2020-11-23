@@ -1,0 +1,62 @@
+.modal
+  display: none
+  position: fixed
+  align-items: center
+  justify-content: center
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: rgba(0,0,0,.19)
+  opacity: 0
+  transition: background $trst
+  z-index: -10
+  animation: .5s linear 0s 1 alternate show
+  &__inner
+    position: relative
+  &.active
+    z-index: 10
+    opacity: 1
+    background-color: rgba(0,0,0,.75)
+    display: flex
+  &__close 
+    position: absolute
+    top: -38px
+    right: -28px
+    
+.modal-video
+  &__video
+    padding-top: 55.3%
+    position: relative
+    .video-js
+      width: 100%
+      position: absolute
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      height: 100%
+      
+.close 
+  display: flex
+  align-items: flex-end
+  transition: opacity .2s linear
+  background-color: transparent
+  padding: 0
+  border: 0
+  cursor: pointer
+  &__icon 
+    position: relative
+    svg
+      +size(26)
+      fill: white
+      transition: fill .2s linear
+  &:hover
+    svg
+      fill: $blue
+    
+@keyframes show 
+  0% 
+    opacity: 0
+  100%
+    opacity: 1

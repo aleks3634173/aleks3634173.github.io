@@ -3,6 +3,7 @@
   background-position: center
   background-repeat: no-repeat
   background-size: cover
+  &__item,
   &__inner
     display: flex
     flex-direction: column
@@ -10,6 +11,13 @@
     text-align: center
   &__icon
     margin-bottom: 40px
+  &__slider
+    max-width: 100%
+    .slick-slide
+      opacity: 0
+      transition: opacity $trst
+    .slick-slide.slick-current
+      opacity: 1
   &__textContent
     margin-bottom: 45px
     p
@@ -21,20 +29,34 @@
   &__author
     margin-bottom: 37px
 .profiles
-  display: flex
-  align-items: center
-  justify-content: center
+  padding: 0
+  .slick-slide:focus,
+  .slick-slide div:focus,
+  .slick-slide img:focus
+    outline: none
+  .slick-slide
+    padding: 0 7px
+    font-size: 0
+    line-height: 0
+    height: 70px
+    display: flex
+    align-items: center
+    justify-content: center
+  .slick-slide.slick-current
+    width: 84px
+    .profiles__item
+      transform: scale(1.55555555556)
   &__item
-    margin-right: 14px
     width: 45px
     height: 45px
     border-radius: 50%
-    &--big
-      width: 70px
-      height: 70px
+    transition: transform $trst, opacity $trst
+    cursor: pointer
+    &:hover
+      opacity: .85
+    &:focus
+      outline: none
     img
       width: 100%
-    &:last-child
-      margin-right: 0
 .icon-quote
    @include sprite($quote)

@@ -1,9 +1,14 @@
 import $ from 'jquery'
 import Form from '_components/form/form'
-import jqueryValidation from 'jquery-validation';
+import Modal from '_module/modal/modal'
+import jqueryValidation from 'jquery-validation'
+import 'slick-carousel'
+import 'video.js'
+import 'videojs-youtube'
 
 document.addEventListener("DOMContentLoaded", function(event) {
   new Form()
+  new Modal()
   var $form = $('.form');
   $.validator.addMethod("lettersonly", function(value, element) {
      return this.optional(element) || /^[a-zА-Я\s]+$/i.test(value);
@@ -80,6 +85,56 @@ document.addEventListener("DOMContentLoaded", function(event) {
              });
      });
 	
+  
+   $('.testimonials__profiles').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.testimonials__slider',
+    dots: false,
+    arrows: false,
+    focusOnSelect: true,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="icon icon-arrow2"><use xlink:href="#arrow2"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="icon icon-arrow2"><use xlink:href="#arrow2"></use></svg></button>',
+    variableWidth: true,
+    centerMode: true,
+    infinite: true,
+    responsive: [
+    ]
+    
+  });
+  $('.testimonials__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    infinite: true,
+    asNavFor: '.testimonials__profiles',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="icon icon-arrow2"><use xlink:href="#arrow2"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="icon icon-arrow2"><use xlink:href="#arrow2"></use></svg></button>',
+    responsive: [
+      {
+        breakpoint: 1320,
+        settings: {
+          dots: false,
+          infinite: true,
+          arrows: false,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          dots: false,
+          infinite: true,
+          arrows: false,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
+  });
 });
 
 // require module

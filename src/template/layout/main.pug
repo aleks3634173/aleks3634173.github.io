@@ -4,11 +4,11 @@ include ~_components/include
 doctype html
 html(lang="ru-RU")
   head
+    title #{title}
     block head
     include ~_module/head/head
   body(class="page "+bodyClass)
-    div(class="wrapper"+wrapClass)
-        block content
+    block content
     block foot
     include ~_module/script/script
     block script

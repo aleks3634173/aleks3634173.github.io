@@ -6,31 +6,429 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="48x48" href="/assets/img/favicon/favicon-48x48.png"><link href="assets/css/main.css" rel="stylesheet"></head>
+  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="48x48" href="/assets/img/favicon/favicon-48x48.png"><link href="assets/css/vendors.css" rel="stylesheet"><link href="assets/css/main.css" rel="stylesheet"></head>
   <body class="page ">
-    <div class="wrapper">
 <div class="header">
   <div class="container">
-    <div class="row">
+    <div class="row header__inner">
       <div class="col-2"><a class="logo" href="/">
-          <div class="logo__img"><img src="/assets/content/logo.png" alt="logo"></div></a></div>
+          <figure class="logo__img"><img src="/assets/img/content/logo.png" alt="logo"></figure></a></div>
+      <nav class="nav header__nav">
+        <li class="nav__item nav__item--current"><a href="/">Home</a></li>
+        <li class="nav__item"><a href="#">About</a></li>
+        <li class="nav__item"><a href="#">Expertise</a></li>
+        <li class="nav__item"><a href="#">Teams</a></li>
+        <li class="nav__item"><a href="#">Works</a></li>
+        <li class="nav__item"><a href="#">People say</a></li>
+        <li class="nav__item"><a href="#">Contact</a></li>
+      </nav>
     </div>
   </div>
 </div>
+<div class="promo section section--dark">
+  <div class="container">
+    <div class="row promo__inner justify-content-md-center">
+      <div class="col-12 section__title">
+        <h1>We Are Awesome Creative Agency</h1>
+      </div>
+      <div class="col-10 promo__textContent text--light">
+        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+      </div>
+      <div class="col-12"><a class="promo__link btn" href="#">LEARN MORE</a></div>
+    </div>
+  </div>
+</div>
+<div class="our-story section">
+  <div class="container">
+    <div class="row our-story__inner">
+      <picture class="col-5 our-story__image"><img src="/assets/img/content/our-story.png" alt="our-story"></picture>
+      <div class="col-7 our-story__right">
+        <div class="our-story__textContent">
+          <h2>OUR STORY</h2>
+          <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
+          <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+        </div><a class="promo__link btn" href="#">LEARN MORE</a>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="our-story-video section section--dark">
       <div class="container">
-        <div class="row">
-          <div class="col-2">
-            <h2>Webpack </h2>
+        <div class="row our-story-video__inner">
+          <button class="our-story-video__play modal-open" data-open-modal="video">
+            <svg class="svg svg--play our-story-video__play-svg">
+              <use xlink:href="assets/img/svg/sprite.svg#play"></use>
+            </svg>
+          </button>
+          <p class="our-story-video__text-play">WATCH OUR STORY</p>
+        </div>
+      </div>
+    </div>
+    <div class="expertise section">
+      <div class="container">
+        <div class="row expertise__inner">
+          <div class="col-12 expertise__title section__title">
+            <h2>EXPERTISE</h2>
+            <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
           </div>
-          <div class="col-2">
-            <div class="example">example</div>
-          </div>
-          <div class="col-2">
-            <div class="example">example</div>
+          <div class="col-12 expertise__list">
+            <div class="row">
+              <div class="col-4 expertise__card">
+                <div class="expertise-card">
+                  <div class="expertise-card__img">
+                    <div class="icon icon-expertise1"></div>
+                  </div>
+                  <div class="expertise-card__textContent">
+                    <h3>WEB DESIGN &amp; DEVELOPMENT</h3>
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 expertise__card">
+                <div class="expertise-card">
+                  <div class="expertise-card__img">
+                    <div class="icon icon-expertise2"></div>
+                  </div>
+                  <div class="expertise-card__textContent">
+                    <h3>BRANDING IDENTITY</h3>
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 expertise__card">
+                <div class="expertise-card">
+                  <div class="expertise-card__img">
+                    <div class="icon icon-expertise3"></div>
+                  </div>
+                  <div class="expertise-card__textContent">
+                    <h3>MOBILE APP</h3>
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 expertise__card">
+                <div class="expertise-card">
+                  <div class="expertise-card__img">
+                    <div class="icon icon-expertise4"></div>
+                  </div>
+                  <div class="expertise-card__textContent">
+                    <h3>SEARCH ENGINE OPTIMIZATION</h3>
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 expertise__card">
+                <div class="expertise-card">
+                  <div class="expertise-card__img">
+                    <div class="icon icon-expertise5"></div>
+                  </div>
+                  <div class="expertise-card__textContent">
+                    <h3>GAME DEVELOPMENT</h3>
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 expertise__card">
+                <div class="expertise-card">
+                  <div class="expertise-card__img">
+                    <div class="icon icon-expertise6"></div>
+                  </div>
+                  <div class="expertise-card__textContent">
+                    <h3>MADE WITH LOVE</h3>
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-<div class="footer">footer</div>
+    <div class="team section section--dark">
+      <div class="container">
+        <div class="row team__inner justify-content-md-center">
+          <div class="col-12 section__title team__title">
+            <h2>MEET OUR AMAZING TEAM</h2>
+            <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+          </div>
+          <div class="col-12">
+            <div class="row team__list">
+              <div class="col-3 team__item">
+                <div class="team-card">
+                  <div class="team-card__img"><img src="assets/img/content/profile.png" alt="profile"></div>
+                  <div class="team-card__textContent author">
+                    <h3>SEMF UCUK</h3>
+                    <p>CEO &amp; FOUNDER</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 team__item">
+                <div class="team-card">
+                  <div class="team-card__img"><img src="assets/img/content/profile.png" alt="profile"></div>
+                  <div class="team-card__textContent author">
+                    <h3>DIK ADALIN</h3>
+                    <p>ENGINEERING</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 team__item"> 
+                <div class="team-card">
+                  <div class="team-card__img"><img src="assets/img/content/profile.png" alt="profile"></div>
+                  <div class="team-card__textContent author">
+                    <h3>JENG KOL</h3>
+                    <p>DESIGNER</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 team__item"> 
+                <div class="team-card">
+                  <div class="team-card__img"><img src="assets/img/content/profile.png" alt="profile"></div>
+                  <div class="team-card__textContent author">
+                    <h3>PET ROMAK</h3>
+                    <p>MARKETING</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 text--light">
+            <p class="team__text">Become part of our dream team, let’s join us ! </p>
+          </div>
+          <div class="col-12"><a class="team__link btn" href="#">WE ARE HIRING</a></div>
+        </div>
+      </div>
+    </div>
+<div class="works section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 works__header">
+        <h2 class="works__title">OUR WORKS</h2><a class="works__more" href="#">See All Project in dribbble
+          <div class="works__more-arrow"></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid works__list">
+    <div class="row">
+      <div class="col-2 works__item"><img src="assets/img/general/work.png" alt="works"></div>
+      <div class="col-2 works__item"><img src="assets/img/general/work1.png" alt="works"></div>
+      <div class="col-2 works__item"><img src="assets/img/general/work2.png" alt="works"></div>
+      <div class="col-2 works__item"><img src="assets/img/general/work3.png" alt="works"></div>
+      <div class="col-2 works__item"><img src="assets/img/general/work4.png" alt="works"></div>
+      <div class="col-2 works__item"><img src="assets/img/general/work5.png" alt="works"></div>
+      <div class="col-2 works__item"><img src="assets/img/general/work6.png" alt="works"></div>
+      <div class="col-2 works__item"><img src="assets/img/general/work7.png" alt="works"></div>
+      <div class="col-2 works__item"><img src="assets/img/general/work8.png" alt="works"></div>
+      <div class="col-2 works__item"><img src="assets/img/general/work9.png" alt="works"></div>
+      <div class="col-2 works__item"><img src="assets/img/general/work10.png" alt="works"></div>
+      <div class="col-2 works__item"><img src="assets/img/general/work11.png" alt="works"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 works__footer"><a class="works__link btn" href="#">LEARN MORE</a></div>
+    </div>
+  </div>
+</div>
+<div class="testimonials section section--dark">
+  <div class="container">
+    <div class="row testimonials__inner">
+      <div class="testimonials__slider">
+        <div>
+          <div class="testimonials__item">
+            <div class="testimonials__icon icon-quote"></div>
+            <div class="col-10 testimonials__textContent">
+              <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+            </div>
+            <div class="col-4 testimonials__author author">
+              <h3>JANE GALADRIEL1</h3>
+              <p>CEO TENGKUREP</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="testimonials__item">
+            <div class="testimonials__icon icon-quote"></div>
+            <div class="col-10 testimonials__textContent">
+              <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+            </div>
+            <div class="col-4 testimonials__author author">
+              <h3>JANE GALADRIEL4</h3>
+              <p>CEO TENGKUREP</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="testimonials__item">
+            <div class="testimonials__icon icon-quote"></div>
+            <div class="col-10 testimonials__textContent">
+              <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+            </div>
+            <div class="col-4 testimonials__author author">
+              <h3>JANE GALADRIEL3</h3>
+              <p>CEO TENGKUREP</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="testimonials__item">
+            <div class="testimonials__icon icon-quote"></div>
+            <div class="col-10 testimonials__textContent">
+              <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+            </div>
+            <div class="col-4 testimonials__author author">
+              <h3>JANE GALADRIEL4</h3>
+              <p>CEO TENGKUREP</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="testimonials__item">
+            <div class="testimonials__icon icon-quote"></div>
+            <div class="col-10 testimonials__textContent">
+              <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+            </div>
+            <div class="col-4 testimonials__author author">
+              <h3>JANE GALADRIEL5</h3>
+              <p>CEO TENGKUREP</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 testimonials__profiles profiles">
+        <div>
+          <div class="profiles__item"><img src="assets/img/general/profile1.png" alt="profile"></div>
+        </div>
+        <div>
+          <div class="profiles__item"><img src="assets/img/general/profile2.png" alt="profile"></div>
+        </div>
+        <div>
+          <div class="profiles__item"><img src="assets/img/general/profile3.png" alt="profile"></div>
+        </div>
+        <div>
+          <div class="profiles__item"><img src="assets/img/general/profile4.png" alt="profile"></div>
+        </div>
+        <div>
+          <div class="profiles__item"><img src="assets/img/general/profile5.png" alt="profile"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="callback section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <form class="callback__form form col-6" action="/" method="post">
+            <h2 class="callback__title">GIVE US A GOOD NEWS</h2>
+            <label class="placeinput callback__placeinput">
+              <input class="field" type="text" name="name">
+              <div class="place_holder">Name</div>
+              <div class="error__text">This field is required</div>
+            </label>
+            <label class="placeinput callback__placeinput">
+              <input class="field" type="email" name="email">
+              <div class="place_holder">Email</div>
+              <div class="error__text">This field is required</div>
+            </label>
+            <label class="placeinput callback__placeinput">
+              <input class="field" type="text" name="subject">
+              <div class="place_holder">Subject</div>
+              <div class="error__text">This field is required</div>
+            </label>
+            <label class="placetextarea callback__placetextarea">
+              <textarea class="textarea callback__textarea" name="message"></textarea>
+              <div class="place_holder">Your Massage</div>
+              <div class="error__text">This field is required</div>
+            </label>
+            <button class="callback__button btn">submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer section--dark">
+      <div class="container">
+        <div class="row footer__top">
+          <div class="col-4"><a class="footer__logo logo" href="/">
+              <figure class="logo__img"><img src="/assets/img/content/logo.png" alt="logo"></figure></a>
+            <p class="footer__text">lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
+          </div>
+          <div class="col-4">
+            <h3 class="footer__subtitle">OUR STUDIO</h3>
+            <div class="footer__contacts contacts"><a class="contacts__item" href="#">
+                <div class="contacts__icon">
+                  <svg class="svg svg--map ">
+                    <use xlink:href="assets/img/svg/sprite.svg#map"></use>
+                  </svg>
+                </div>
+                <p class="footer__text contacts__content">Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia</p></a><a class="contacts__item" href="tel:(+62)21-22243333">
+                <div class="contacts__icon">
+                  <svg class="svg svg--tel ">
+                    <use xlink:href="assets/img/svg/sprite.svg#tel"></use>
+                  </svg>
+                </div>
+                <p class="footer__text contacts__content">(+62) 21-2224 3333</p></a></div>
+          </div>
+          <div class="col-4">
+            <h3 class="footer__subtitle">STAY IN TOUCH</h3>
+            <form class="footer__mailing mailing form" action="/" method="post">
+              <label class="placeinput mailing__placeinput">
+                <input class="field" placeholder="Subscribe our newsletter" name="email" type="email">
+                <div class="place_holder"></div>
+                <div class="error__text">This field is required</div>
+              </label>
+              <button class="mailing__button">
+                <div class="icon-mailing"></div>
+              </button>
+            </form>
+            <div class="footer__soc-icons soc-icons"><a class="soc-icons__item" href="#">
+                <svg class="svg svg--fc ">
+                  <use xlink:href="assets/img/svg/sprite.svg#fc"></use>
+                </svg></a><a class="soc-icons__item" href="#">
+                <svg class="svg svg--tw ">
+                  <use xlink:href="assets/img/svg/sprite.svg#tw"></use>
+                </svg></a><a class="soc-icons__item" href="#">
+                <svg class="svg svg--db ">
+                  <use xlink:href="assets/img/svg/sprite.svg#db"></use>
+                </svg></a><a class="soc-icons__item" href="#">
+                <svg class="svg svg--inst ">
+                  <use xlink:href="assets/img/svg/sprite.svg#inst"></use>
+                </svg></a><a class="soc-icons__item" href="#">
+                <svg class="svg svg--gp ">
+                  <use xlink:href="assets/img/svg/sprite.svg#gp"></use>
+                </svg></a><a class="soc-icons__item" href="#">
+                <svg class="svg svg--yt ">
+                  <use xlink:href="assets/img/svg/sprite.svg#yt"></use>
+                </svg></a></div>
+          </div>
+        </div>
+        <div class="row footer__bottom">
+          <div class="col-4">
+            <div class="footer__nav nav">
+              <li class="nav__item"><a href="/">HELP</a></li>
+              <li class="nav__item"><a href="#">TERMS &amp; CONDITION</a></li>
+              <li class="nav__item"><a href="#">PRIVACY</a></li>
+            </div>
+          </div>
+          <div class="col-4">
+            <p class="footer__copyright">Copyright © 2015 - Tajem Creative</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal modal-video" id="modal-video">
+      <div class="container modal__inner">
+        <div class="modal__close close">
+          <div class="close__icon">
+            <svg class="svg svg--close ">
+              <use xlink:href="assets/img/svg/sprite.svg#close"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 modal-video__video">
+            <video class="video-js vjs-theme-fantasy" controls preload="auto" data-setup="{ &quot;techOrder&quot;: [&quot;youtube&quot;], &quot;sources&quot;: [{ &quot;type&quot;: &quot;video/youtube&quot;, &quot;src&quot;: &quot;https://www.youtube.com/watch?v=KvUgaHTNit4&quot;}] }"></video>
+          </div>
+        </div>
+      </div>
+    </div>
   <script src="assets/js/vendors.min.js"></script><script src="assets/js/main.min.js"></script></body>
 </html>

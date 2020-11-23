@@ -6,21 +6,97 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="48x48" href="/assets/img/favicon/favicon-48x48.png"><link href="assets/css/main.css" rel="stylesheet"></head>
+  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="48x48" href="/assets/img/favicon/favicon-48x48.png"><link href="assets/css/vendors.css" rel="stylesheet"><link href="assets/css/main.css" rel="stylesheet"></head>
   <body class="page ">
-    <div class="wrapper">
 <div class="header">
   <div class="container">
-    <div class="row">
+    <div class="row header__inner">
       <div class="col-2"><a class="logo" href="/">
-          <div class="logo__img"><img src="/assets/content/logo.png" alt="logo"></div></a></div>
+          <figure class="logo__img"><img src="/assets/img/content/logo.png" alt="logo"></figure></a></div>
+      <nav class="nav header__nav">
+        <li class="nav__item nav__item--current"><a href="/">Home</a></li>
+        <li class="nav__item"><a href="#">About</a></li>
+        <li class="nav__item"><a href="#">Expertise</a></li>
+        <li class="nav__item"><a href="#">Teams</a></li>
+        <li class="nav__item"><a href="#">Works</a></li>
+        <li class="nav__item"><a href="#">People say</a></li>
+        <li class="nav__item"><a href="#">Contact</a></li>
+      </nav>
     </div>
   </div>
 </div>
-      <div class="conainer">
-        <h2>404</h2>
-      </div>
+    <div class="conainer">
+      <h2>404</h2>
     </div>
-<div class="footer">footer</div>
+    <footer class="footer section--dark">
+      <div class="container">
+        <div class="row footer__top">
+          <div class="col-4"><a class="footer__logo logo" href="/">
+              <figure class="logo__img"><img src="/assets/img/content/logo.png" alt="logo"></figure></a>
+            <p class="footer__text">lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
+          </div>
+          <div class="col-4">
+            <h3 class="footer__subtitle">OUR STUDIO</h3>
+            <div class="footer__contacts contacts"><a class="contacts__item" href="#">
+                <div class="contacts__icon">
+                  <svg class="svg svg--map ">
+                    <use xlink:href="assets/img/svg/sprite.svg#map"></use>
+                  </svg>
+                </div>
+                <p class="footer__text contacts__content">Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia</p></a><a class="contacts__item" href="tel:(+62)21-22243333">
+                <div class="contacts__icon">
+                  <svg class="svg svg--tel ">
+                    <use xlink:href="assets/img/svg/sprite.svg#tel"></use>
+                  </svg>
+                </div>
+                <p class="footer__text contacts__content">(+62) 21-2224 3333</p></a></div>
+          </div>
+          <div class="col-4">
+            <h3 class="footer__subtitle">STAY IN TOUCH</h3>
+            <form class="footer__mailing mailing form" action="/" method="post">
+              <label class="placeinput mailing__placeinput">
+                <input class="field" placeholder="Subscribe our newsletter" name="email" type="email">
+                <div class="place_holder"></div>
+                <div class="error__text">This field is required</div>
+              </label>
+              <button class="mailing__button">
+                <div class="icon-mailing"></div>
+              </button>
+            </form>
+            <div class="footer__soc-icons soc-icons"><a class="soc-icons__item" href="#">
+                <svg class="svg svg--fc ">
+                  <use xlink:href="assets/img/svg/sprite.svg#fc"></use>
+                </svg></a><a class="soc-icons__item" href="#">
+                <svg class="svg svg--tw ">
+                  <use xlink:href="assets/img/svg/sprite.svg#tw"></use>
+                </svg></a><a class="soc-icons__item" href="#">
+                <svg class="svg svg--db ">
+                  <use xlink:href="assets/img/svg/sprite.svg#db"></use>
+                </svg></a><a class="soc-icons__item" href="#">
+                <svg class="svg svg--inst ">
+                  <use xlink:href="assets/img/svg/sprite.svg#inst"></use>
+                </svg></a><a class="soc-icons__item" href="#">
+                <svg class="svg svg--gp ">
+                  <use xlink:href="assets/img/svg/sprite.svg#gp"></use>
+                </svg></a><a class="soc-icons__item" href="#">
+                <svg class="svg svg--yt ">
+                  <use xlink:href="assets/img/svg/sprite.svg#yt"></use>
+                </svg></a></div>
+          </div>
+        </div>
+        <div class="row footer__bottom">
+          <div class="col-4">
+            <div class="footer__nav nav">
+              <li class="nav__item"><a href="/">HELP</a></li>
+              <li class="nav__item"><a href="#">TERMS &amp; CONDITION</a></li>
+              <li class="nav__item"><a href="#">PRIVACY</a></li>
+            </div>
+          </div>
+          <div class="col-4">
+            <p class="footer__copyright">Copyright © 2015 - Tajem Creative</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   <script src="assets/js/vendors.min.js"></script><script src="assets/js/main.min.js"></script></body>
 </html>

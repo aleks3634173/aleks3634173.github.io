@@ -14,7 +14,7 @@
     justify-content: center
     cursor: pointer
     margin-bottom: 27px
-    transition: border $trst
+    transition: border $trst, opacity $trst
     &-svg
       margin-left: 5px
       +size(37, 45)  
@@ -22,8 +22,13 @@
       transition: fill $trst
     &:hover
       border-color: $blue
+      & + .our-story-video__text-play
+        color: $blue
+        animation: none
       .our-story-video__play-svg
         fill: $blue
+    &:active
+      opacity: .7
   &__text-play
     font-size: 16px
     font-weight: 800
@@ -31,7 +36,10 @@
     text-transform: uppercase
     letter-spacing: 0.8px
     animation: blink1 3s linear infinite
+    transition: color $trst
   &__inner
+    flex-direction: column
+    align-items: center
     text-align: center
     
 @keyframes blink1 
