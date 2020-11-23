@@ -61,7 +61,7 @@ module.exports = merge(baseWebpackConfig, {
             css: `${PATHS.src.assets.sass}/_sprite.sass`,
         },
         apiOptions: {
-            cssImageRef: "~_images/content/sprite.png"
+            cssImageRef: "assets/img/content/sprite.png"
         }
     }),
   ],
