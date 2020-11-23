@@ -88,7 +88,7 @@ module.exports = {
             options: {
               name: '[path][name].[ext]',
               outputPath: 'assets/fonts/',
-              publicPath: '../assets/fonts/',
+              publicPath: '../fonts/',
               context: 'src/assets/fonts',
             },
           },
@@ -110,7 +110,7 @@ module.exports = {
             options: {
               name: '[path][name].[ext]',
               outputPath: 'assets/img/',
-              publicPath: '../assets/img/',
+              publicPath: '../img/',
               context: 'src/assets/img',
             }
           },
@@ -131,7 +131,7 @@ module.exports = {
             options: {
               name: '[path][name].[ext]',
               outputPath: 'assets/media/',
-              publicPath: '../assets/media/',
+              publicPath: '../media/',
               context: 'src/assets/media',
             }
           },
