@@ -48,6 +48,7 @@ export default class Menu {
       if (this.menu.classList.contains(this.CLASS_HIDDEN)) {
         this.menu.classList.remove(this.CLASS_ACTIVE); 
         this.menu.classList.remove(this.CLASS_HIDDEN); 
+        this.header.classList.remove(this.CLASS_ACTIVE);
       }
     })
   
@@ -67,7 +68,6 @@ export default class Menu {
     this.hiddenContent.classList.add(this.CLASS_HIDDEN);
     this.menu.classList.add(this.CLASS_HIDDEN);
     this.burger.classList.remove(this.CLASS_ACTIVE);
-    this.header.classList.remove(this.CLASS_ACTIVE);
     if (window.innerWidth < 576) {
       this.page.classList.remove(this.PAGE_FROZE);
     }

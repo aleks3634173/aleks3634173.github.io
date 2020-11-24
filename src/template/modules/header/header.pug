@@ -26,6 +26,66 @@
 -   {
 -     name: 'Contact',
 -     link: "#"
+-   },
+-   {
+-     name: 'Expertise',
+-     link: "#"
+-   },
+-   {
+-     name: 'Teams',
+-     link: "#"
+-   },
+-   {
+-     name: 'Works',
+-     link: "#"
+-   },
+-   {
+-     name: 'People say',
+-     link: "#"
+-   },
+-   {
+-     name: 'Contact',
+-     link: "#"
+-   },
+-   {
+-     name: 'Expertise',
+-     link: "#"
+-   },
+-   {
+-     name: 'Teams',
+-     link: "#"
+-   },
+-   {
+-     name: 'Works',
+-     link: "#"
+-   },
+-   {
+-     name: 'People say',
+-     link: "#"
+-   },
+-   {
+-     name: 'Contact',
+-     link: "#"
+-   },
+-   {
+-     name: 'Expertise',
+-     link: "#"
+-   },
+-   {
+-     name: 'Teams',
+-     link: "#"
+-   },
+-   {
+-     name: 'Works',
+-     link: "#"
+-   },
+-   {
+-     name: 'People say',
+-     link: "#"
+-   },
+-   {
+-     name: 'Contact',
+-     link: "#"
 -   }
 - ];
 
@@ -46,11 +106,12 @@
                 a(href!=item.link)= item.name
         .header__burger.burger
           .burger__item
-ul.menu-mobile
-  each item, index in menu.length ? menu : ['There are no values']
-    if index == 0
-      li.menu-mobile__item.menu-mobile__item--current
-        a(href!=item.link)= item.name
-    else
-      li.menu-mobile__item
-        a(href!=item.link)= item.name
+        ul.menu-mobile
+          .menu-mobile__wrap
+            each item, index in menu.length ? menu : ['There are no values']
+              if index == 0
+                li.menu-mobile__item.menu-mobile__item--current
+                  a(href!=item.link)= item.name
+              else
+                li.menu-mobile__item
+                  a(href!=item.link)= item.name

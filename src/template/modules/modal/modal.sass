@@ -1,26 +1,26 @@
 .modal
   display: none
   position: fixed
-  align-items: center
-  justify-content: center
   top: 0
   left: 0
   right: 0
   bottom: 0
+  height: 100vh
+  overflow-y: auto
   background-color: rgba(0,0,0,.19)
   opacity: 0
   transition: background $trst
   z-index: -10
   animation: .5s linear 0s 1 alternate show
   &__inner
-    +min(576)
+    +min(700)
       position: relative
     
   &.active
     z-index: 10
     opacity: 1
     background-color: rgba(0,0,0,.75)
-    display: flex
+    display: block
   &.hidden
     opacity: 0  
     animation: .2s linear 0s 1 alternate hidden
@@ -30,9 +30,17 @@
       top: 30px
       right: 15px
     +min(700)
-      top: -38px
+      top: -43px
       right: -28px
-    
+  &__wrap
+    min-height: 380px
+    width: 100%
+    height: auto
+    display: flex
+    align-items: center
+    padding: 75px 0 40px
+    @media(min-height:380px)
+      height: 100vh
 .modal-video
   .modal__inner
     +min(576)
