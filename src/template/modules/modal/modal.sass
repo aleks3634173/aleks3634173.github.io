@@ -5,7 +5,7 @@
   left: 0
   right: 0
   bottom: 0
-  height: 100vh
+  height: calc(var(--vh, 1vh) * 100)
   overflow-y: auto
   background-color: rgba(0,0,0,.19)
   opacity: 0
@@ -38,9 +38,12 @@
     height: auto
     display: flex
     align-items: center
-    padding: 75px 0 40px
+    +min(300)
+      padding: 40px 0 40px
+    +min(768)
+      padding: 75px 0 40px
     @media(min-height:380px)
-      height: 100vh
+      height: calc(var(--vh, 1vh) * 100)
 .modal-video
   .modal__inner
     +min(576)
@@ -75,7 +78,7 @@
   right: 0
   width: 100%
   left: 0
-  height: 100vh
+  height: calc(var(--vh, 1vh) * 100)
   background: rgba(193,193,193,0.36)
   display: none
   animation: .5s linear 0s 1 alternate show

@@ -202,7 +202,8 @@ module.exports = {
       logo: `${PATHS.src.assets.image.favicon}/favicon.png`,
       prefix: 'assets/img/favicon/',
       outputPath: 'assets/img/favicon',
-      inject: true,
+      path: "", 
+      inject: false,
       cache: true,
       favicons: { 
         icons: {
