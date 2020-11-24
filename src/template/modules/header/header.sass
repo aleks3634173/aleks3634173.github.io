@@ -6,10 +6,10 @@
   top: 0
   right: 0
   z-index: 1
-  +min(576)
-    padding-top: 15px
   +min(300)
     padding-top: 25px
+  +min(576)
+    padding-top: 15px
   &__inner
     display: flex
     justify-content: space-between
@@ -32,18 +32,22 @@
     +max(300)
       display: none
   &.active
-    z-index: 11
-    position: fixed
     +min(300)
       background-color: white
       overflow-y: auto
       height: calc(var(--vh, 1vh) * 100)
       bottom: 0
+      z-index: 11
+      position: fixed
     +min(576)
       background-color: transparent
       overflow-y: visible
       height: auto
       bottom: auto
+    +min(992)
+      position: absolute
+      z-index: 1
+      
     .header__logo
       z-index: 12
       +min(300)
@@ -51,6 +55,8 @@
       +min(576)
         position: absolute
         top: 15px
+      +min(992)
+        position: static
     .burger
       z-index: 12
       right: 20px
@@ -63,6 +69,8 @@
       +min(768)
         top: 30px
         right: 20px
+      +min(992)
+        position: static
     .header__inner
       flex-wrap: wrap
       justify-content: space-between
@@ -145,9 +153,7 @@
   
 .menu-mobile
   opacity: 0
-  animation: .4s linear 0s 1 alternate showMenu
   max-width: 370px
-  transform: translateX(100%)
   display: none
   top: 0
   right: 0
@@ -163,6 +169,8 @@
     max-width: 370px
     background-color: white
     height: 100vh
+    transform: translateX(100%)
+    animation: .4s linear 0s 1 alternate showMenu
   &__wrap
     flex-direction: column
     display: flex
@@ -171,13 +179,15 @@
     width: 100%
     margin-top: 10px
     margin-bottom: 10px
+    &::-webkit-scrollbar
+      width: 0
     +min(300)
       overflow-y: hidden
       padding: 20px 0 10px 0
     +min(576)
       padding-left: 120px
       overflow-y: auto
-      padding: 75px 50px 75px 120px
+      padding: 75px 50px 40px 100px
   &:before
     content: ''
     position: absolute
@@ -221,9 +231,9 @@
       display: none
   &.hidden
     opacity: 0  
-    transform: translateX(100%)
-    animation: .2s linear 0s 1 alternate hiddenMenu
-      
+    +min(576)
+      animation: .2s linear 0s 1 alternate hiddenMenu
+      transform: translateX(100%)
 @keyframes showMenu 
   0% 
     transform: translateX(100%)

@@ -55,6 +55,9 @@ export default class Menu {
   }
   
   openMenu() {
+    
+    this.hiddenContent.classList.remove(this.CLASS_HIDDEN); 
+    this.menu.classList.remove(this.CLASS_HIDDEN); 
     this.hiddenContent.classList.add(this.CLASS_ACTIVE);
     this.burger.classList.add(this.CLASS_ACTIVE);
     this.menu.classList.add(this.CLASS_ACTIVE);
@@ -65,11 +68,15 @@ export default class Menu {
   }
   
   closeMenu() {
-    this.hiddenContent.classList.add(this.CLASS_HIDDEN);
-    this.menu.classList.add(this.CLASS_HIDDEN);
     this.burger.classList.remove(this.CLASS_ACTIVE);
     if (window.innerWidth < 576) {
-      this.page.classList.remove(this.PAGE_FROZE);
+      this.header.classList.remove(this.CLASS_ACTIVE);
+      this.hiddenContent.classList.remove(this.CLASS_ACTIVE);
+      this.menu.classList.remove(this.CLASS_ACTIVE); 
+    } else {
+      this.hiddenContent.classList.add(this.CLASS_HIDDEN);
+      this.menu.classList.add(this.CLASS_HIDDEN);
     }
+    this.page.classList.remove(this.PAGE_FROZE);
   }
 }
