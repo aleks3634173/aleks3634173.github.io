@@ -3,42 +3,79 @@
   background-position: center
   background-repeat: no-repeat
   background-size: cover
-  padding: 70px 0
+  +min(300)
+    padding: 60px 0
+  +min(992)
+    padding: 70px 0
   &__logo
     margin-bottom: 22px
+    max-width: 128px
+    +min(300)
+      margin-bottom: 13px
+      max-width: 102px
+    +min(768)
+      margin-bottom: 22px
+      max-width: 128px
   &__text
     color: white
-    font-size: 14px
     font-weight: 300
-    line-height: 26px
     letter-spacing: 0.35px
   &__subtitle
-    font-size: 15px
     font-weight: 800
-    line-height: 26px
     text-transform: uppercase
     letter-spacing: 0.75px
     color: white
     margin-bottom: 26px
-    margin-top: 14px
+    +min(300)
+      margin-top: 32px
+      margin-bottom: 17px
+      font-size: 14px
+      line-height: 23px
+    +min(768)
+      margin-top: 44px
+      margin-bottom: 26px
+      font-size: 15px
+      line-height: 26px
+    +min(992)
+      margin-top: 14px
   &__mailing
     margin-bottom: 27px
   &__bottom
-    margin-top: 58px
     justify-content: space-between
+    +min(300)
+      margin-top: 32px
+    +min(768)
+      margin-top: 55px
+    +min(992)
+      margin-top: 58px
   &__copyright
     color: #ffffff
     font-weight: 400
     line-height: 26px
     letter-spacing: 0.35px
     text-align: right
+    +min(300)
+      text-align: center
+    +min(768)
+      text-align: right
+    
   &__nav
-    justify-content: space-between
+    +min(300)
+      justify-content: center
+      margin-bottom: 15px
+    +min(768)
+      justify-content: flex-start
+      margin-bottom: 0
     li
       line-height: 26px
 .mailing
   display: flex
   &__placeinput
+    +min(300)
+      width: 100%
+      max-width: 100%
+    +max(476)
+      max-width: 270px
     input
       border: 1px solid rgba(255, 255, 255, 0.5)
       padding: 13px 16px 14px

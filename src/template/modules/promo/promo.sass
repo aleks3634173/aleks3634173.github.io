@@ -1,16 +1,35 @@
 .promo
   height: 100vh
-  margin-top: -80px
-  max-height: 670px
-  padding-top: 80px
-  padding-bottom: 60px
+  min-height: 400px
   display: flex
   align-items: center
   background-image: url(~_images/content/promo.png)
   background-position: center
   background-repeat: no-repeat
   background-size: cover
+  
+  +min(300)
+    max-height: none
+    height: calc(var(--vh, 1vh) * 100)
+    padding-top: 85px
+    padding-bottom: 120px
+  +min(576)
+    max-height: 480px
+  +min(768)
+    max-height: 550px
+    padding-top: 75px
+    padding-bottom: 20px
+  +min(992)
+    max-height: 670px
+    padding-top: 80px
+    padding-bottom: 60px
   &__inner
     text-align: center
   &__textContent
-    margin-bottom: 45px
+    
+    +min(300)
+      margin-bottom: 45px
+    +min(576)
+      margin-bottom: 40px
+    +min(768)
+      margin-bottom: 45px

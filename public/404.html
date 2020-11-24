@@ -10,32 +10,45 @@
   <body class="page ">
 <div class="header">
   <div class="container">
-    <div class="row header__inner">
-      <div class="col-2"><a class="logo" href="/">
-          <figure class="logo__img"><img src="assets/img/content/logo.png" alt="logo"></figure></a></div>
-      <nav class="nav header__nav">
-        <li class="nav__item nav__item--current"><a href="/">Home</a></li>
-        <li class="nav__item"><a href="#">About</a></li>
-        <li class="nav__item"><a href="#">Expertise</a></li>
-        <li class="nav__item"><a href="#">Teams</a></li>
-        <li class="nav__item"><a href="#">Works</a></li>
-        <li class="nav__item"><a href="#">People say</a></li>
-        <li class="nav__item"><a href="#">Contact</a></li>
-      </nav>
+    <div class="row">
+      <div class="col-12 header__inner"><a class="header__logo logo" href="/">
+          <figure class="logo__img"><img src="assets/img/content/logo.png" alt="logo"></figure></a>
+        <nav class="nav header__nav">
+          <li class="nav__item nav__item--current"><a href="/">Home</a></li>
+          <li class="nav__item"><a href="#">About</a></li>
+          <li class="nav__item"><a href="#">Expertise</a></li>
+          <li class="nav__item"><a href="#">Teams</a></li>
+          <li class="nav__item"><a href="#">Works</a></li>
+          <li class="nav__item"><a href="#">People say</a></li>
+          <li class="nav__item"><a href="#">Contact</a></li>
+        </nav>
+        <div class="header__burger burger">
+          <div class="burger__item"></div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+<ul class="menu-mobile">
+  <li class="menu-mobile__item menu-mobile__item--current"><a href="/">Home</a></li>
+  <li class="menu-mobile__item"><a href="#">About</a></li>
+  <li class="menu-mobile__item"><a href="#">Expertise</a></li>
+  <li class="menu-mobile__item"><a href="#">Teams</a></li>
+  <li class="menu-mobile__item"><a href="#">Works</a></li>
+  <li class="menu-mobile__item"><a href="#">People say</a></li>
+  <li class="menu-mobile__item"><a href="#">Contact</a></li>
+</ul>
     <div class="conainer">
       <h2>404</h2>
     </div>
     <footer class="footer section--dark">
       <div class="container">
         <div class="row footer__top">
-          <div class="col-4"><a class="footer__logo logo" href="/">
+          <div class="col-md-8 col-lg-4"><a class="footer__logo logo" href="/">
               <figure class="logo__img"><img src="assets/img/content/logo.png" alt="logo"></figure></a>
             <p class="footer__text">lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
           </div>
-          <div class="col-4">
+          <div class="col-md-6 col-lg-4">
             <h3 class="footer__subtitle">OUR STUDIO</h3>
             <div class="footer__contacts contacts"><a class="contacts__item" href="#">
                 <div class="contacts__icon">
@@ -51,7 +64,7 @@
                 </div>
                 <p class="footer__text contacts__content">(+62) 21-2224 3333</p></a></div>
           </div>
-          <div class="col-4">
+          <div class="col-md-6 col-lg-4">
             <h3 class="footer__subtitle">STAY IN TOUCH</h3>
             <form class="footer__mailing mailing form" action="/" method="post">
               <label class="placeinput mailing__placeinput">
@@ -85,14 +98,14 @@
           </div>
         </div>
         <div class="row footer__bottom">
-          <div class="col-4">
+          <div class="col-12 col-md-6">
             <div class="footer__nav nav">
               <li class="nav__item"><a href="/">HELP</a></li>
               <li class="nav__item"><a href="#">TERMS &amp; CONDITION</a></li>
               <li class="nav__item"><a href="#">PRIVACY</a></li>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <p class="footer__copyright">Copyright © 2015 - Tajem Creative</p>
           </div>
         </div>

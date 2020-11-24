@@ -3,23 +3,40 @@
   background-position: center
   background-repeat: no-repeat
   background-size: cover
-  padding: 202px 0 195px
+  +min(300)
+    padding: 120px 0 100px
+  +min(576)
+    padding: 145px 0 150px
+  +min(768)
+    padding: 165px 0 170px
+  +min(992)
+    padding: 202px 0 195px
   &__play
-    width: 100px
-    height: 100px
-    border: 3px solid #ffffff
     border-radius: 50%
     display: flex
     align-items: center
     justify-content: center
     cursor: pointer
-    margin-bottom: 27px
     transition: border $trst, opacity $trst
+    +min(300)
+      width: 75px
+      height: 75px
+      border: 2px solid #ffffff
+      margin-bottom: 22px
+    +min(576)
+      width: 100px
+      height: 100px
+      border: 3px solid #ffffff
+      margin-bottom: 27px
     &-svg
-      margin-left: 5px
-      +size(37, 45)  
       fill: white
       transition: fill $trst
+      +min(300)
+        +size(27, 35)
+        margin-left: 3px
+      +min(576)
+        +size(37, 45)  
+        margin-left: 5px
     &:hover
       border-color: $blue
       & + .our-story-video__text-play
@@ -30,13 +47,16 @@
     &:active
       opacity: .7
   &__text-play
-    font-size: 16px
     font-weight: 800
     color: white
     text-transform: uppercase
     letter-spacing: 0.8px
     animation: blink1 3s linear infinite
     transition: color $trst
+    +min(300)
+      font-size: 14px
+    +min(576)
+      font-size: 16px
   &__inner
     flex-direction: column
     align-items: center

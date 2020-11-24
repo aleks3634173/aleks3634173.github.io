@@ -4,19 +4,24 @@
   align-items: center
   text-align: center
   &__img
-    margin-bottom: 32px
     height: 50px
     width: 50px
     display: flex
     align-items: center
     justify-content: center
+    +min(300)
+      margin-bottom: 27px
+    +min(576)
+      margin-bottom: 32px
   &__textContent
     h3
-      font-size: 14px
       font-weight: 800
       text-transform: uppercase
       letter-spacing: 0.7px
       margin-bottom: 16px
+      +min(300)
+        margin-bottom: 12px
+      +min(576)
+        margin-bottom: 14px
     p
-      line-height: 22px
       letter-spacing: 0.7px

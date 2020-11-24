@@ -9,6 +9,11 @@
     display: flex
     align-items: center
     transition: color $trst
+    +min(300)
+      font-size: 12px
+      margin-top: 5px
+    +min(350)
+      margin-top: 0px
     &-arrow
       border: 1px solid #413d4b
       border-top-color: transparent
@@ -19,6 +24,9 @@
       margin-left: 10px
       border-radius: 2px
       transition: border $trst
+      margin-bottom: 2px
+      +min(300)
+        margin-left: 5px
     &:hover
       color: $blue
       .works__more-arrow
@@ -29,6 +37,11 @@
     display: flex
     justify-content: space-between
     align-items: center
+    +min(300)
+      flex-direction: column
+      align-items: flex-start
+    +min(350)
+      flex-direction: row
   &__footer
     text-align: center
   &__list
@@ -37,16 +50,33 @@
     padding: 0
     overflow: hidden
     max-width: 1600px
+    +min(300)
+      margin-top: 30px
+      margin-bottom: 35px
+    +min(350)
+      margin-top: 40px
+    +min(768)
+      margin-top: 60px
+      margin-bottom: 60px
+    +min(992)
+      margin-top: 70px 
+      margin-bottom: 70px 
     .row
       margin: 0
   &__item
     font-size: 0
     line-height: 0
     padding: 0
-    padding-top: 12.5%
     position: relative
     overflow: hidden
+    +min(300)
+      padding-top: 24.8%
+    +min(576)
+      padding-top: 18.5%
+    +min(992)
+      padding-top: 12.5%
     img
+      width: 100%
       +absolute-center()
       transition: transform $trst
     &:hover

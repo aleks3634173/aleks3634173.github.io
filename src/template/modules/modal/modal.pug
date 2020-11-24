@@ -4,10 +4,12 @@
       .close__icon
         +svg('close')
     .row
-      .col-12.modal-video__video
-        video(
-          class="video-js vjs-theme-fantasy"
-          controls
-          preload="auto"
-          data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=KvUgaHTNit4"}] }'
-          )
+      .col-12
+        .modal-video__video
+          video(
+            class="video-js vjs-theme-fantasy"
+            controls
+            preload="auto"
+            data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=KvUgaHTNit4"}] }'
+            )
+.hidden-content

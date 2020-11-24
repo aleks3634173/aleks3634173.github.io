@@ -10,28 +10,41 @@
   <body class="page ">
 <div class="header">
   <div class="container">
-    <div class="row header__inner">
-      <div class="col-2"><a class="logo" href="/">
-          <figure class="logo__img"><img src="assets/img/content/logo.png" alt="logo"></figure></a></div>
-      <nav class="nav header__nav">
-        <li class="nav__item nav__item--current"><a href="/">Home</a></li>
-        <li class="nav__item"><a href="#">About</a></li>
-        <li class="nav__item"><a href="#">Expertise</a></li>
-        <li class="nav__item"><a href="#">Teams</a></li>
-        <li class="nav__item"><a href="#">Works</a></li>
-        <li class="nav__item"><a href="#">People say</a></li>
-        <li class="nav__item"><a href="#">Contact</a></li>
-      </nav>
+    <div class="row">
+      <div class="col-12 header__inner"><a class="header__logo logo" href="/">
+          <figure class="logo__img"><img src="assets/img/content/logo.png" alt="logo"></figure></a>
+        <nav class="nav header__nav">
+          <li class="nav__item nav__item--current"><a href="/">Home</a></li>
+          <li class="nav__item"><a href="#">About</a></li>
+          <li class="nav__item"><a href="#">Expertise</a></li>
+          <li class="nav__item"><a href="#">Teams</a></li>
+          <li class="nav__item"><a href="#">Works</a></li>
+          <li class="nav__item"><a href="#">People say</a></li>
+          <li class="nav__item"><a href="#">Contact</a></li>
+        </nav>
+        <div class="header__burger burger">
+          <div class="burger__item"></div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+<ul class="menu-mobile">
+  <li class="menu-mobile__item menu-mobile__item--current"><a href="/">Home</a></li>
+  <li class="menu-mobile__item"><a href="#">About</a></li>
+  <li class="menu-mobile__item"><a href="#">Expertise</a></li>
+  <li class="menu-mobile__item"><a href="#">Teams</a></li>
+  <li class="menu-mobile__item"><a href="#">Works</a></li>
+  <li class="menu-mobile__item"><a href="#">People say</a></li>
+  <li class="menu-mobile__item"><a href="#">Contact</a></li>
+</ul>
 <div class="promo section section--dark">
   <div class="container">
     <div class="row promo__inner justify-content-md-center">
       <div class="col-12 section__title">
         <h1>We Are Awesome Creative Agency</h1>
       </div>
-      <div class="col-10 promo__textContent text--light">
+      <div class="col-12 col-md-10 promo__textContent text--light">
         <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
       </div>
       <div class="col-12"><a class="promo__link btn" href="#">LEARN MORE</a></div>
@@ -41,8 +54,8 @@
 <div class="our-story section">
   <div class="container">
     <div class="row our-story__inner">
-      <picture class="col-5 our-story__image"><img src="assets/img/content/our-story.png" alt="our-story"></picture>
-      <div class="col-7 our-story__right">
+      <picture class="col-12 col-sm-3 col-md-5 our-story__image"><img src="assets/img/content/our-story.png" alt="our-story"></picture>
+      <div class="col-12 col-sm-9 col-md-7 our-story__right">
         <div class="our-story__textContent">
           <h2>OUR STORY</h2>
           <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
@@ -71,9 +84,9 @@
             <h2>EXPERTISE</h2>
             <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
           </div>
-          <div class="col-12 expertise__list">
-            <div class="row">
-              <div class="col-4 expertise__card">
+          <div class="col-12">
+            <div class="row expertise__list">
+              <div class="col-9 col-sm-6 col-lg-4 expertise__card">
                 <div class="expertise-card">
                   <div class="expertise-card__img">
                     <div class="icon icon-expertise1"></div>
@@ -84,7 +97,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-4 expertise__card">
+              <div class="col-9 col-sm-6 col-lg-4 expertise__card">
                 <div class="expertise-card">
                   <div class="expertise-card__img">
                     <div class="icon icon-expertise2"></div>
@@ -95,7 +108,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-4 expertise__card">
+              <div class="col-9 col-sm-6 col-lg-4 expertise__card">
                 <div class="expertise-card">
                   <div class="expertise-card__img">
                     <div class="icon icon-expertise3"></div>
@@ -106,7 +119,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-4 expertise__card">
+              <div class="col-9 col-sm-6 col-lg-4 expertise__card">
                 <div class="expertise-card">
                   <div class="expertise-card__img">
                     <div class="icon icon-expertise4"></div>
@@ -117,7 +130,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-4 expertise__card">
+              <div class="col-9 col-sm-6 col-lg-4 expertise__card">
                 <div class="expertise-card">
                   <div class="expertise-card__img">
                     <div class="icon icon-expertise5"></div>
@@ -128,7 +141,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-4 expertise__card">
+              <div class="col-9 col-sm-6 col-lg-4 expertise__card">
                 <div class="expertise-card">
                   <div class="expertise-card__img">
                     <div class="icon icon-expertise6"></div>
@@ -151,9 +164,9 @@
             <h2>MEET OUR AMAZING TEAM</h2>
             <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
           </div>
-          <div class="col-12">
+          <div class="col-12 col-md-9 col-lg-12">
             <div class="row team__list">
-              <div class="col-3 team__item">
+              <div class="col-9 col-sm-6 col-lg-3 team__item">
                 <div class="team-card">
                   <div class="team-card__img"><img src="assets/img/content/profile.png" alt="profile"></div>
                   <div class="team-card__textContent author">
@@ -162,7 +175,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-3 team__item">
+              <div class="col-9 col-sm-6 col-lg-3 team__item">
                 <div class="team-card">
                   <div class="team-card__img"><img src="assets/img/content/profile.png" alt="profile"></div>
                   <div class="team-card__textContent author">
@@ -171,7 +184,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-3 team__item"> 
+              <div class="col-9 col-sm-6 col-lg-3 team__item"> 
                 <div class="team-card">
                   <div class="team-card__img"><img src="assets/img/content/profile.png" alt="profile"></div>
                   <div class="team-card__textContent author">
@@ -180,7 +193,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-3 team__item"> 
+              <div class="col-9 col-sm-6 col-lg-3 team__item"> 
                 <div class="team-card">
                   <div class="team-card__img"><img src="assets/img/content/profile.png" alt="profile"></div>
                   <div class="team-card__textContent author">
@@ -209,18 +222,18 @@
   </div>
   <div class="container-fluid works__list">
     <div class="row">
-      <div class="col-2 works__item"><img src="assets/img/general/work.png" alt="works"></div>
-      <div class="col-2 works__item"><img src="assets/img/general/work1.png" alt="works"></div>
-      <div class="col-2 works__item"><img src="assets/img/general/work2.png" alt="works"></div>
-      <div class="col-2 works__item"><img src="assets/img/general/work3.png" alt="works"></div>
-      <div class="col-2 works__item"><img src="assets/img/general/work4.png" alt="works"></div>
-      <div class="col-2 works__item"><img src="assets/img/general/work5.png" alt="works"></div>
-      <div class="col-2 works__item"><img src="assets/img/general/work6.png" alt="works"></div>
-      <div class="col-2 works__item"><img src="assets/img/general/work7.png" alt="works"></div>
-      <div class="col-2 works__item"><img src="assets/img/general/work8.png" alt="works"></div>
-      <div class="col-2 works__item"><img src="assets/img/general/work9.png" alt="works"></div>
-      <div class="col-2 works__item"><img src="assets/img/general/work10.png" alt="works"></div>
-      <div class="col-2 works__item"><img src="assets/img/general/work11.png" alt="works"></div>
+      <div class="col-4 col-sm-3 col-lg-2 works__item"><img src="assets/img/general/work.png" alt="works"></div>
+      <div class="col-4 col-sm-3 col-lg-2 works__item"><img src="assets/img/general/work1.png" alt="works"></div>
+      <div class="col-4 col-sm-3 col-lg-2 works__item"><img src="assets/img/general/work2.png" alt="works"></div>
+      <div class="col-4 col-sm-3 col-lg-2 works__item"><img src="assets/img/general/work3.png" alt="works"></div>
+      <div class="col-4 col-sm-3 col-lg-2 works__item"><img src="assets/img/general/work4.png" alt="works"></div>
+      <div class="col-4 col-sm-3 col-lg-2 works__item"><img src="assets/img/general/work5.png" alt="works"></div>
+      <div class="col-4 col-sm-3 col-lg-2 works__item"><img src="assets/img/general/work6.png" alt="works"></div>
+      <div class="col-4 col-sm-3 col-lg-2 works__item"><img src="assets/img/general/work7.png" alt="works"></div>
+      <div class="col-4 col-sm-3 col-lg-2 works__item"><img src="assets/img/general/work8.png" alt="works"></div>
+      <div class="col-4 col-sm-3 col-lg-2 works__item"><img src="assets/img/general/work9.png" alt="works"></div>
+      <div class="col-4 col-sm-3 col-lg-2 works__item"><img src="assets/img/general/work10.png" alt="works"></div>
+      <div class="col-4 col-sm-3 col-lg-2 works__item"><img src="assets/img/general/work11.png" alt="works"></div>
     </div>
   </div>
   <div class="container">
@@ -239,7 +252,7 @@
             <div class="col-10 testimonials__textContent">
               <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
             </div>
-            <div class="col-4 testimonials__author author">
+            <div class="col-6 col-sm-4 testimonials__author author">
               <h3>JANE GALADRIEL1</h3>
               <p>CEO TENGKUREP</p>
             </div>
@@ -251,7 +264,7 @@
             <div class="col-10 testimonials__textContent">
               <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
             </div>
-            <div class="col-4 testimonials__author author">
+            <div class="col-6 col-sm-4 testimonials__author author">
               <h3>JANE GALADRIEL4</h3>
               <p>CEO TENGKUREP</p>
             </div>
@@ -261,9 +274,9 @@
           <div class="testimonials__item">
             <div class="testimonials__icon icon-quote"></div>
             <div class="col-10 testimonials__textContent">
-              <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+              <p>This is Phonare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
             </div>
-            <div class="col-4 testimonials__author author">
+            <div class="col-6 col-sm-4 testimonials__author author">
               <h3>JANE GALADRIEL3</h3>
               <p>CEO TENGKUREP</p>
             </div>
@@ -273,9 +286,9 @@
           <div class="testimonials__item">
             <div class="testimonials__icon icon-quote"></div>
             <div class="col-10 testimonials__textContent">
-              <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+              <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare om quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare om quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
             </div>
-            <div class="col-4 testimonials__author author">
+            <div class="col-6 col-sm-4 testimonials__author author">
               <h3>JANE GALADRIEL4</h3>
               <p>CEO TENGKUREP</p>
             </div>
@@ -287,14 +300,14 @@
             <div class="col-10 testimonials__textContent">
               <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
             </div>
-            <div class="col-4 testimonials__author author">
+            <div class="col-6 col-sm-4 testimonials__author author">
               <h3>JANE GALADRIEL5</h3>
               <p>CEO TENGKUREP</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-4 testimonials__profiles profiles">
+      <div class="col-md-6 col-lg-4 testimonials__profiles profiles">
         <div>
           <div class="profiles__item"><img src="assets/img/general/profile1.png" alt="profile"></div>
         </div>
@@ -317,7 +330,7 @@
     <div class="callback section">
       <div class="container">
         <div class="row justify-content-center">
-          <form class="callback__form form col-6" action="/" method="post">
+          <form class="callback__form form col-11 col-sm-9 col-md-8 col-lg-6" action="/" method="post">
             <h2 class="callback__title">GIVE US A GOOD NEWS</h2>
             <label class="placeinput callback__placeinput">
               <input class="field" type="text" name="name">
@@ -347,11 +360,11 @@
     <footer class="footer section--dark">
       <div class="container">
         <div class="row footer__top">
-          <div class="col-4"><a class="footer__logo logo" href="/">
+          <div class="col-md-8 col-lg-4"><a class="footer__logo logo" href="/">
               <figure class="logo__img"><img src="assets/img/content/logo.png" alt="logo"></figure></a>
             <p class="footer__text">lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
           </div>
-          <div class="col-4">
+          <div class="col-md-6 col-lg-4">
             <h3 class="footer__subtitle">OUR STUDIO</h3>
             <div class="footer__contacts contacts"><a class="contacts__item" href="#">
                 <div class="contacts__icon">
@@ -367,7 +380,7 @@
                 </div>
                 <p class="footer__text contacts__content">(+62) 21-2224 3333</p></a></div>
           </div>
-          <div class="col-4">
+          <div class="col-md-6 col-lg-4">
             <h3 class="footer__subtitle">STAY IN TOUCH</h3>
             <form class="footer__mailing mailing form" action="/" method="post">
               <label class="placeinput mailing__placeinput">
@@ -401,14 +414,14 @@
           </div>
         </div>
         <div class="row footer__bottom">
-          <div class="col-4">
+          <div class="col-12 col-md-6">
             <div class="footer__nav nav">
               <li class="nav__item"><a href="/">HELP</a></li>
               <li class="nav__item"><a href="#">TERMS &amp; CONDITION</a></li>
               <li class="nav__item"><a href="#">PRIVACY</a></li>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <p class="footer__copyright">Copyright © 2015 - Tajem Creative</p>
           </div>
         </div>
@@ -424,11 +437,14 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-12 modal-video__video">
-            <video class="video-js vjs-theme-fantasy" controls preload="auto" data-setup="{ &quot;techOrder&quot;: [&quot;youtube&quot;], &quot;sources&quot;: [{ &quot;type&quot;: &quot;video/youtube&quot;, &quot;src&quot;: &quot;https://www.youtube.com/watch?v=KvUgaHTNit4&quot;}] }"></video>
+          <div class="col-12">
+            <div class="modal-video__video">
+              <video class="video-js vjs-theme-fantasy" controls preload="auto" data-setup="{ &quot;techOrder&quot;: [&quot;youtube&quot;], &quot;sources&quot;: [{ &quot;type&quot;: &quot;video/youtube&quot;, &quot;src&quot;: &quot;https://www.youtube.com/watch?v=KvUgaHTNit4&quot;}] }"></video>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="hidden-content"></div>
   <script src="assets/js/vendors.min.js"></script><script src="assets/js/main.min.js"></script></body>
 </html>

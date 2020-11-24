@@ -13,21 +13,45 @@
   z-index: -10
   animation: .5s linear 0s 1 alternate show
   &__inner
-    position: relative
+    +min(576)
+      position: relative
+    
   &.active
     z-index: 10
     opacity: 1
     background-color: rgba(0,0,0,.75)
     display: flex
+  &.hidden
+    opacity: 0  
+    animation: .2s linear 0s 1 alternate hidden
   &__close 
     position: absolute
-    top: -38px
-    right: -28px
+    +min(300)
+      top: 30px
+      right: 15px
+    +min(700)
+      top: -38px
+      right: -28px
     
 .modal-video
+  .modal__inner
+    +min(576)
+      max-width: 560px
+    +min(768)
+      max-width: 660px
+    +min(992)
+      max-width: 860px
+    +min(1100)
+      max-width: 960px
   &__video
     padding-top: 55.3%
     position: relative
+    .vjs-theme-fantasy .vjs-big-play-button
+      +min(300)
+        font-size: 60px
+      +min(768)
+        font-size: 80px
+      
     .video-js
       width: 100%
       position: absolute
@@ -36,7 +60,25 @@
       bottom: 0
       right: 0
       height: 100%
-      
+.hidden-content
+  position: fixed
+  top: 0
+  bottom: 0
+  right: 0
+  width: 100%
+  left: 0
+  height: 100vh
+  background: rgba(193,193,193,0.36)
+  display: none
+  animation: .5s linear 0s 1 alternate show
+  opacity: 0
+  &.active
+    display: flex
+    opacity: 1
+    z-index: 10
+  &.hidden
+    opacity: 0  
+    animation: .2s linear 0s 1 alternate hidden
 .close 
   display: flex
   align-items: flex-end
@@ -60,3 +102,9 @@
     opacity: 0
   100%
     opacity: 1
+
+@keyframes hidden 
+  0% 
+    opacity: 1
+  100%
+    opacity: 0

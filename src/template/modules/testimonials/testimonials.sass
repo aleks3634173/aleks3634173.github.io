@@ -10,7 +10,10 @@
     align-items: center
     text-align: center
   &__icon
-    margin-bottom: 40px
+    +min(300)
+      margin-bottom: 28px
+    +min(576)
+      margin-bottom: 40px
   &__slider
     max-width: 100%
     .slick-slide
@@ -22,16 +25,25 @@
       opacity: 1
   &__textContent
     margin-bottom: 45px
+    +min(300)
+      margin-bottom: 27px
+    +min(576)
+      margin-bottom: 45px
     p
       color: rgba(255, 255, 255, .85)
-      font-size: 16px
-      font-weight: 400
-      line-height: 26px
       font-family: "PlayfairDisplay", sans-serif
+      +min(300)
+        font-size: 14px
+        line-height: 23px
+      +min(576)
+        font-size: 16px
+        font-weight: 400
+        line-height: 26px
   &__author
     margin-bottom: 37px
 .profiles
   padding: 0
+  max-width: 320px
   .slick-slide:focus,
   .slick-slide div:focus,
   .slick-slide img:focus

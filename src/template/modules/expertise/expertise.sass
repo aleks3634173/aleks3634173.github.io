@@ -1,17 +1,58 @@
 .expertise
   &__title
     margin-bottom: 41px
+  &__list
+    +min(300)
+      align-items: center
+      flex-direction: column
+      display: flex
+    +min(576)
+      flex-direction: row
   &__card
     padding-top: 36px
     padding-bottom: 39px
     border-right: 1px solid rgba(0, 0, 0, 0.08)
     border-bottom: 1px solid rgba(0, 0, 0, 0.08)
+    +min(300)
+      border-right: 0
+    +min(576)
+      border-right: 1px solid rgba(0, 0, 0, 0.08)
+    &:nth-child(2n)
+      +min(576)
+        border-right: 0
+      +min(992)
+        border-right: 1px solid rgba(0, 0, 0, 0.08)
     &:nth-child(3n)
-      border-right-color: transparent
+      +min(992)
+        border-right: 0
+    &:nth-last-child(2),
+    &:nth-last-child(3)
+      +min(300)
+        border-bottom-color: rgba(0, 0, 0, 0.08)
+    &:last-child
+      +min(300)
+        padding-bottom: 15px
+        border-bottom: 0 
+    &:nth-child(1)
+      +min(300)
+        padding-top: 15px
+      +min(576)
+        padding-top: 36px
     &:nth-last-child(1),
     &:nth-last-child(2),
     &:nth-last-child(3)
-      border-bottom-color: transparent
+      +min(992)
+        border-bottom: 0
+    &:nth-last-child(1),
+    &:nth-last-child(2)
+      +min(576)
+        padding-bottom: 20px
+        border-bottom: 0
+      +min(992)
+        padding-bottom: 39px
+        border-bottom: 0
+      
+    
 
 .icon-expertise1
    @include sprite($expertise1)

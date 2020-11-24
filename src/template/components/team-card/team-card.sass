@@ -7,12 +7,17 @@
     display: flex
     align-items: center
     justify-content: center
-    padding-top: 104.090909091%
     position: relative
     width: 100%
+    +min(300)
+      padding-top: 104.090909091%
+    +min(768)
+      padding-top: 115%
+    +min(992)
+      padding-top: 104.090909091%
     img
       width: 100%
-      height: auto
+      height: 100%
       position: absolute
       top: 0
       left: 0
@@ -20,5 +25,8 @@
       bottom: 0
   &__textContent
     border: 1px solid rgba(225, 225, 225, 0.7)
-    padding: 17px 20px 20px
     width: 100%
+    +min(300)
+      padding: 16px 10px 17px
+    +min(768)
+      padding: 17px 20px 20px

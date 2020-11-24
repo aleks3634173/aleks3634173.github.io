@@ -15,12 +15,12 @@
 footer.footer.section--dark
   .container
     .row.footer__top
-      .col-4
+      .col-md-8.col-lg-4
         a.footer__logo.logo(href="/")
           figure.logo__img
             img(src="assets/img/content/logo.png" alt="logo")
         p.footer__text lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
-      .col-4
+      .col-md-6.col-lg-4
         h3.footer__subtitle OUR STUDIO
         .footer__contacts.contacts
           a.contacts__item(href="#")
@@ -31,7 +31,7 @@ footer.footer.section--dark
             .contacts__icon
               +svg('tel')
             p.footer__text.contacts__content (+62) 21-2224 3333
-      .col-4
+      .col-md-6.col-lg-4
         h3.footer__subtitle STAY IN TOUCH
         form.footer__mailing.mailing.form(action="/" method="post")
           label.placeinput.mailing__placeinput(class!= mod)
@@ -54,10 +54,10 @@ footer.footer.section--dark
           a.soc-icons__item(href="#")
             +svg('yt')
     .row.footer__bottom
-      .col-4
+      .col-12.col-md-6
         .footer__nav.nav
           each item, index in menu.length ? menu : ['There are no values']
             li.nav__item
               a(href!=item.link)= item.name
-      .col-4
+      .col-12.col-md-6.col-lg-4
         p.footer__copyright Copyright © 2015 - Tajem Creative

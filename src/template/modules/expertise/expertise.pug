@@ -12,8 +12,8 @@
       .col-12.expertise__title.section__title
         h2 EXPERTISE
         p Lorem ipsum dolor sit amet proin gravida nibh vel velit
-      .col-12.expertise__list
-        .row
+      .col-12
+        .row.expertise__list
           each value, index in cardsName.length ? cardsName : ['There are no values']
-            .col-4.expertise__card
+            .col-9.col-sm-6.col-lg-4.expertise__card
               +expertise-card(index + 1, value)

@@ -1,13 +1,29 @@
 .our-story
   &__textContent
-    margin-bottom: 19px
+    margin-bottom: 19px    
     h2
-      margin-bottom: 20px
+      +min(300)
+        margin-bottom: 15px
+      +min(576)
+        margin-bottom: 20px
     p
       margin-bottom: 19px
       &:last-child
         margin-bottom: 0
+      +min(300)
+        margin-bottom: 10px
+      +min(576)
+        margin-bottom: 15px
   &__image
     display: flex
     justify-content: center
-    max-height: 229px
+    +min(300)
+      max-height: 175px
+      margin-bottom: 40px
+    +min(576)
+      max-height: 95px
+      margin-bottom: 0
+    +min(768)
+      max-height: 200px
+    +min(992)
+      max-height: 229px

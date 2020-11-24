@@ -3,6 +3,7 @@ import videojs from 'video.js'
 export default class Modal {
   constructor() {
     this.ACTIVE = 'active';
+    this.HIDDEN = 'hidden';
     this.PAGE_FROZE = 'froze';
     this.elements = document.querySelectorAll('.modal');
     this.buttonName = 'modal-open';
@@ -32,10 +33,17 @@ export default class Modal {
         this.closeModal(item);
       }
     })
+    
+    item.addEventListener('animationend', () => {
+      if (item.classList.contains(this.HIDDEN)) {
+        item.classList.remove(this.ACTIVE); 
+        item.classList.remove(this.HIDDEN); 
+        this.page.classList.remove(this.PAGE_FROZE);
+      }
+    })
   }
   closeModal(item) {
-    item.classList.remove(this.ACTIVE);
-    this.page.classList.remove(this.PAGE_FROZE);
+    item.classList.add(this.HIDDEN);
     if (item.classList.contains('modal-video')) {
       const video = document.querySelector('.video-js');
       const player = videojs(video);

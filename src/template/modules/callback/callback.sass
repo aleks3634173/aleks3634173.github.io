@@ -4,13 +4,24 @@
     align-items: center
     flex-direction: column
     text-align: center
+    +min(300)
+      max-width: 375px
+    +min(768)
+      max-width: none
   &__title
-    margin-bottom: 35px
+    +min(300)
+      margin-bottom: 30px
+    +min(768)
+      margin-bottom: 35px
   &__placeinput
     margin-bottom: 23px
     width: 100%
     &:last-child
       margin-bottom: 0
+      +min(300)
+        margin-bottom: 0px
+    +min(300)
+      margin-bottom: 20px
   &__placetextarea
     margin-bottom: 15px
     width: 100%

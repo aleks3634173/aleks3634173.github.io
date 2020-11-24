@@ -6381,6 +6381,16 @@ mdn-data@2.0.6:
   resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.0.6.tgz#852dc60fcaa5daa2e8cf6c9189c440ed3e042978"
   integrity sha512-rQvjv71olwNHgiTbfPZFkJtjNMciWgswYeciZhtvWLO8bmX3TnhyA62I6sTWOyZssWHJJjY6/KiWwqQsWWsqOA==
 
+media-query-plugin@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/media-query-plugin/-/media-query-plugin-1.4.0.tgz#7fdf529e2a2952d46b2e225918fa4711eef757a1"
+  integrity sha512-Cht8LWE9C7UJ8tGw9c14vkaS2S8mKsHMdkJhAIZuC4x/3Dcyu35ZGQoOkwUwrPb/Uw2kcy4cL0OLa/m5wll43A==
+  dependencies:
+    loader-utils "^2.0.0"
+    postcss "^7.0.32"
+    webpack "^4.44.1"
+    webpack-sources "^1.4.3"
+
 media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
