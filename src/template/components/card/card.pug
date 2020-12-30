@@ -1,0 +1,9 @@
+mixin card(title, text, name, className, color)
+  .card(class= className)
+    if color
+      .card__line(class= "card__line--" + color)
+    object.card__svg(type="image/svg+xml" data!="assets/img/general/" + name + ".svg")
+    .card__content
+      h3.card__title.title-medium= title
+      p.card__text= text
+    

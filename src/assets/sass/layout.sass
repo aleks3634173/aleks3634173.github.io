@@ -1,0 +1,90 @@
+.page 
+  position: relative
+  min-width: 320px
+  font-family: $defFont
+  font-weight: 300
+  color: $def
+  background-color: white
+  overflow-X: hidden
+  font-size: $baseFontSize+px
+  line-height: 22px
+  letter-spacing: 0.003em
+  
+*::placeholder
+  color: inherit
+  opacity: 1
+  transition: $tr
+
+*:focus::placeholder
+  opacity: 0
+
+*::selection
+  color: #fff
+  background-color: #0075FF
+
+*::-webkit-scrollbar 
+  width: 8px
+
+ 
+*::-webkit-scrollbar-track 
+  background-color: #EEEEEE
+  border-radius: 90px
+
+ 
+*::-webkit-scrollbar-thumb 
+  background: #CACACA
+  border-radius: 90px
+
+
+// body input:focus:required:invalid,
+// body textarea:focus:required:invalid
+//   color: #666
+// body input:required:valid,
+// body textarea:required:valid
+//   color: #666
+button,
+input,
+textarea
+  font-family: $defFont
+
+.wrap
+  width: 100%
+  max-width: 320px
+  box-sizing: border-box
+  padding: 0 10px
+  margin: 0 auto
+  +min(540)
+    max-width: 540px
+    padding: 0 15px
+  +min(991)
+    max-width: 991px
+  +min(1200)
+    max-width: 1200px
+  
+.title
+  font-weight: 600
+  font-size: 24px
+  line-height: 27px
+.title-medium
+  font-weight: 600
+  font-size: 18px
+  line-height: 27px
+  
+.btn
+  min-width: 170px
+  box-sizing: border-box
+  text-align: center
+  transition: all $trst linear
+  display: inline-block
+  cursor: pointer
+  height: 46px
+  line-height: 46px
+  padding: 0 15px
+  border-radius: 8px
+  &--common
+    border: 1px solid #FFFFFF
+    color: white
+    &:hover
+      opacity: .65
+    &:active
+      opacity: .8

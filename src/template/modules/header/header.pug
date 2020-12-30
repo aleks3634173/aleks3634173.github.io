@@ -1,0 +1,25 @@
+header.header
+  .wrap
+    .header__inner
+      a.header__logo.logo(href="#")
+        +svg('logo', 'logo__svg')
+      .header__center
+        nav.header__nav.nav
+          ul
+            li
+              a(href="#") Услуги
+            li
+              a(href="#") Цены
+            li
+              a(href="#") Врачи
+            li
+              a(href="#") Отзывы
+            li
+              a(href="#") До и после
+            li
+              a(href="#") О клинике
+        button.header__btn-search.btn-search
+          +svg('search', 'btn-search__svg')
+      .header__right
+        a.header__tel(href="tel:+74993703799") +7 499 370 37 99
+        a.btn.btn--common(href="#") Обратный звонок

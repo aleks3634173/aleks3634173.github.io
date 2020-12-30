@@ -1,0 +1,11 @@
+extends ~_layout/main
+
+block head
+  - var title = 'webpack'
+  - var bodyClass = ''
+  - var wrapClass = ''
+block content
+  include ~_module/header/header
+block foot
+  include ~_module/footer/footer
+  include ~_module/modal/modal

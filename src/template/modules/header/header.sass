@@ -1,0 +1,42 @@
+.header
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  width: 100%
+  background: #0A9DDB
+  padding: 30px 0 26px
+  color: #FFFFFF
+  &__inner
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__center,
+  &__right
+    display: flex
+    align-items: center
+  &__tel
+    opacity: 0.8
+    margin-right: 30px
+    transition: opacity $trst linear
+    &:hover
+      opacity: .65
+    &:active
+      opacity: .8
+.btn-search
+  &__svg
+    +size(22)
+.nav
+  ul
+    display: flex
+  a
+    transition: opacity $trst linear
+    &:hover
+      opacity: .65
+    &:active
+      opacity: .8
+.logo
+  font-size: 0
+  line-height: 0
+  &__svg
+    +size(142, 25)

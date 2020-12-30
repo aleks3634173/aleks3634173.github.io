@@ -1,0 +1,15 @@
+include ~_template/utils/vars
+include ~_template/utils/mixins
+include ~_components/include
+
+doctype html
+html(lang="ru-RU")
+  head
+    block head
+    title #{title}
+    include ~_module/head/head
+  body(class="page "+bodyClass)
+    block content
+    block foot
+    include ~_module/script/script
+    block script
