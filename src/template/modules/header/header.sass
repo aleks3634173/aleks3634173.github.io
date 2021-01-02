@@ -4,9 +4,9 @@
   left: 0
   right: 0
   width: 100%
-  background: #0A9DDB
-  padding: 30px 0 26px
+  padding: 20px 0 20px
   color: #FFFFFF
+  z-index: 5
   &__inner
     display: flex
     align-items: center
@@ -23,12 +23,52 @@
       opacity: .65
     &:active
       opacity: .8
+  &__btn-search
+    cursor: pointer
+    transition: opacity $trst linear
+    &:hover
+      opacity: .65
+    &:active
+      opacity: .8
+  &__nav
+    margin-right: 10px
+  &__btn
+    font-weight: normal
+    line-height: 40px
+    height: 40px
 .btn-search
   &__svg
     +size(22)
 .nav
+  display: flex
+  align-items: center
+  &__dec
+    +size(15)
+    margin-right: 4px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    &:before
+      content: ''
+      display: block
+      width: 11px
+      background-color: white
+      height: 1px
+      border-radius: 20px
+      margin-bottom: 5px
+    &:after
+      content: ''
+      display: block
+      width: 5px
+      background-color: white
+      height: 1px
+      border-radius: 20px
   ul
     display: flex
+  li
+    margin-right: 28px
+    &:last-child
+      margin-right: 0
   a
     transition: opacity $trst linear
     &:hover
@@ -38,5 +78,10 @@
 .logo
   font-size: 0
   line-height: 0
+  transition: opacity $trst linear
+  &:hover
+    opacity: .65
+  &:active
+    opacity: .8
   &__svg
     +size(142, 25)

@@ -1,0 +1,109 @@
+.promo-slider
+  background-image: url(~_images/content/promo.png)
+  background-repeat: no-repeat
+  background-position: center top
+  background-size: 1444px 700px 
+  position: relative
+  z-index: 2
+  padding-top: 40px
+  margin-bottom: -130px
+  .wrap
+    max-width: 1280px
+  &__list
+    height: 100vh
+    height: calc(var(--vh, 1vh) * 100)
+    display: flex
+    align-items: center
+    +min(991)
+      height: 100vh
+      max-height: 700px
+  &__item
+    display: flex
+  &__img
+    width: 510px
+    height: 428px
+    font-size: 0
+    line-height: 0
+    margin-right: 30px
+  &__title
+    font-size: 32px
+    line-height: 49px
+    letter-spacing: 0.01em
+    color: #FFFFFF
+    font-weight: 600
+    display: flex
+    margin-bottom: 42px
+    align-items: center
+    .icon-pluse
+      margin-left: 5px
+  &__pluse-list
+    margin-bottom: 24px
+    color: white
+  &__price
+    margin-bottom: 20px
+    padding-left: 7px
+  &__btn
+    min-width: 272px
+    margin-left: 5px
+.pluse-list
+  background: rgba(16, 47, 82, 0.2)
+  border-radius: 15px
+  position: relative
+  padding: 33px 15px 23px
+  &__status-list
+    position: absolute
+    top: -20px
+    left: 4px
+.icon-pluse
+  @include sprite($pluse)
+.status-list
+  display: flex
+  &__item
+    background-color: white
+    box-shadow: 1px 2px 5px rgba(2, 10, 79, 0.15)
+    border-radius: 100px
+    display: flex
+    align-items: center
+    padding: 12px 15px
+    font-size: 14px
+    line-height: 14px
+    letter-spacing: 0.02em
+    color: #102F52
+    margin-right: 10px
+    &:last-child
+      margin-right: 0
+  &__icon
+    +size(16)
+    margin-right: 7px
+.price
+  font-size: 38px
+  line-height: 39px
+  display: flex
+  align-items: center
+  color: #FFFFFF
+  &__old
+    letter-spacing: 0.003em
+    text-decoration-line: line-through
+    opacity: 0.5
+    margin-left: 20px
+  &__discount
+    margin-left: 10px
+.discount
+  font-size: 13px
+  line-height: 25px
+  text-align: center
+  letter-spacing: 0.02em
+  text-transform: uppercase
+  font-weight: 600
+  color: #FFFFFF
+  width: 58px
+  height: 25px
+  position: relative
+  padding-left: 2px
+  &__bg
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: -1

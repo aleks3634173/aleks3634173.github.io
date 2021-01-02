@@ -6,4 +6,10 @@ mixin card(title, text, name, className, color)
     .card__content
       h3.card__title.title-medium= title
       p.card__text= text
-    
+mixin card-features(title, name, className)
+  .card-features(class= className)
+    .card-features__img
+      img(src!="assets/img/general/" + name + ".png" alt="features")
+    h3.card-features__title Врачи высшей категории
+    a.card-features__btn(href="")
+      | Подробнее
