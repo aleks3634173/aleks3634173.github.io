@@ -24,3 +24,34 @@ header.header
       .header__right
         a.header__tel(href="tel:+74993703799") +7 499 370 37 99
         a.btn.btn--common.header__btn(href="#") Обратный звонок
+        button.header__btn-search.header__btn-search--mobile.btn-search
+          +svg('search', 'btn-search__svg')
+        .header__burger.burger
+          .burger__item
+          .burger__item
+          .burger__item
+  form.header__search-form.search-form(action="/" method="get")
+    .wrap
+      .search-form__inner
+        input.search-form__input(type="text" name="search" placeholder="Поиск")
+        .search-form__close
+          +svg('close', 'search-form__close-svg')
+.mobile-menu
+  .wrap
+    .mobile-menu__inner
+      .mobile-menu__nav.nav
+        ul
+          li
+            a(href="#") Услуги
+          li
+            a(href="#") Цены
+          li
+            a(href="#") Врачи
+          li
+            a(href="#") Отзывы
+          li
+            a(href="#") До и после
+          li
+            a(href="#") О клинике
+      a.mobile-menu__tel(href="tel:+74993703799") +7 499 370 37 99
+      a.btn.btn--fill.mobile-menu__btn(href="#") Обратный звонок

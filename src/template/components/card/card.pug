@@ -1,8 +1,21 @@
 mixin card(title, text, name, className, color)
-  .card(class= className)
-    if color
-      .card__line(class= "card__line--" + color)
-    object.card__svg(type="image/svg+xml" data!="assets/img/general/" + name + ".svg")
+  - var classCard = ''
+  if color
+    - classCard = " card--" + color
+  .card(class= className + classCard)
+    .card__line
+    .card__icon
+      +svg(name, 'card__svg')
+    .card__content
+      h3.card__title.title-medium= title
+      p.card__text= text
+mixin card2(title, text, name, className, color)
+  - var classCard = ''
+  if color
+    - classCard = " card--" + color
+  .card(class= className + classCard)
+    .card__icon
+      +svg(name, 'card__svg')
     .card__content
       h3.card__title.title-medium= title
       p.card__text= text
@@ -10,6 +23,7 @@ mixin card-features(title, name, className)
   .card-features(class= className)
     .card-features__img
       img(src!="assets/img/general/" + name + ".png" alt="features")
-    h3.card-features__title Врачи высшей категории
+    h3.card-features__title=title
     a.card-features__btn(href="")
+      .card-features__icon ?
       | Подробнее

@@ -1,0 +1,86 @@
+section.adress.section
+  .wrap
+    .section__inner
+      .section__section-header.section-header
+        h2.title 6 клиник в Москве
+        a.section-header__link.link(href="#")
+          | Подробнее о клиниках
+          +svg('arrow-right', 'link__arrow')
+      .adress__line
+        .adress__map
+          iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d34923.394623504864!2d53.2259101!3d56.8337273!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e13971b21dece9%3A0xf82c53855822cdb4!2z0JDQqNCQ0J0!5e0!3m2!1sru!2sru!4v1609987408537!5m2!1sru!2sru")
+          .adress__map-info.map-info
+            p
+              b ВДНХ
+            p 8 800 555 35 35
+            p с 11 до 18
+            a.map-info__link.link(href="#") Подробнее
+        .adress__content
+          .adress__list
+            label.adress__adress-card.adress-card
+              input(type="radio" name="adress")
+              .adress-card__inner
+                .adress-card__img
+                  img(src="assets/img/content/adress1.png" alt="m")
+                p.adress-card__title ВДНХ
+                p.adress-card__text
+                  | Академика 
+                  br
+                  | Королева, 10 
+            label.adress__adress-card.adress-card
+              input(type="radio" name="adress")
+              .adress-card__inner
+                .adress-card__img
+                  img(src="assets/img/content/adress1.png" alt="m")
+                p.adress-card__title Новослободская
+                p.adress-card__text
+                  | Новослободская, 
+                  br
+                  | 67/69 
+            label.adress__adress-card.adress-card
+              input(type="radio" name="adress")
+              .adress-card__inner
+                .adress-card__img
+                  img(src="assets/img/content/adress1.png" alt="m")
+                p.adress-card__title Тропарево
+                p.adress-card__text
+                  | Академика 
+                  br
+                  | Анохина, 60
+            label.adress__adress-card.adress-card
+              input(type="radio" name="adress")
+              .adress-card__inner
+                .adress-card__img
+                  img(src="assets/img/content/adress1.png" alt="m")
+                p.adress-card__title Динамо
+                p.adress-card__text
+                  | Мишина, 38
+            label.adress__adress-card.adress-card
+              input(type="radio" name="adress")
+              .adress-card__inner
+                .adress-card__img
+                  img(src="assets/img/content/adress1.png" alt="m")
+                p.adress-card__title Другая станция
+                p.adress-card__text
+                  | Академика 
+                  br
+                  | Анохина, 60
+            label.adress__adress-card.adress-card
+              input(type="radio" name="adress")
+              .adress-card__inner
+                .adress-card__img
+                  img(src="assets/img/content/adress2.png" alt="m")
+                p.adress-card__title город Одинцово
+                p.adress-card__text
+                  | «Миродент»
+                  br
+                  | Молодёжная, 48
+          .adress__tourist.tourist
+            p.tourist__title Медицинский туризм для других городов
+            p 
+              | наша клиника ежегодно принимает более 500 пациентов 
+              br
+              | из других городов и стран
+            a.tourist__btn.btn.btn--linear(href="#") 
+              span Узнать подробнее
+            

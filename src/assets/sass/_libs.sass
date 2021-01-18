@@ -1,0 +1,26 @@
+@import 'slick-carousel/slick/slick.css'
+@import '@fancyapps/fancybox/dist/jquery.fancybox.css'
+.slick-dots
+  display: flex
+  align-items: center
+  justify-content: center
+  li
+    +size(8)
+    box-sizing: border-box
+    border: 2px solid #D7DDE5
+    border-radius: 50%
+    margin-right: 9px
+    transition: all $trst
+    cursor: pointer
+    &:last-child
+      margin-right: 0
+    &.slick-active
+      background: linear-gradient(88.87deg, #0AB5DB 10.59%, #0075FF 98.77%)
+      border-radius: 100px
+      width: 22px
+      border: 0
+  button
+    font-size: 0
+    line-height: 0
+.slick-slide:focus
+  outline: none

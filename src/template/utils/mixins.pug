@@ -2,3 +2,9 @@ mixin svg(name,mod)
   - mod = mod || ''
   svg(class="svg svg--" + name + ' ' + mod)
     use(xlink:href="assets/img/svg/sprite.svg#" + name)
+mixin obj(name,mod)
+  - mod = mod || ''
+  object(class="object object--" + name + ' ' + mod type="image/svg+xml" data!="assets/img/content/"+name+".svg")
+mixin obj2(name,mod)
+  - mod = mod || ''
+  object(class="object object--" + name + ' ' + mod type="image/svg+xml" data!="assets/img/general/"+name+".svg")

@@ -1,30 +1,32 @@
 extends ~_layout/main
 
 block head
-  - var title = 'webpack'
+  - var title = 'webpack 14'
   - var bodyClass = ''
   - var wrapClass = ''
 block content
   include ~_module/header/header
-  include ~_module/promo-slider/promo-slider
-  include ~_module/features/features
-  include ~_module/comments/comments
-  //  include ~_module/services/services
-  //  include ~_module/doctors/doctors
-  //  include ~_module/equipment/equipment
-  //  include ~_module/callback-block/callback-block
-  //  include ~_module/rating/rating
-  //  include ~_module/whyarewe/whyarewe
-  //  include ~_module/comment-star/comment-star
-  //  include ~_module/documents/documents
-  //  include ~_module/quotation/quotation
-  //  include ~_module/history/history
-  //  include ~_module/adress/adress
-  //  include ~_module/news/news
-  //  include ~_module/callback-block/callback-block
-  //  include ~_module/news/blog
-  //  include ~_module/about/about
-  //  include ~_module/callback-line/callback-line
+  //  include ~_module/promo-slider/promo-slider
+  //  include ~_module/features/features
+  //  include ~_module/comments/comments
+  include ~_module/services/services
+  include ~_module/doctors/doctors
+  include ~_module/equipment/equipment
+  include ~_module/callback-block/callback-block2   
+  include ~_module/rating/rating
+  include ~_module/whyarewe/whyarewe
+  .section-block
+    include ~_module/comment-stars/comment-stars
+    include ~_module/documents/documents
+    include ~_module/quotation/quotation
+  include ~_module/features/features-line
+  include ~_module/history/history
+  include ~_module/adress/adress
+  include ~_module/news/news
+  include ~_module/callback-block/callback-block
+  include ~_module/news/blog
+  include ~_module/about/about
+  include ~_module/callback-line/callback-line
 block foot
   include ~_module/footer/footer
   include ~_module/modal/modal

@@ -1,0 +1,89 @@
+.news
+  overflow: hidden
+  padding: 40px 0 45px
+  +min(540)
+    padding: 67px 0 73px
+  +min(768)
+    background-image: linear-gradient(109.14deg, #F3F7FB -4.47%, #DEE8F4 97.39%)
+  +min(991)
+    padding: 97px 0 113px
+  &--hidden-mobile
+    display: none
+    +min(768)
+      display: block
+  &__mobile
+    display: block
+    +min(768)
+      display: none
+  .section-header__link
+    display: none
+    +min(1200)
+      display: block
+  .mobile-swipe--ico:before,
+  .mobile-swipe--ico:after
+    display: block
+    +min(1200)
+      display: none
+  &__list
+    overflow: visible
+    margin-bottom: 35px
+    +min(540)
+      margin-bottom: 55px
+    +min(991)
+      margin-bottom: 0
+    &:last-child
+      margin-bottom: 0
+  &__item
+    filter: drop-shadow(10px 20px 20px rgba(0, 0, 0, 0.1))
+    position: relative
+    padding-top: 58.3783783784%
+    width: 100%
+    +min(400)
+      width: 320px
+    +min(540)
+      width: 373px
+  &__link
+    display: inline-block
+    padding: 20px 15px
+    +min(540)
+      padding: 25px 15px
+    &:hover
+      .news__img:before
+        background: rgba(0,0,0,.17)
+  &__img
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    overflow: hidden
+    border-radius: 13px
+    &:before
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      content: ''
+      display: block
+      background: rgba(0,0,0,0)
+      z-index: 1
+      transition: background $trst
+    img
+      +absolute-center
+      width: 100%
+  &__text
+    position: absolute
+    top: 35px
+    left: 14px
+    font-weight: 500
+    font-size: 18px
+    line-height: 29px
+    z-index: 2
+    span
+      background: #FFFFFF
+      padding: 8px 5px
+  .slick-list
+    margin-left: -15px
+    margin-right: -15px
+    overflow: visible

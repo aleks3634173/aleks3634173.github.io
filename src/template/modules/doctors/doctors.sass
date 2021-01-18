@@ -1,0 +1,392 @@
+.doctors
+  padding: 42px 0 58px
+  overflow: hidden
+  +min(768)
+    padding: 69px 0 78px
+  +min(991)
+    padding: 79px 0 108px
+  &__section-header
+    margin-bottom: 19px
+    +min(540)
+      margin-bottom: 25px
+    +min(768)
+      margin-bottom: 35px
+  .mobile-swipe--ico:before,
+  .mobile-swipe--ico:after
+    display: block
+    +min(1200)
+      display: none
+  &__tabs
+    margin-bottom: 19px
+    +min(768)
+      margin-bottom: 22px
+  &__doctors-panel
+    margin-right: 2.47863247863%
+    width: 23.0769230769%
+    margin-top: 60px
+    overflow: hidden
+    position: relative
+    display: none
+    +min(1200)
+      display: block
+    .card-person
+      box-shadow: 1px 2px 10px rgba(220, 220, 220, 0.5)
+      height: 110px
+      padding: 19px
+      box-sizing: border-box
+      transition: background $trst
+      &:hover
+        background: linear-gradient(109.14deg, #F3F7FB -4.47%, #DEE8F4 97.39%)
+      &__img
+        max-height: 110px
+      &__name
+        line-height: 24px
+    .slick-slide
+      padding: 6px 0px
+    .slick-list
+      margin-top: -6px
+      margin-bottom: -6px
+    .slick-current
+      .card-person
+        background: #FFA732
+        &__name
+          color: white
+  &__line
+    display: flex
+    justify-content: space-between
+  &__list
+    .slick-dots
+      top: 20px
+      position: absolute
+      transform: translateX(-50%)
+      z-index: 3
+      left: 50px
+      +min(540)
+        left: calc(50% - 200px)
+      +min(768)
+        left: calc(50% - 115px)
+      
+    width: 100%
+    +min(991)
+      overflow: hidden
+    +min(1200)
+      width: 74.358974359%
+    .slick-slide
+      padding: 0 30px 0
+      opacity: 1
+      transition: opacity $trst
+      +min(540)
+        padding: 0 30px 0
+        opacity: 1
+      +min(991)
+        padding: 0 20px 0
+    
+    .slick-current
+      opacity: 1
+      .doctor-block__btn
+        opacity: 1
+    .slick-list
+      position: relative
+      z-index: 2
+      padding-top: 0
+      margin-left: -30px
+      margin-right: -30px
+      +min(540)
+        margin-left: -30px
+        margin-right: -30px
+      +min(991)
+        padding-bottom: 0
+        padding-top: 35px
+        margin-left: -20px
+        margin-right: -20px
+      +min(1200)
+        padding-top: 60px
+        
+  &__item
+    height: 100%
+    
+    
+.tabs
+  +min(768)
+    padding-bottom: 25px
+    border-bottom: 1px solid rgba(16, 47, 82, 0.2)  
+  .slick-slide
+    padding: 0px 6px
+    +min(768)
+      padding: 0
+  .slick-list
+    margin-left: -6px
+    margin-right: -6px
+    overflow: visible
+    +min(768)
+      overflow: hidden
+      margin-left: 0
+      margin-right: 0
+  &__list
+    +min(768)
+      overflow: hidden
+      background: linear-gradient(109.14deg, #F3F7FB -4.47%, #DEE8F4 97.39%)
+      border-radius: 10px
+  &__item
+    font-size: 18px
+    line-height: 27px
+    line-height: 48px
+    padding: 0 35px 0 36px
+    position: relative
+    width: auto
+    display: inline-block
+    white-space: nowrap
+    border-radius: 10px
+    background: linear-gradient(109.14deg, #F3F7FB -4.47%, #DEE8F4 97.39%)
+    border: 1px solid rgba(16, 47, 82, 0.5)
+    box-shadow: 1px 2px 5px rgba(0, 52, 82, 0.05)
+    +min(768)
+      box-shadow: none
+      background: none
+      border: 0
+      border-radius: 15px
+    &:hover
+      background: linear-gradient(109.14deg, #dee0e2 -4.47%, #eae8e8 97.39%)
+  .slick-active
+    .tabs__item.active
+      border: 0
+      color: white
+      background: linear-gradient(88.87deg, #0AB5DB 10.59%, #0075FF 98.77%)
+      box-shadow: 1px 2px 10px rgba(4, 63, 240, 0.5)
+.doctors-panel
+  position: relative
+  &__slick-arrows
+    position: relative
+    z-index: 2
+  &__list
+    z-index: 0
+    margin-bottom: -50px
+  &:before
+    content: ''
+    display: block
+    width: 100%
+    height: 75px
+    position: absolute
+    bottom: -10px
+    left: 0
+    right: 0
+    z-index: 1
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 5.59%, rgba(255, 255, 255, 1) 10.59%, rgba(255, 255, 255, 1) 100%)
+.statistics
+  display: flex
+  &__item
+    margin-right: 26px
+    +min(991)
+      margin-right: 30px
+    &:last-child
+      margin-right: 0
+  &__value
+    margin-bottom: 4px
+    font-size: 18px
+    line-height: 21px
+    font-weight: 500
+    +min(991)
+      font-weight: normal
+      font-size: 24px
+      line-height: 22px
+      margin-bottom: 7px
+  &__text
+    opacity: 0.6
+    font-size: 15px
+    line-height: 21px
+    +min(991)
+      font-size: 16px
+      opacity: 0.8
+.doctor-block
+  box-sizing: border-box
+  background: linear-gradient(109.14deg, #F3F7FB -4.47%, #DEE8F4 97.39%)
+  box-shadow: 1px 2px 10px rgba(220, 220, 220, 0.5)
+  border-radius: 12px
+  padding: 27px 16px 81px
+  position: relative
+  color: #102F52
+  margin-top: 43px
+  margin-right: -20px
+  margin-bottom: 175px
+  width: calc(100% + 20px)
+  +min(540)
+    margin-left: 0
+    border-radius: 12px
+    width: 100%
+    margin-bottom: 135px
+    padding: 27px 16px 105px
+  +min(768)
+    margin-bottom: 200px
+    padding: 27px 16px 81px
+    width: 355px
+  +min(991)
+    width: auto
+    margin-right: 0
+    color: white
+    padding: 40px 32px
+    margin-top: 0
+    border-radius: 20px
+    background: linear-gradient(88.87deg, #FFA732 10.59%, #FE9754 98.77%)
+    margin-bottom: 0
+  &__status
+    opacity: .8
+    display: none
+    +min(991)
+      display: inline-block
+  &__line
+    width: 54px
+    height: 3px
+    background-image: linear-gradient(88.87deg, #0AB5DB 10.59%, #0075FF 98.77%)
+    border-radius: 20px
+    +min(991)
+      display: none
+  &__name
+    font-size: 18px
+    line-height: 27px
+    font-weight: 500
+    margin-bottom: 8px
+    max-width: 140px
+    +min(540)
+      max-width: 160px
+    +min(768)
+      max-width: 140px
+    +min(991)
+      margin-bottom: 0px
+      font-size: 38px
+      line-height: 53px
+      max-width: 400px
+  &__mobile-block
+    position: absolute
+    background: #FFFFFF
+    box-shadow: 1px 2px 10px rgba(204, 203, 203, 0.5)
+    border-radius: 15px
+    top: 81%
+    width: 100%
+    left: -20px
+    z-index: 3
+    padding: 20px 22px 22px 33px
+    box-sizing: border-box
+    max-width: 362px
+    +min(540)
+      border-radius: 15px
+      top: 60%
+    +min(768)
+      top: 81%
+    +min(991)
+      left: auto
+      top: auto
+      max-width: none
+      width: auto
+      padding: 0
+      background: transparent
+      box-shadow: none
+      border-radius: 0
+      position: relative
+  &__text
+    font-size: 15px
+    line-height: 21px
+    margin-bottom: 22px
+    +min(991)
+      max-width: 220px
+      margin-bottom: 36px
+      font-size: 14px
+      line-height: 22px
+  &__statistics
+    margin-bottom: 0
+    +min(991)
+      margin-bottom: 46px
+  &__btn
+    background-image: linear-gradient(88.87deg, #0AB5DB 10.59%, #0075FF 98.77%)
+    box-shadow: 1px 2px 10px rgba(1, 124, 252, 0.5)
+    max-width: 331px
+    width: 100%
+    position: absolute
+    bottom: -175px
+    left: 0
+    color: white
+    transition: opacity $trst
+    margin-bottom: 0
+    +min(540)
+      bottom: -135px
+    +min(768)
+      opacity: 0
+      bottom: -200px
+    +min(991)
+      margin-bottom: 21px
+      opacity: 1
+      bottom: auto
+      left: auto
+      position: relative
+      background: #FFFFFF
+      color: #333333
+      box-shadow: 1px 2px 10px rgba(6, 157, 233, 0.5)
+  &__links
+    display: none
+    align-items: center
+    +min(991)
+      display: flex
+  &__link
+    margin-right: 30px
+    line-height: 27px
+    &:last-child
+      margin-right: 0
+  &__img
+    position: absolute
+    right: 0
+    bottom: 0
+    overflow: hidden
+    z-index: 2
+    display: flex
+    justify-content: flex-end
+    align-items: flex-end
+    height: 240px
+    +min(991)
+      height: 521px
+    +min(1200)
+      height: 535px
+    img
+      max-height: 240px
+      margin-right: 10px
+      +min(991)
+        margin-right: -17px
+        max-height: 511px
+        height: 100%
+      +min(1200)
+        margin-right: -37px
+        max-height: 515px
+        height: 100%
+  &:before
+    content: ''
+    display: block
+    +size(18)
+    box-sizing: border-box
+    border-radius: 50%
+    position: absolute
+    top: 28px
+    right: 195px
+    border: 5px solid #FFFFFF
+    +min(991)
+      top: 40px
+      right: 32px
+      opacity: 0.3
+      border: 14.4948px solid #FFFFFF
+      +size(52)
+    
+  &:after
+    content: ''
+    display: block
+    +size(185)
+    border: 20px solid #FFFFFF
+    box-sizing: border-box
+    border-radius: 50%
+    position: absolute
+    top: 32px
+    right: 11px
+    border: 10px solid #FFFFFF
+    +min(991)
+      top: auto
+      bottom: -130px
+      right: -36px
+      border: 20px solid #FFFFFF
+      +size(492)
+      opacity: 0.2

@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <title>webpack 14</title>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon/favicon-48x48.png">
+  <link href="assets/css/vendors.css" rel="stylesheet"><link href="assets/css/main.css" rel="stylesheet"></head>
+  <body class="page ">
+    <header class="header">
+      <div class="wrap">
+        <div class="header__inner"><a class="header__logo logo" href="#">
+            <svg class="svg svg--logo logo__svg">
+              <use xlink:href="assets/img/svg/sprite.svg#logo"></use>
+            </svg></a>
+          <div class="header__center">
+            <nav class="header__nav nav">
+              <div class="nav__dec"></div>
+              <ul>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Цены</a></li>
+                <li><a href="#">Врачи</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">До и после</a></li>
+                <li><a href="#">О клинике</a></li>
+              </ul>
+            </nav>
+            <button class="header__btn-search btn-search">
+              <svg class="svg svg--search btn-search__svg">
+                <use xlink:href="assets/img/svg/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="header__right"><a class="header__tel" href="tel:+74993703799">+7 499 370 37 99</a><a class="btn btn--common header__btn" href="#">Обратный звонок</a>
+            <button class="header__btn-search header__btn-search--mobile btn-search">
+              <svg class="svg svg--search btn-search__svg">
+                <use xlink:href="assets/img/svg/sprite.svg#search"></use>
+              </svg>
+            </button>
+            <div class="header__burger burger">
+              <div class="burger__item"></div>
+              <div class="burger__item"></div>
+              <div class="burger__item"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form class="header__search-form search-form" action="/" method="get">
+        <div class="wrap">
+          <div class="search-form__inner">
+            <input class="search-form__input" type="text" name="search" placeholder="Поиск">
+            <div class="search-form__close">
+              <svg class="svg svg--close search-form__close-svg">
+                <use xlink:href="assets/img/svg/sprite.svg#close"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </form>
+    </header>
+    <div class="mobile-menu">
+      <div class="wrap">
+        <div class="mobile-menu__inner">
+          <div class="mobile-menu__nav nav">
+            <ul>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Цены</a></li>
+              <li><a href="#">Врачи</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">До и после</a></li>
+              <li><a href="#">О клинике</a></li>
+            </ul>
+          </div><a class="mobile-menu__tel" href="tel:+74993703799">+7 499 370 37 99</a><a class="btn btn--fill mobile-menu__btn" href="#">Обратный звонок</a>
+        </div>
+      </div>
+    </div>
+    <!--  include ~_module/promo-slider/promo-slider-->
+    <!--  include ~_module/features/features-->
+    <!--  include ~_module/comments/comments-->
+<section class="services section">
+  <div class="wrap">
+    <div class="services__inner">
+      <h2 class="services__title title">Наши услуги</h2>
+      <div class="sevives__slider">
+        <div class="services__item">
+          <div class="service-card">
+            <h3 class="service-card__title">Восстановить зуб</h3>
+            <div class="service-card__list"><a class="service-card__item" href="#">Коронки</a><a class="service-card__item" href="#">Имплантация</a><a class="service-card__item" href="#">Реставрация зубов</a><a class="service-card__item" href="#">Восстановать зуб</a></div>
+            <div class="service-card__img"><img src="assets/img/general/services1.png"></div>
+          </div>
+        </div>
+        <div class="services__item">
+          <div class="service-card service-card--orange">
+            <h3 class="service-card__title">Восстановить все зубы</h3>
+            <div class="service-card__list"><a class="service-card__item" href="#">All-on-4</a><a class="service-card__item" href="#">All-on-6</a><a class="service-card__item" href="#">Все зубы за 1 день</a></div>
+            <div class="service-card__img"><img src="assets/img/general/services2.png"></div>
+          </div>
+        </div>
+        <div class="services__item">
+          <div class="service-card service-card--pink">
+            <h3 class="service-card__title">Вылечить зубы</h3>
+            <div class="service-card__list"><a class="service-card__item" href="#">Лечение</a><a class="service-card__item" href="#">Чистка</a><a class="service-card__item" href="#">Удаление зубов</a></div>
+            <div class="service-card__img"><img src="assets/img/general/services3.png"></div>
+          </div>
+        </div>
+        <div class="services__item">
+          <div class="service-card service-card--dark-blue">
+            <h3 class="service-card__title">Красивая улыбка</h3>
+            <div class="service-card__list"><a class="service-card__item" href="#">Виниры</a><a class="service-card__item" href="#">Брекеты</a><a class="service-card__item" href="#">Отбеливание</a></div>
+            <div class="service-card__img"><img src="assets/img/general/services4.png"></div>
+          </div>
+        </div>
+        <div class="services__item">
+          <div class="service-card service-card--pink">
+            <h3 class="service-card__title">Удаление зуба</h3>
+            <div class="service-card__list"><a class="service-card__item" href="#">Лечение</a><a class="service-card__item" href="#">Чистка</a><a class="service-card__item" href="#">Удаление зубов</a></div>
+            <div class="service-card__img"><img src="assets/img/general/services2.png"></div>
+          </div>
+        </div>
+      </div><a class="services__button btn btn--fill" href="#">Перейти к услугам</a>
+    </div>
+  </div>
+</section>
+    <section class="doctors section">
+      <div class="wrap">
+        <div class="doctors__inner">
+          <div class="doctors__section-header section-header mobile-swipe--ico">
+            <h2 class="doctors__title title">Наши врачи</h2>
+          </div>
+          <div class="doctors__tabs tabs">
+            <div class="tabs__list">
+              <div><a class="tabs__item" href="#">Все врачи</a></div>
+              <div><a class="tabs__item" href="#">Cтоматолог-хирург</a></div>
+              <div><a class="tabs__item" href="#">Cтоматолог-хирург</a></div>
+              <div><a class="tabs__item active" href="#">Cтоматолог-ортодонт</a></div>
+              <div><a class="tabs__item" href="#">Cтоматолог-терапевт</a></div>
+              <div><a class="tabs__item" href="#">Cтоматолог-АГА</a></div>
+            </div>
+          </div>
+          <div class="doctors__line">
+            <div class="doctors__doctors-panel doctors-panel">
+              <div class="doctors-panel__list">
+                <div>
+                  <div class="card-person">
+                    <div class="card-person__content">
+                      <p class="card-person__name">Кислица Николай Семенович</p>
+                    </div>
+                    <div class="card-person__img"><img src="assets/img/general/person1.png" alt="person"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="card-person">
+                    <div class="card-person__content">
+                      <p class="card-person__name">Закариев Заур Закариевич</p>
+                    </div>
+                    <div class="card-person__img"><img src="assets/img/general/person1.png" alt="person"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="card-person">
+                    <div class="card-person__content">
+                      <p class="card-person__name">Кирсанова Наталия Михайловна</p>
+                    </div>
+                    <div class="card-person__img"><img src="assets/img/general/person1.png" alt="person"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="card-person">
+                    <div class="card-person__content">
+                      <p class="card-person__name">Закариев Заур Закариевич</p>
+                    </div>
+                    <div class="card-person__img"><img src="assets/img/general/person1.png" alt="person"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="card-person">
+                    <div class="card-person__content">
+                      <p class="card-person__name">Кислица Николай Семенович</p>
+                    </div>
+                    <div class="card-person__img"><img src="assets/img/general/person1.png" alt="person"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="doctors-panel__slick-arrows slick-arrows slick-arrows--vertical" id="doctors-slick-arrows">
+                <button class="slick-arrows__arrow slick-arrows__left">
+                  <svg class="svg svg--arrow3 slick-arrows__svg">
+                    <use xlink:href="assets/img/svg/sprite.svg#arrow3"></use>
+                  </svg>
+                </button>
+                <button class="slick-arrows__arrow slick-arrows__right">
+                  <svg class="svg svg--arrow3 slick-arrows__svg">
+                    <use xlink:href="assets/img/svg/sprite.svg#arrow3"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="doctors__list">
+              <div class="doctors__item">
+                <div class="doctor-block">
+                  <div class="doctor-block__content">
+                    <p class="doctor-block__status">Врач высшей категории </p>
+                    <p class="doctor-block__name">
+                       Кислица Николай Семёнович</p>
+                    <div class="doctor-block__line"></div>
+                    <div class="doctor-block__mobile-block">
+                      <p class="doctor-block__text">Стоматолог, терапевт, ортопед, хирург, имплантолог</p>
+                      <div class="doctor-block__statistics statistics">
+                        <div class="statistics__item">
+                          <p class="statistics__value">4,92</p>
+                          <p class="statistics__text">Рейтинг</p>
+                        </div>
+                        <div class="statistics__item">
+                          <p class="statistics__value">42 года</p>
+                          <p class="statistics__text">Стаж</p>
+                        </div>
+                        <div class="statistics__item">
+                          <p class="statistics__value">5 240</p>
+                          <p class="statistics__text">Операций</p>
+                        </div>
+                      </div>
+                    </div><a class="doctor-block__btn btn btn--white" href="#">Записаться на приём</a>
+                    <div class="doctor-block__links"><a class="doctor-block__link" href="#">Подробнее о враче</a><a class="doctor-block__link" href="#">Отзывы (75)</a></div>
+                  </div>
+                  <div class="doctor-block__img"><img src="assets/img/general/doctor-block.png" assets="doctor-block"></div>
+                </div>
+              </div>
+              <div class="doctors__item">
+                <div class="doctor-block">
+                  <div class="doctor-block__content">
+                    <p class="doctor-block__status">Врач высшей категории </p>
+                    <p class="doctor-block__name">
+                       Кислица Николай Семёнович</p>
+                    <div class="doctor-block__line"></div>
+                    <div class="doctor-block__mobile-block">
+                      <p class="doctor-block__text">Стоматолог, терапевт, ортопед, хирург, имплантолог</p>
+                      <div class="doctor-block__statistics statistics">
+                        <div class="statistics__item">
+                          <p class="statistics__value">4,92</p>
+                          <p class="statistics__text">Рейтинг</p>
+                        </div>
+                        <div class="statistics__item">
+                          <p class="statistics__value">42 года</p>
+                          <p class="statistics__text">Стаж</p>
+                        </div>
+                        <div class="statistics__item">
+                          <p class="statistics__value">5 240</p>
+                          <p class="statistics__text">Операций</p>
+                        </div>
+                      </div>
+                    </div><a class="doctor-block__btn btn btn--white" href="#">Записаться на приём</a>
+                    <div class="doctor-block__links"><a class="doctor-block__link" href="#">Подробнее о враче</a><a class="doctor-block__link" href="#">Отзывы (75)</a></div>
+                  </div>
+                  <div class="doctor-block__img"><img src="assets/img/general/doctor-block.png" assets="doctor-block"></div>
+                </div>
+              </div>
+              <div class="doctors__item">
+                <div class="doctor-block">
+                  <div class="doctor-block__content">
+                    <p class="doctor-block__status">Врач высшей категории </p>
+                    <p class="doctor-block__name">
+                       Кислица Николай Семёнович</p>
+                    <div class="doctor-block__line"></div>
+                    <div class="doctor-block__mobile-block">
+                      <p class="doctor-block__text">Стоматолог, терапевт, ортопед, хирург, имплантолог</p>
+                      <div class="doctor-block__statistics statistics">
+                        <div class="statistics__item">
+                          <p class="statistics__value">4,92</p>
+                          <p class="statistics__text">Рейтинг</p>
+                        </div>
+                        <div class="statistics__item">
+                          <p class="statistics__value">42 года</p>
+                          <p class="statistics__text">Стаж</p>
+                        </div>
+                        <div class="statistics__item">
+                          <p class="statistics__value">5 240</p>
+                          <p class="statistics__text">Операций</p>
+                        </div>
+                      </div>
+                    </div><a class="doctor-block__btn btn btn--white" href="#">Записаться на приём</a>
+                    <div class="doctor-block__links"><a class="doctor-block__link" href="#">Подробнее о враче</a><a class="doctor-block__link" href="#">Отзывы (75)</a></div>
+                  </div>
+                  <div class="doctor-block__img"><img src="assets/img/general/doctor-block.png" assets="doctor-block"></div>
+                </div>
+              </div>
+              <div class="doctors__item">
+                <div class="doctor-block">
+                  <div class="doctor-block__content">
+                    <p class="doctor-block__status">Врач высшей категории </p>
+                    <p class="doctor-block__name">
+                       Кислица Николай Семёнович</p>
+                    <div class="doctor-block__line"></div>
+                    <div class="doctor-block__mobile-block">
+                      <p class="doctor-block__text">Стоматолог, терапевт, ортопед, хирург, имплантолог</p>
+                      <div class="doctor-block__statistics statistics">
+                        <div class="statistics__item">
+                          <p class="statistics__value">4,92</p>
+                          <p class="statistics__text">Рейтинг</p>
+                        </div>
+                        <div class="statistics__item">
+                          <p class="statistics__value">42 года</p>
+                          <p class="statistics__text">Стаж</p>
+                        </div>
+                        <div class="statistics__item">
+                          <p class="statistics__value">5 240</p>
+                          <p class="statistics__text">Операций</p>
+                        </div>
+                      </div>
+                    </div><a class="doctor-block__btn btn btn--white" href="#">Записаться на приём</a>
+                    <div class="doctor-block__links"><a class="doctor-block__link" href="#">Подробнее о враче</a><a class="doctor-block__link" href="#">Отзывы (75)</a></div>
+                  </div>
+                  <div class="doctor-block__img"><img src="assets/img/general/doctor-block.png" assets="doctor-block"></div>
+                </div>
+              </div>
+              <div class="doctors__item">
+                <div class="doctor-block">
+                  <div class="doctor-block__content">
+                    <p class="doctor-block__status">Врач высшей категории </p>
+                    <p class="doctor-block__name">
+                       Кислица Николай Семёнович</p>
+                    <div class="doctor-block__line"></div>
+                    <div class="doctor-block__mobile-block">
+                      <p class="doctor-block__text">Стоматолог, терапевт, ортопед, хирург, имплантолог</p>
+                      <div class="doctor-block__statistics statistics">
+                        <div class="statistics__item">
+                          <p class="statistics__value">4,92</p>
+                          <p class="statistics__text">Рейтинг</p>
+                        </div>
+                        <div class="statistics__item">
+                          <p class="statistics__value">42 года</p>
+                          <p class="statistics__text">Стаж</p>
+                        </div>
+                        <div class="statistics__item">
+                          <p class="statistics__value">5 240</p>
+                          <p class="statistics__text">Операций</p>
+                        </div>
+                      </div>
+                    </div><a class="doctor-block__btn btn btn--white" href="#">Записаться на приём</a>
+                    <div class="doctor-block__links"><a class="doctor-block__link" href="#">Подробнее о враче</a><a class="doctor-block__link" href="#">Отзывы (75)</a></div>
+                  </div>
+                  <div class="doctor-block__img"><img src="assets/img/general/doctor-block.png" assets="doctor-block"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<section class="equipment section">
+  <div class="wrap">
+    <div class="section__inner">
+      <div class="equipment__section-header section-header">
+        <h2 class="title">
+           Наше оборудование </h2>
+      </div>
+      <div class="equipment__content-slider content-slider">
+        <div class="content-slider__item-wrap">
+          <div class="content-slider__item">
+            <div class="content-slider__img"><img class="content-slider__img-bg" src="assets/img/general/bg-shape.png" alt="equipment"><img src="assets/img/general/equipment.png" alt="equipment"></div>
+            <div class="content-slider__content">
+              <h3 class="content-slider__title title">3D-принтер Form2</h3>
+              <p class="content-slider__text">Следуя принципу непрерывного обучения и обновления оборудования, в сети стоматологий «ЭспаДент» для создания коронок, протезов, хирургических шаблонов, ортопедических конструкций используется 3D принтер Form2 компании FormLabs.</p>
+              <ul class="list-success list-success--white">
+                <li>Высокое качество </li>
+                <li>Максимальная точность</li>
+                <li>Скорость работы</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="content-slider__item-wrap">
+          <div class="content-slider__item">
+            <div class="content-slider__img"><img class="content-slider__img-bg" src="assets/img/general/bg-shape.png" alt="equipment"><img src="assets/img/general/equipment.png" alt="equipment"></div>
+            <div class="content-slider__content">
+              <h3 class="content-slider__title title">3D-принтер Form2</h3>
+              <p class="content-slider__text">Следуя принципу непрерывного обучения и обновления оборудования, в сети стоматологий «ЭспаДент» для создания коронок, протезов, хирургических шаблонов, ортопедических конструкций используется 3D принтер Form2 компании FormLabs.</p>
+              <ul class="list-success list-success--white">
+                <li>Высокое качество </li>
+                <li>Максимальная точность</li>
+                <li>Скорость работы</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="content-slider__item-wrap">
+          <div class="content-slider__item">
+            <div class="content-slider__img"><img class="content-slider__img-bg" src="assets/img/general/bg-shape.png" alt="equipment"><img src="assets/img/general/equipment.png" alt="equipment"></div>
+            <div class="content-slider__content">
+              <h3 class="content-slider__title title">3D-принтер Form2</h3>
+              <p class="content-slider__text">Следуя принципу непрерывного обучения и обновления оборудования, в сети стоматологий «ЭспаДент» для создания коронок, протезов, хирургических шаблонов, ортопедических конструкций используется 3D принтер Form2 компании FormLabs.</p>
+              <ul class="list-success list-success--white">
+                <li>Высокое качество </li>
+                <li>Максимальная точность</li>
+                <li>Скорость работы</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="content-slider__item-wrap">
+          <div class="content-slider__item">
+            <div class="content-slider__img"><img class="content-slider__img-bg" src="assets/img/general/bg-shape.png" alt="equipment"><img src="assets/img/general/equipment.png" alt="equipment"></div>
+            <div class="content-slider__content">
+              <h3 class="content-slider__title title">3D-принтер Form2</h3>
+              <p class="content-slider__text">Следуя принципу непрерывного обучения и обновления оборудования, в сети стоматологий «ЭспаДент» для создания коронок, протезов, хирургических шаблонов, ортопедических конструкций используется 3D принтер Form2 компании FormLabs.</p>
+              <ul class="list-success list-success--white">
+                <li>Высокое качество </li>
+                <li>Максимальная точность</li>
+                <li>Скорость работы</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="content-slider__item-wrap">
+          <div class="content-slider__item">
+            <div class="content-slider__img"><img class="content-slider__img-bg" src="assets/img/general/bg-shape.png" alt="equipment"><img src="assets/img/general/equipment.png" alt="equipment"></div>
+            <div class="content-slider__content">
+              <h3 class="content-slider__title title">3D-принтер Form2</h3>
+              <p class="content-slider__text">Следуя принципу непрерывного обучения и обновления оборудования, в сети стоматологий «ЭспаДент» для создания коронок, протезов, хирургических шаблонов, ортопедических конструкций используется 3D принтер Form2 компании FormLabs.</p>
+              <ul class="list-success list-success--white">
+                <li>Высокое качество </li>
+                <li>Максимальная точность</li>
+                <li>Скорость работы</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="content-slider__item-wrap">
+          <div class="content-slider__item">
+            <div class="content-slider__img"><img class="content-slider__img-bg" src="assets/img/general/bg-shape.png" alt="equipment"><img src="assets/img/general/equipment.png" alt="equipment"></div>
+            <div class="content-slider__content">
+              <h3 class="content-slider__title title">3D-принтер Form2</h3>
+              <p class="content-slider__text">Следуя принципу непрерывного обучения и обновления оборудования, в сети стоматологий «ЭспаДент» для создания коронок, протезов, хирургических шаблонов, ортопедических конструкций используется 3D принтер Form2 компании FormLabs.</p>
+              <ul class="list-success list-success--white">
+                <li>Высокое качество </li>
+                <li>Максимальная точность</li>
+                <li>Скорость работы</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="content-slider__item-wrap">
+          <div class="content-slider__item">
+            <div class="content-slider__img"><img class="content-slider__img-bg" src="assets/img/general/bg-shape.png" alt="equipment"><img src="assets/img/general/equipment.png" alt="equipment"></div>
+            <div class="content-slider__content">
+              <h3 class="content-slider__title title">3D-принтер Form2</h3>
+              <p class="content-slider__text">Следуя принципу непрерывного обучения и обновления оборудования, в сети стоматологий «ЭспаДент» для создания коронок, протезов, хирургических шаблонов, ортопедических конструкций используется 3D принтер Form2 компании FormLabs.</p>
+              <ul class="list-success list-success--white">
+                <li>Высокое качество </li>
+                <li>Максимальная точность</li>
+                <li>Скорость работы</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="equipment__gallery-panel gallery-panel" id="equipment-gallery-panel">
+        <div>
+          <div class="gallery-panel__item">
+            <div class="gallery-panel__img"><img src="assets/img/general/history1.png" alt="history"></div>
+          </div>
+        </div>
+        <div>
+          <div class="gallery-panel__item">
+            <div class="gallery-panel__img"><img src="assets/img/general/history2.png" alt="history"></div>
+          </div>
+        </div>
+        <div>
+          <div class="gallery-panel__item">
+            <div class="gallery-panel__img"><img src="assets/img/general/history3.png" alt="history"></div>
+          </div>
+        </div>
+        <div>
+          <div class="gallery-panel__item">
+            <div class="gallery-panel__img"><img src="assets/img/general/history4.png" alt="history"></div>
+          </div>
+        </div>
+        <div>
+          <div class="gallery-panel__item">
+            <div class="gallery-panel__img"><img src="assets/img/general/history5.png" alt="history"></div>
+          </div>
+        </div>
+        <div>
+          <div class="gallery-panel__item">
+            <div class="gallery-panel__img"><img src="assets/img/general/history6.png" alt="history"></div>
+          </div>
+        </div>
+        <div>
+          <div class="gallery-panel__item">
+            <div class="gallery-panel__img"><img src="assets/img/general/history6.png" alt="history"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="callback-block section callback-block--dark">
+      <div class="wrap">
+        <div class="callback-block__inner callback-block__inner--dark section__inner">
+          <div class="callback-block__content">
+            <h2 class="callback-block__title title">Запишитесь прямо сейчас</h2>
+            <p class="callback-block__text text-bg"> <span>На бесплатный осмотр и консультацию</span></p>
+            <p class="callback-block__text callback-block__info callback-block__info--dark">Наш менеджер свяжется с вами, проконсультирует и поможет выбрать удобное время приёма.</p><a class="callback-block__btn btn btn--fill" href="/">Записаться на приём</a>
+            <form class="callback-block__mobile-form mobile-form" action="/" method="post">
+              <input class="mobile-form__input input" type="text" name="phone" placeholder="Ваш телефон">
+              <button class="mobile-form__btn btn btn--fill">Записаться</button>
+            </form>
+            <div class="callback-block__contacts contacts">
+              <p class="contacts__desc">Позвонить самостоятельно</p><a class="contacts__tel link" href="tel:+74993703799"> 
+                <object class="object object--tel contacts__tel-svg" type="image/svg+xml" data="assets/img/content/tel.svg"></object>+7 499 370 37 99</a>
+            </div>
+          </div>
+          <div class="callback-block__img"><img src="assets/img/content/callback-block2.png" alt="callback-block"></div>
+        </div>
+      </div>
+    </section>
+    <section class="rating section">
+      <div class="wrap">
+        <div class="section__inner">
+          <div class="rating__section-header section-header section-header--left">
+            <h2 class="title">
+               К нам едут со всего мира! </h2>
+            <div class="section-header__block">
+              <p class="section-header__text text-bg"><span>Лечение зубов это то с чем нельзя задерживатся.</span><br>Характер заболеваний зубов таков, что само ничего не проходит. — рыба лечение зубов это то с чем нельзя задерживатся. Характер заболеваний зубов таков, что само ничего не проходит. — рыба.</p>
+            </div>
+          </div>
+          <div class="rating__steps-global-client steps-global-client">
+            <div class="steps-global-client__item">
+              <object class="object object--infly steps-global-client__obj" type="image/svg+xml" data="assets/img/general/infly.svg"></object>
+              <p class="steps-global-client__text">
+                 Встретим вас<br>по прибытию</p>
+            </div>
+            <div class="steps-global-client__item">
+              <object class="object object--hotel steps-global-client__obj" type="image/svg+xml" data="assets/img/general/hotel.svg"></object>
+              <p class="steps-global-client__text">
+                 Доставим <br>в гостиницу</p>
+            </div>
+            <div class="steps-global-client__item">
+              <object class="object object--clinic steps-global-client__obj" type="image/svg+xml" data="assets/img/general/clinic.svg"></object>
+              <p class="steps-global-client__text">
+                 Привезём <br>в клинику</p>
+            </div>
+            <div class="steps-global-client__item">
+              <object class="object object--car steps-global-client__obj" type="image/svg+xml" data="assets/img/general/car.svg"></object>
+              <p class="steps-global-client__text">
+                 После лечения отвезём <br>в гостиницу</p>
+            </div>
+            <div class="steps-global-client__item">
+              <object class="object object--outfly steps-global-client__obj" type="image/svg+xml" data="assets/img/general/outfly.svg"></object>
+              <p class="steps-global-client__text">Проводим до отъезда</p>
+            </div>
+          </div>
+          <div class="rating__section-header section-header">
+            <h2 class="title">Независимые рейтинги</h2>
+            <div class="section-header__block section-header__block--mobile">
+              <p class="section-header__text">Многие сталкивались с такими проблемами, но не верили что медициной можно исправить их без особый сложностей. Поэтому приходите к нам на консультацию если вам знакомы такие проблемы, как:</p>
+            </div><a class="section-header__link link" href="#">Отзывы пациентов
+              <svg class="svg svg--arrow-right link__arrow">
+                <use xlink:href="assets/img/svg/sprite.svg#arrow-right"></use>
+              </svg></a>
+          </div>
+          <div class="rating__list"><a class="rating__item" href="#">
+              <div class="rating__info"><span>5.0</span><sup> / 5</sup></div>
+              <div class="rating__img"><img src="assets/img/general/company1.png" alt="company"></div></a><a class="rating__item" href="#">
+              <div class="rating__info"><span>4.8</span><sup> / 5</sup></div>
+              <div class="rating__img"><img src="assets/img/general/company2.png" alt="company"></div></a><a class="rating__item" href="#">
+              <div class="rating__info"><span>25+ / 1-</span></div>
+              <div class="rating__img"><img src="assets/img/general/company3.png" alt="company"></div></a><a class="rating__item" href="#">
+              <div class="rating__info"><span>5.0</span><sup> / 5</sup></div>
+              <div class="rating__img"><img src="assets/img/general/company4.png" alt="company"></div></a><a class="rating__item" href="#">
+              <div class="rating__info"><span>4.49</span><sup> / 5</sup></div>
+              <div class="rating__img"><img src="assets/img/general/company5.png" alt="company"></div></a><a class="rating__item" href="#">
+              <div class="rating__info"><span>4.8</span><sup> / 5</sup></div>
+              <div class="rating__img"><img src="assets/img/general/company6.png" alt="company"></div></a></div>
+        </div>
+      </div>
+    </section>
+    <section class="whyarewe section">
+      <div class="wrap">
+        <div class="section__inner">
+          <div class="whyarewe__section-header section-header section-header--left">
+            <h2 class="section-header__title title">
+               Лечиться у нас выгодно</h2>
+            <div class="section-header__block">
+              <p class="section-header__text text-bg text-bg--dark"> <span>Сразу говорим конечную цену</span></p>
+              <p class="section-header__text">Колл-центр работает в режиме 24/7! Подробно ответим на все вопросы и запишем к врачу в удобное для вас время.</p>
+            </div>
+          </div>
+          <div class="whyarewe__list">
+            <div>
+              <div class="card whyarewe__item card--blue">
+                <div class="card__line"></div>
+                <div class="card__icon">
+                  <svg class="svg svg--star card__svg">
+                    <use xlink:href="assets/img/svg/sprite.svg#star"></use>
+                  </svg>
+                </div>
+                <div class="card__content">
+                  <h3 class="card__title title-medium">Гибкие цены</h3>
+                  <p class="card__text">план лечения составляется под вас</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card whyarewe__item card--red">
+                <div class="card__line"></div>
+                <div class="card__icon">
+                  <svg class="svg svg--success card__svg">
+                    <use xlink:href="assets/img/svg/sprite.svg#success"></use>
+                  </svg>
+                </div>
+                <div class="card__content">
+                  <h3 class="card__title title-medium">Рассрочка</h3>
+                  <p class="card__text">можно разбить оплату на нес-колько платежей</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card whyarewe__item card--orange">
+                <div class="card__line"></div>
+                <div class="card__icon">
+                  <svg class="svg svg--percent card__svg">
+                    <use xlink:href="assets/img/svg/sprite.svg#percent"></use>
+                  </svg>
+                </div>
+                <div class="card__content">
+                  <h3 class="card__title title-medium">Кредит</h3>
+                  <p class="card__text">для экстренных ситуаций можно оформить кредит</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section-block">
+      <section class="comment-stars section">
+        <div class="wrap">
+          <div class="section">
+            <h2 class="comment-stars__title title">Звёзды выбирают ЭспаДент</h2>
+            <div class="comment-stars__video-slider video-slider">
+              <div class="video-slider__item-wrap">
+                <div class="video-slider__item">
+                  <div class="video-slider__content">
+                    <h3 class="video-slider__title title">Татьяна Судец</h3>
+                    <p class="video-slider__text">
+                       Телеведущая, диктор центрального телевидения <br>Заслуженная артистка РФ</p>
+                    <p class="video-slider__text">Белые зубы это не только эстетическая сторона. Открытая улыбка располагает к себе собеседника и придает уверенность своему обладателю.Белые зубы это не только эстетическая сторона. Открытая улыбка располагает к себе собеседника и придает уверенность своему обладателю.» </p>
+                  </div><a class="video-slider__video video" data-fancybox href="https://vimeo.com/191947042"><img src="assets/img/general/promo-video.png" alt="video">
+                    <div class="video__play play">
+                      <svg class="svg svg--play play__svg">
+                        <use xlink:href="assets/img/svg/sprite.svg#play"></use>
+                      </svg>
+                    </div></a>
+                </div>
+              </div>
+              <div class="video-slider__item-wrap">
+                <div class="video-slider__item">
+                  <div class="video-slider__content">
+                    <h3 class="video-slider__title title">Татьяна Судец</h3>
+                    <p class="video-slider__text">
+                       Телеведущая, диктор центрального телевидения <br>Заслуженная артистка РФ</p>
+                    <p class="video-slider__text">Белые зубы это не только эстетическая сторона. Открытая улыбка располагает к себе собеседника и придает уверенность своему обладателю.Белые зубы это не только эстетическая сторона. Открытая улыбка располагает к себе собеседника и придает уверенность своему обладателю.» </p>
+                  </div><a class="video-slider__video video" data-fancybox href="https://vimeo.com/191947042"><img src="assets/img/general/promo-video.png" alt="video">
+                    <div class="video__play play">
+                      <svg class="svg svg--play play__svg">
+                        <use xlink:href="assets/img/svg/sprite.svg#play"></use>
+                      </svg>
+                    </div></a>
+                </div>
+              </div>
+              <div class="video-slider__item-wrap">
+                <div class="video-slider__item">
+                  <div class="video-slider__content">
+                    <h3 class="video-slider__title title">Татьяна Судец</h3>
+                    <p class="video-slider__text">
+                       Телеведущая, диктор центрального телевидения <br>Заслуженная артистка РФ</p>
+                    <p class="video-slider__text">Белые зубы это не только эстетическая сторона. Открытая улыбка располагает к себе собеседника и придает уверенность своему обладателю.Белые зубы это не только эстетическая сторона. Открытая улыбка располагает к себе собеседника и придает уверенность своему обладателю.» </p>
+                  </div><a class="video-slider__video video" data-fancybox href="https://vimeo.com/191947042"><img src="assets/img/general/promo-video.png" alt="video">
+                    <div class="video__play play">
+                      <svg class="svg svg--play play__svg">
+                        <use xlink:href="assets/img/svg/sprite.svg#play"></use>
+                      </svg>
+                    </div></a>
+                </div>
+              </div>
+              <div class="video-slider__item-wrap">
+                <div class="video-slider__item">
+                  <div class="video-slider__content">
+                    <h3 class="video-slider__title title">Татьяна Судец</h3>
+                    <p class="video-slider__text">
+                       Телеведущая, диктор центрального телевидения <br>Заслуженная артистка РФ</p>
+                    <p class="video-slider__text">Белые зубы это не только эстетическая сторона. Открытая улыбка располагает к себе собеседника и придает уверенность своему обладателю.Белые зубы это не только эстетическая сторона. Открытая улыбка располагает к себе собеседника и придает уверенность своему обладателю.» </p>
+                  </div><a class="video-slider__video video" data-fancybox href="https://vimeo.com/191947042"><img src="assets/img/general/promo-video.png" alt="video">
+                    <div class="video__play play">
+                      <svg class="svg svg--play play__svg">
+                        <use xlink:href="assets/img/svg/sprite.svg#play"></use>
+                      </svg>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="comment-stars__panel-slider panel-slider">
+              <div class="panel-slider__item">
+                <div class="card-person">
+                  <div class="card-person__content">
+                    <p class="card-person__desc">Актриса кино и театра</p>
+                    <p class="card-person__name">Ранета <br>Волкобурова</p>
+                  </div>
+                  <div class="card-person__img"><img src="assets/img/general/person1.png" alt="person"></div>
+                </div>
+              </div>
+              <div class="panel-slider__item">
+                <div class="card-person">
+                  <div class="card-person__content">
+                    <p class="card-person__desc">Актриса кино и театра</p>
+                    <p class="card-person__name">Ранета <br>Волкобурова</p>
+                  </div>
+                  <div class="card-person__img"><img src="assets/img/general/person1.png" alt="person"></div>
+                </div>
+              </div>
+              <div class="panel-slider__item">
+                <div class="card-person">
+                  <div class="card-person__content">
+                    <p class="card-person__desc">Актриса кино и театра</p>
+                    <p class="card-person__name">Ранета <br>Волкобурова</p>
+                  </div>
+                  <div class="card-person__img"><img src="assets/img/general/person1.png" alt="person"></div>
+                </div>
+              </div>
+              <div class="panel-slider__item">
+                <div class="card-person">
+                  <div class="card-person__content">
+                    <p class="card-person__desc">Актриса кино и театра</p>
+                    <p class="card-person__name">Ранета <br>Волкобурова</p>
+                  </div>
+                  <div class="card-person__img"><img src="assets/img/general/person1.png" alt="person"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="documents section">
+        <div class="wrap">
+          <div class="aection__inner documents__inner">
+            <div class="documents__content">
+              <h2 class="documents__title title">
+                 Дипломы <br>и награды </h2>
+              <p>Награды, дипломы, премии — мы гордимся и дорожим своей репутацией!</p>
+              <div class="documents__slick-arrows slick-arrows" id="documents-slick-arrows">
+                <button class="slick-arrows__arrow slick-arrows__left">
+                  <svg class="svg svg--arrow3 slick-arrows__svg">
+                    <use xlink:href="assets/img/svg/sprite.svg#arrow3"></use>
+                  </svg>
+                </button>
+                <button class="slick-arrows__arrow slick-arrows__right">
+                  <svg class="svg svg--arrow3 slick-arrows__svg">
+                    <use xlink:href="assets/img/svg/sprite.svg#arrow3"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="documents__list">
+              <div class="documents__item">
+                <div class="documents__img"><img src="assets/img/general/documents1.png" alt="documents"></div>
+                <p class="documents__text">
+                   Клиника года 2016 <br>в Московском регионе</p>
+              </div>
+              <div class="documents__item">
+                <div class="documents__img"><img src="assets/img/general/documents2.png" alt="documents"></div>
+                <p class="documents__text">
+                   Лучший международный стоматологический центр</p>
+              </div>
+              <div class="documents__item">
+                <div class="documents__img"><img src="assets/img/general/documents3.png" alt="documents"></div>
+                <p class="documents__text">
+                   Сертификация <br>Dentium</p>
+              </div>
+              <div class="documents__item">
+                <div class="documents__img"><img src="assets/img/general/documents3.png" alt="documents"></div>
+                <p class="documents__text">
+                   Сертификация <br>Dentium</p>
+              </div>
+              <div class="documents__item">
+                <div class="documents__img"><img src="assets/img/general/documents3.png" alt="documents"></div>
+                <p class="documents__text">
+                   Сертификация <br>Dentium</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quotation section">
+        <div class="wrap">
+          <div class="quotation__inner">
+            <div class="quotation__content">
+              <h2 class="quotation__title">«На первичном осмотре пациент жаловался на острую боль»</h2>
+              <p class="quotation__text">Белые зубы это не только эстетическая сторона. Открытая улыбка располагает к себе собеседника и придает уверенность своему обладателю.Белые зубы это не только эстетическая сторона. Открытая улыбка располагает к себе собеседника и придает уверенность своему обладателю.» Белые зубы это не только эстетическая сторона. Открытая улыбка располагает к себе собеседника и придает уверенность своему обладателю.Белые зубы это не только эстетическая сторона. Открытая улыбка располагает к себе собеседника и придает уверенность своему обладателю.»</p>
+              <p class="quotation__author">Генеральный директор ЭспаДент,<br>Меркушев Сергей Леонидович</p>
+              <svg class="svg svg--quety quotation__quety">
+                <use xlink:href="assets/img/svg/sprite.svg#quety"></use>
+              </svg>
+            </div>
+            <div class="quotation__img"><img src="assets/img/general/quotation.png" alt="quotation"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="features-line">
+      <div class="wrap">
+        <div class="features-line__list">
+          <div class="features-line__item">
+            <div class="features-line__img">
+              <object class="object object--features1 " type="image/svg+xml" data="assets/img/general/features1.svg"></object>
+            </div>
+            <div class="features-line__content">
+              <p class="features-line__title">Комфортные зоны отдыха</p>
+              <p class="features-line__text">где вы сможете расслабиться и восстановиться</p>
+            </div>
+          </div>
+          <div class="features-line__item">
+            <div class="features-line__img">
+              <object class="object object--features2 " type="image/svg+xml" data="assets/img/general/features2.svg"></object>
+            </div>
+            <div class="features-line__content">
+              <p class="features-line__title">Полный комплекс услуг</p>
+              <p class="features-line__text">
+                 позволит полностью выле-<br>читься в нашей клинике</p>
+            </div>
+          </div>
+          <div class="features-line__item">
+            <div class="features-line__img">
+              <object class="object object--features3 " type="image/svg+xml" data="assets/img/general/features3.svg"></object>
+            </div>
+            <div class="features-line__content">
+              <p class="features-line__title">Современное оборудование</p>
+              <p class="features-line__text">помогает проводить операции профессионально</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="history section">
+      <div class="wrap">
+        <div class="section__inner history__inner">
+          <div class="history__slider-info slider-info">
+            <div class="slider-info__item">
+              <div class="slider-info__content">
+                <h3 class="slider-info__title title">История «ЭспаДент» началась более 17 лет назад с одной зуботехнической лаборатории. </h3>
+                <ul class="slider-info__list list-success list-success--white">
+                  <li> <b>Первая клиника </b>открылась в 2005 году по адресу Мишина 38. </li>
+                  <li> <b>На данный момент </b>у центра «Эспадент» есть 6 отделений в Москве.</li>
+                  <li> <b>Основными направлениями деятельности: </b>протезирование по методике ALL-ON-4, одномоментная имплантация зубов, ортодонтия, художественная реставрация и отбеливание зубов. </li>
+                  <li> <b>Проведено более 3 000 </b>успешных операций</li>
+                  <li> <b>Собственная лаборатория, </b>укомплектованная CAD/CAM оборудованием</li>
+                </ul>
+              </div>
+              <div class="slider-info__img"><img src="assets/img/general/history-main.png" alt="history"></div>
+            </div>
+            <div class="slider-info__item">
+              <div class="slider-info__content">
+                <h3 class="slider-info__title title">История «ЭспаДент» началась более 17 лет назад с одной зуботехнической лаборатории. </h3>
+                <ul class="slider-info__list list-success list-success--white">
+                  <li> <b>Первая клиника </b>открылась в 2005 году по адресу Мишина 38. </li>
+                  <li> <b>На данный момент </b>у центра «Эспадент» есть 6 отделений в Москве.</li>
+                  <li> <b>Основными направлениями деятельности: </b>протезирование по методике ALL-ON-4, одномоментная имплантация зубов, ортодонтия, художественная реставрация и отбеливание зубов. </li>
+                  <li> <b>Проведено более 3 000 </b>успешных операций</li>
+                  <li> <b>Собственная лаборатория, </b>укомплектованная CAD/CAM оборудованием</li>
+                </ul>
+              </div>
+              <div class="slider-info__img"><img src="assets/img/general/history-main.png" alt="history"></div>
+            </div>
+            <div class="slider-info__item">
+              <div class="slider-info__content">
+                <h3 class="slider-info__title title">История «ЭспаДент» началась более 17 лет назад с одной зуботехнической лаборатории. </h3>
+                <ul class="slider-info__list list-success list-success--white">
+                  <li> <b>Первая клиника </b>открылась в 2005 году по адресу Мишина 38. </li>
+                  <li> <b>На данный момент </b>у центра «Эспадент» есть 6 отделений в Москве.</li>
+                  <li> <b>Основными направлениями деятельности: </b>протезирование по методике ALL-ON-4, одномоментная имплантация зубов, ортодонтия, художественная реставрация и отбеливание зубов. </li>
+                  <li> <b>Проведено более 3 000 </b>успешных операций</li>
+                  <li> <b>Собственная лаборатория, </b>укомплектованная CAD/CAM оборудованием</li>
+                </ul>
+              </div>
+              <div class="slider-info__img"><img src="assets/img/general/history-main.png" alt="history"></div>
+            </div>
+            <div class="slider-info__item">
+              <div class="slider-info__content">
+                <h3 class="slider-info__title title">История «ЭспаДент» началась более 17 лет назад с одной зуботехнической лаборатории. </h3>
+                <ul class="slider-info__list list-success list-success--white">
+                  <li> <b>Первая клиника </b>открылась в 2005 году по адресу Мишина 38. </li>
+                  <li> <b>На данный момент </b>у центра «Эспадент» есть 6 отделений в Москве.</li>
+                  <li> <b>Основными направлениями деятельности: </b>протезирование по методике ALL-ON-4, одномоментная имплантация зубов, ортодонтия, художественная реставрация и отбеливание зубов. </li>
+                  <li> <b>Проведено более 3 000 </b>успешных операций</li>
+                  <li> <b>Собственная лаборатория, </b>укомплектованная CAD/CAM оборудованием</li>
+                </ul>
+              </div>
+              <div class="slider-info__img"><img src="assets/img/general/history-main.png" alt="history"></div>
+            </div>
+            <div class="slider-info__item">
+              <div class="slider-info__content">
+                <h3 class="slider-info__title title">История «ЭспаДент» началась более 17 лет назад с одной зуботехнической лаборатории. </h3>
+                <ul class="slider-info__list list-success list-success--white">
+                  <li> <b>Первая клиника </b>открылась в 2005 году по адресу Мишина 38. </li>
+                  <li> <b>На данный момент </b>у центра «Эспадент» есть 6 отделений в Москве.</li>
+                  <li> <b>Основными направлениями деятельности: </b>протезирование по методике ALL-ON-4, одномоментная имплантация зубов, ортодонтия, художественная реставрация и отбеливание зубов. </li>
+                  <li> <b>Проведено более 3 000 </b>успешных операций</li>
+                  <li> <b>Собственная лаборатория, </b>укомплектованная CAD/CAM оборудованием</li>
+                </ul>
+              </div>
+              <div class="slider-info__img"><img src="assets/img/general/history-main.png" alt="history"></div>
+            </div>
+            <div class="slider-info__item">
+              <div class="slider-info__content">
+                <h3 class="slider-info__title title">История «ЭспаДент» началась более 17 лет назад с одной зуботехнической лаборатории. </h3>
+                <ul class="slider-info__list list-success list-success--white">
+                  <li> <b>Первая клиника </b>открылась в 2005 году по адресу Мишина 38. </li>
+                  <li> <b>На данный момент </b>у центра «Эспадент» есть 6 отделений в Москве.</li>
+                  <li> <b>Основными направлениями деятельности: </b>протезирование по методике ALL-ON-4, одномоментная имплантация зубов, ортодонтия, художественная реставрация и отбеливание зубов. </li>
+                  <li> <b>Проведено более 3 000 </b>успешных операций</li>
+                  <li> <b>Собственная лаборатория, </b>укомплектованная CAD/CAM оборудованием</li>
+                </ul>
+              </div>
+              <div class="slider-info__img"><img src="assets/img/general/history-main.png" alt="history"></div>
+            </div>
+            <div class="slider-info__item">
+              <div class="slider-info__content">
+                <h3 class="slider-info__title title">История «ЭспаДент» началась более 17 лет назад с одной зуботехнической лаборатории. </h3>
+                <ul class="slider-info__list list-success list-success--white">
+                  <li> <b>Первая клиника </b>открылась в 2005 году по адресу Мишина 38. </li>
+                  <li> <b>На данный момент </b>у центра «Эспадент» есть 6 отделений в Москве.</li>
+                  <li> <b>Основными направлениями деятельности: </b>протезирование по методике ALL-ON-4, одномоментная имплантация зубов, ортодонтия, художественная реставрация и отбеливание зубов. </li>
+                  <li> <b>Проведено более 3 000 </b>успешных операций</li>
+                  <li> <b>Собственная лаборатория, </b>укомплектованная CAD/CAM оборудованием</li>
+                </ul>
+              </div>
+              <div class="slider-info__img"><img src="assets/img/general/history-main.png" alt="history"></div>
+            </div>
+            <div class="slider-info__item">
+              <div class="slider-info__content">
+                <h3 class="slider-info__title title">История «ЭспаДент» началась более 17 лет назад с одной зуботехнической лаборатории. </h3>
+                <ul class="slider-info__list list-success list-success--white">
+                  <li> <b>Первая клиника </b>открылась в 2005 году по адресу Мишина 38. </li>
+                  <li> <b>На данный момент </b>у центра «Эспадент» есть 6 отделений в Москве.</li>
+                  <li> <b>Основными направлениями деятельности: </b>протезирование по методике ALL-ON-4, одномоментная имплантация зубов, ортодонтия, художественная реставрация и отбеливание зубов. </li>
+                  <li> <b>Проведено более 3 000 </b>успешных операций</li>
+                  <li> <b>Собственная лаборатория, </b>укомплектованная CAD/CAM оборудованием</li>
+                </ul>
+              </div>
+              <div class="slider-info__img"><img src="assets/img/general/history-main.png" alt="history"></div>
+            </div>
+            <div class="slider-info__item">
+              <div class="slider-info__content">
+                <h3 class="slider-info__title title">История «ЭспаДент» началась более 17 лет назад с одной зуботехнической лаборатории. </h3>
+                <ul class="slider-info__list list-success list-success--white">
+                  <li> <b>Первая клиника </b>открылась в 2005 году по адресу Мишина 38. </li>
+                  <li> <b>На данный момент </b>у центра «Эспадент» есть 6 отделений в Москве.</li>
+                  <li> <b>Основными направлениями деятельности: </b>протезирование по методике ALL-ON-4, одномоментная имплантация зубов, ортодонтия, художественная реставрация и отбеливание зубов. </li>
+                  <li> <b>Проведено более 3 000 </b>успешных операций</li>
+                  <li> <b>Собственная лаборатория, </b>укомплектованная CAD/CAM оборудованием</li>
+                </ul>
+              </div>
+              <div class="slider-info__img"><img src="assets/img/general/history-main.png" alt="history"></div>
+            </div>
+            <div class="slider-info__item">
+              <div class="slider-info__content">
+                <h3 class="slider-info__title title">История «ЭспаДент» началась более 17 лет назад с одной зуботехнической лаборатории. </h3>
+                <ul class="slider-info__list list-success list-success--white">
+                  <li> <b>Первая клиника </b>открылась в 2005 году по адресу Мишина 38. </li>
+                  <li> <b>На данный момент </b>у центра «Эспадент» есть 6 отделений в Москве.</li>
+                  <li> <b>Основными направлениями деятельности: </b>протезирование по методике ALL-ON-4, одномоментная имплантация зубов, ортодонтия, художественная реставрация и отбеливание зубов. </li>
+                  <li> <b>Проведено более 3 000 </b>успешных операций</li>
+                  <li> <b>Собственная лаборатория, </b>укомплектованная CAD/CAM оборудованием</li>
+                </ul>
+              </div>
+              <div class="slider-info__img"><img src="assets/img/general/history-main.png" alt="history"></div>
+            </div>
+          </div>
+          <div class="history__gallery-panel gallery-panel" id="gallery-panel-history">
+            <div>
+              <div class="gallery-panel__item">
+                <div class="gallery-panel__img"><img src="assets/img/general/history1.png" alt="history"></div>
+              </div>
+            </div>
+            <div>
+              <div class="gallery-panel__item">
+                <div class="gallery-panel__img"><img src="assets/img/general/history2.png" alt="history"></div>
+              </div>
+            </div>
+            <div>
+              <div class="gallery-panel__item">
+                <div class="gallery-panel__img"><img src="assets/img/general/history3.png" alt="history"></div>
+              </div>
+            </div>
+            <div>
+              <div class="gallery-panel__item">
+                <div class="gallery-panel__img"><img src="assets/img/general/history4.png" alt="history"></div>
+              </div>
+            </div>
+            <div>
+              <div class="gallery-panel__item">
+                <div class="gallery-panel__img"><img src="assets/img/general/history5.png" alt="history"></div>
+              </div>
+            </div>
+            <div>
+              <div class="gallery-panel__item">
+                <div class="gallery-panel__img"><img src="assets/img/general/history6.png" alt="history"></div>
+              </div>
+            </div>
+            <div>
+              <div class="gallery-panel__item">
+                <div class="gallery-panel__img"><img src="assets/img/general/history6.png" alt="history"></div>
+              </div>
+            </div>
+          </div>
+          <div class="history__section-header section-header">
+            <h2 class="title">
+               Мы в социальных сетях</h2>
+            <p class="section-header__text">
+               Подписывайтесь на наши аккаунты, следите за выгодными предложениями<br>и задавайте вопросы. Мы всегда рады новым знакомствам!</p>
+          </div>
+          <div class="history__social-list social-list"><a class="social-list__item" href="#">
+              <div class="social-list__icon">
+                <svg class="svg svg--fc social-list__svg">
+                  <use xlink:href="assets/img/svg/sprite.svg#fc"></use>
+                </svg>
+              </div>
+              <div class="social-list__content">
+                <p class="social-list__name">Facebook</p>
+                <div class="social-list__success-item success-item">
+                  <object class="object object--success-blue success-item__svg" type="image/svg+xml" data="assets/img/content/success-blue.svg"></object>
+                  <p class="success-item__text">5 456 </p>
+                </div>
+              </div></a><a class="social-list__item social-list__item--red" href="#">
+              <div class="social-list__icon">
+                <svg class="svg svg--yo social-list__svg">
+                  <use xlink:href="assets/img/svg/sprite.svg#yo"></use>
+                </svg>
+              </div>
+              <div class="social-list__content">
+                <p class="social-list__name">Youtube</p>
+                <div class="social-list__success-item success-item">
+                  <object class="object object--success-blue success-item__svg" type="image/svg+xml" data="assets/img/content/success-blue.svg"></object>
+                  <p class="success-item__text">24 568 </p>
+                </div>
+              </div></a><a class="social-list__item social-list__item--pink" href="#">
+              <div class="social-list__icon">
+                <svg class="svg svg--inst social-list__svg">
+                  <use xlink:href="assets/img/svg/sprite.svg#inst"></use>
+                </svg>
+              </div>
+              <div class="social-list__content">
+                <p class="social-list__name">Instagram</p>
+                <div class="social-list__success-item success-item">
+                  <object class="object object--success-blue success-item__svg" type="image/svg+xml" data="assets/img/content/success-blue.svg"></object>
+                  <p class="success-item__text">80 145</p>
+                </div>
+              </div></a><a class="social-list__item" href="#">
+              <div class="social-list__icon">
+                <svg class="svg svg--vk social-list__svg">
+                  <use xlink:href="assets/img/svg/sprite.svg#vk"></use>
+                </svg>
+              </div>
+              <div class="social-list__content">
+                <p class="social-list__name">Вконтакте</p>
+                <div class="social-list__success-item success-item">
+                  <object class="object object--success-blue success-item__svg" type="image/svg+xml" data="assets/img/content/success-blue.svg"></object>
+                  <p class="success-item__text">14 456 </p>
+                </div>
+              </div></a></div>
+          <div class="history__gallery-line gallery-line">
+            <div>
+              <div class="gallery-line__item"><a class="gallery-line__img" data-fancybox href="assets/img/general/gallery1.png"><img src="assets/img/general/gallery1.png" alt="gallery"></a><a class="gallery-line__like like" href="#">
+                  <svg class="svg svg--like like__svg">
+                    <use xlink:href="assets/img/svg/sprite.svg#like"></use>
+                  </svg>
+                  <p class="like__text">456</p></a></div>
+            </div>
+            <div>
+              <div class="gallery-line__item"><a class="gallery-line__img" data-fancybox href="assets/img/general/gallery2.png"><img src="assets/img/general/gallery2.png" alt="gallery"></a><a class="gallery-line__like like" href="#">
+                  <svg class="svg svg--like like__svg">
+                    <use xlink:href="assets/img/svg/sprite.svg#like"></use>
+                  </svg>
+                  <p class="like__text">943</p></a></div>
+            </div>
+            <div>
+              <div class="gallery-line__item"><a class="gallery-line__img" data-fancybox href="assets/img/general/gallery3.png"><img src="assets/img/general/gallery3.png" alt="gallery"></a><a class="gallery-line__like like" href="#">
+                  <svg class="svg svg--like like__svg">
+                    <use xlink:href="assets/img/svg/sprite.svg#like"></use>
+                  </svg>
+                  <p class="like__text">1050</p></a></div>
+            </div>
+            <div>
+              <div class="gallery-line__item"><a class="gallery-line__img" data-fancybox href="assets/img/general/gallery4.png"><img src="assets/img/general/gallery4.png" alt="gallery"></a><a class="gallery-line__like like" href="#">
+                  <svg class="svg svg--like like__svg">
+                    <use xlink:href="assets/img/svg/sprite.svg#like"></use>
+                  </svg>
+                  <p class="like__text">943</p></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="adress section">
+      <div class="wrap">
+        <div class="section__inner">
+          <div class="section__section-header section-header">
+            <h2 class="title">6 клиник в Москве</h2><a class="section-header__link link" href="#">Подробнее о клиниках
+              <svg class="svg svg--arrow-right link__arrow">
+                <use xlink:href="assets/img/svg/sprite.svg#arrow-right"></use>
+              </svg></a>
+          </div>
+          <div class="adress__line">
+            <div class="adress__map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d34923.394623504864!2d53.2259101!3d56.8337273!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e13971b21dece9%3A0xf82c53855822cdb4!2z0JDQqNCQ0J0!5e0!3m2!1sru!2sru!4v1609987408537!5m2!1sru!2sru"></iframe>
+              <div class="adress__map-info map-info">
+                <p><b>ВДНХ</b></p>
+                <p>8 800 555 35 35</p>
+                <p>с 11 до 18</p><a class="map-info__link link" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="adress__content">
+              <div class="adress__list">
+                <label class="adress__adress-card adress-card">
+                  <input type="radio" name="adress">
+                  <div class="adress-card__inner">
+                    <div class="adress-card__img"><img src="assets/img/content/adress1.png" alt="m"></div>
+                    <p class="adress-card__title">ВДНХ</p>
+                    <p class="adress-card__text">Академика <br>Королева, 10 </p>
+                  </div>
+                </label>
+                <label class="adress__adress-card adress-card">
+                  <input type="radio" name="adress">
+                  <div class="adress-card__inner">
+                    <div class="adress-card__img"><img src="assets/img/content/adress1.png" alt="m"></div>
+                    <p class="adress-card__title">Новослободская</p>
+                    <p class="adress-card__text">Новослободская, <br>67/69 </p>
+                  </div>
+                </label>
+                <label class="adress__adress-card adress-card">
+                  <input type="radio" name="adress">
+                  <div class="adress-card__inner">
+                    <div class="adress-card__img"><img src="assets/img/content/adress1.png" alt="m"></div>
+                    <p class="adress-card__title">Тропарево</p>
+                    <p class="adress-card__text">Академика <br>Анохина, 60</p>
+                  </div>
+                </label>
+                <label class="adress__adress-card adress-card">
+                  <input type="radio" name="adress">
+                  <div class="adress-card__inner">
+                    <div class="adress-card__img"><img src="assets/img/content/adress1.png" alt="m"></div>
+                    <p class="adress-card__title">Динамо</p>
+                    <p class="adress-card__text">Мишина, 38</p>
+                  </div>
+                </label>
+                <label class="adress__adress-card adress-card">
+                  <input type="radio" name="adress">
+                  <div class="adress-card__inner">
+                    <div class="adress-card__img"><img src="assets/img/content/adress1.png" alt="m"></div>
+                    <p class="adress-card__title">Другая станция</p>
+                    <p class="adress-card__text">Академика <br>Анохина, 60</p>
+                  </div>
+                </label>
+                <label class="adress__adress-card adress-card">
+                  <input type="radio" name="adress">
+                  <div class="adress-card__inner">
+                    <div class="adress-card__img"><img src="assets/img/content/adress2.png" alt="m"></div>
+                    <p class="adress-card__title">город Одинцово</p>
+                    <p class="adress-card__text">«Миродент»<br>Молодёжная, 48</p>
+                  </div>
+                </label>
+              </div>
+              <div class="adress__tourist tourist">
+                <p class="tourist__title">Медицинский туризм для других городов</p>
+                <p>
+                   наша клиника ежегодно принимает более 500 пациентов <br>из других городов и стран</p><a class="tourist__btn btn btn--linear" href="#"> <span>Узнать подробнее</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="news section section--dark news--hidden-mobile">
+      <div class="wrap">
+        <div class="section__inner">
+          <div class="section__section-header section-header mobile-swipe--ico">
+            <h2 class="title">Новости</h2><a class="section-header__link link" href="#">Все новости
+              <svg class="svg svg--arrow-right link__arrow">
+                <use xlink:href="assets/img/svg/sprite.svg#arrow-right"></use>
+              </svg></a>
+          </div>
+          <div class="news__list"><a class="news__link" href="#">
+              <div class="news__item">
+                <div class="news__img"><img src="assets/img/general/news1.png" alt="news"></div>
+                <p class="news__text"> <span>«Любителям </span><br><span>кофе»</span></p>
+              </div></a><a class="news__link" href="#">
+              <div class="news__item">
+                <div class="news__img"><img src="assets/img/general/news2.png" alt="news"></div>
+                <p class="news__text"> <span>Что такое All-on-4 и почему это</span><br><span>стало таким популярным?</span></p>
+              </div></a><a class="news__link" href="#">
+              <div class="news__item">
+                <div class="news__img"><img src="assets/img/general/news3.png" alt="news"></div>
+                <p class="news__text"> <span>Эмаль не вечна? </span><br><span>Частые ошибки  чистки зубов</span></p>
+              </div></a></div>
+        </div>
+      </div>
+    </div>
+    <section class="callback-block section">
+      <div class="wrap">
+        <div class="callback-block__inner section__inner">
+          <div class="callback-block__content">
+            <h2 class="callback-block__title title">Запишитесь прямо сейчас</h2>
+            <p class="callback-block__text">На бесплатный осмотр и консультацию</p>
+            <p class="callback-block__text callback-block__info">Наш менеджер свяжется с вами, проконсультирует и поможет выбрать удобное время приёма.</p><a class="callback-block__btn btn btn--fill" href="/">Записаться на приём</a>
+            <form class="callback-block__mobile-form mobile-form" action="/" method="post">
+              <input class="mobile-form__input input" type="text" name="phone" placeholder="Ваш телефон">
+              <button class="mobile-form__btn btn btn--fill">Записаться</button>
+            </form>
+            <div class="callback-block__contacts contacts">
+              <p class="contacts__desc">Позвонить самостоятельно</p><a class="contacts__tel link" href="tel:+74993703799"> 
+                <object class="object object--tel contacts__tel-svg" type="image/svg+xml" data="assets/img/content/tel.svg"></object>+7 499 370 37 99</a>
+            </div>
+          </div>
+          <div class="callback-block__img"><img src="assets/img/content/callback-block.png" alt="callback-block"></div>
+        </div>
+      </div>
+    </section>
+    <div class="news section section--dark">
+      <div class="wrap">
+        <div class="section__inner">
+          <div class="section__section-header section-header mobile-swipe--ico">
+            <h2 class="title">Блог</h2><a class="section-header__link link" href="#">Все посты блога
+              <svg class="svg svg--arrow-right link__arrow">
+                <use xlink:href="assets/img/svg/sprite.svg#arrow-right"></use>
+              </svg></a>
+          </div>
+          <div class="news__list"><a class="news__link" href="#">
+              <div class="news__item">
+                <div class="news__img"><img src="assets/img/general/blog1.png" alt="blog"></div>
+                <p class="news__text"> <span>Как прошел наш </span><br><span>день рождения</span></p>
+              </div></a><a class="news__link" href="#">
+              <div class="news__item">
+                <div class="news__img"><img src="assets/img/general/blog2.png" alt="blog"></div>
+                <p class="news__text"> <span>Открытие новой клиники </span><br><span>«ЭспаДент» на Восстания, 19</span></p>
+              </div></a><a class="news__link" href="#">
+              <div class="news__item">
+                <div class="news__img"><img src="assets/img/general/blog3.png" alt="blog"></div>
+                <p class="news__text"> <span>Выставка ЭКСПО-Дент</span></p>
+              </div></a></div>
+          <div class="news__mobile">
+            <div class="section__section-header section-header mobile-swipe--ico">
+              <h2 class="title">Новости</h2><a class="section-header__link link" href="#">Все новости
+                <svg class="svg svg--arrow-right link__arrow">
+                  <use xlink:href="assets/img/svg/sprite.svg#arrow-right"></use>
+                </svg></a>
+            </div>
+            <div class="news__list"><a class="news__link" href="#">
+                <div class="news__item">
+                  <div class="news__img"><img src="assets/img/general/news1.png" alt="news"></div>
+                  <p class="news__text"> <span>«Любителям </span><br><span>кофе»</span></p>
+                </div></a><a class="news__link" href="#">
+                <div class="news__item">
+                  <div class="news__img"><img src="assets/img/general/news2.png" alt="news"></div>
+                  <p class="news__text"> <span>Что такое All-on-4 и почему это</span><br><span>стало таким популярным?</span></p>
+                </div></a><a class="news__link" href="#">
+                <div class="news__item">
+                  <div class="news__img"><img src="assets/img/general/news3.png" alt="news"></div>
+                  <p class="news__text"> <span>Эмаль не вечна? </span><br><span>Частые ошибки  чистки зубов</span></p>
+                </div></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+<section class="about section">
+  <div class="wrap">
+    <div class="section__inner">
+      <div class="about__text-content text-content">
+        <h2>Тут будет сео текст в виде “простыни”</h2>
+        <p>Концепцию All-on-4 («Все-на-4») используют в Америке, Израиле и по всей Европе с 1998 года. Технология разработана швейцарская компанией Nobel Biocare – создателем первых в мире зубных имплантов, лидером мирового рынка инновационных разработок для имплантологии и эстетической стоматологии. – рыба</p>
+        <p>Концепцию All-on-4 («Все-на-4») используют в Америке, Израиле и по всей Европе с 1998 года. Технология разработана швейцарская компанией Nobel Biocare – создателем первых в мире зубных имплантов, лидером мирового рынка инновационных разработок для имплантологии и эстетической стоматологии. – рыба</p>
+        <h2>О враче</h2>
+        <p>Окончила Московский Государственный Медико-Стоматологический Университет. Интернатура по специальности «Стоматология общей практики». Клиническая ординатура по специальности "Стоматология хирургическая". Владеет методиками консервативного и хирургического лечения стоматологических заболеваний с использованием диодного лазера</p>
+        <ul class="list-circle">
+          <li>Член Российского Стоматологического Общества</li>
+          <li>Обучение по установке скуловых имплантатов (Италия)</li>
+          <li>Профессиональная стажировка в клинике И.Балана (Израиль)</li>
+        </ul>
+        <h2>О враче</h2>
+        <ul class="list-success list-success--white">
+          <li>Хирургическая стоматология</li>
+          <li>Дентальная имплантология (Nobel, Noris, Dentium, Alpha-Bio, Superline, ASD и др.)  </li>
+          <li>Хирургическая предимплантационная подготовка</li>
+          <li>Пародонтология</li>
+        </ul>
+      </div>
+      <div class="about__text-content text-content about__text-content--mobile">
+        <p>Концепцию All-on-4 («Все-на-4») используют в Америке, Израиле и по всей Европе с 1998 года. Технология разработана швейцарская компанией Nobel Biocare – создателем первых в мире зубных имплантов, лидером мирового рынка инновационных разработок для имплантологии и эстетической стоматологии. Создателем первых в мире зубных имплантов, лидером мирового рынка. </p>
+        <ul class="list-circle">
+          <li>Член Российского Стоматологического Общества</li>
+          <li>Обучение по установке скуловых имплантатов (Италия)</li>
+          <li>Профессиональная стажировка в клинике И.Балана (Израиль)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="callback-line section">
+      <div class="wrap">
+        <div class="callback-line__inner"><a class="callback-line__logo logo" href="/">
+            <svg class="svg svg--logo logo__svg">
+              <use xlink:href="assets/img/svg/sprite.svg#logo"></use>
+            </svg></a>
+          <button class="callback-line__btn btn btn--fill">Записаться</button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer section">
+      <div class="wrap">
+        <div class="footer__inner">
+          <div class="footer__top">
+            <h3 class="footer__title title">Клиника</h3>
+            <div class="footer__content">
+              <div class="footer-links footer__item--big">
+                <div class="footer-links__block footer__item--big"><a class="footer-links__link link" href="#">Врачи</a><a class="footer-links__link link" href="#">Отзывы</a><a class="footer-links__link link" href="#">До и после</a><a class="footer-links__link link" href="#">Цены</a><a class="footer-links__link link" href="#">Медицинский туризм</a></div>
+                <div class="footer-links__block footer__item--big"><a class="footer-links__link link" href="#">О клинике</a><a class="footer-links__link link" href="#">Клиники</a><a class="footer-links__link link" href="#">Блог</a><a class="footer-links__link link" href="#">Новости</a></div>
+              </div>
+              <div class="footer__list-contacts list-contacts footer__item">
+                <div class="list-contacts__item"><a class="list-contacts__tel link" href="tel:+74993703799"><span>+7 499 </span>370 37 99</a>
+                  <p class="list-contacts__text">Москва</p>
+                </div>
+                <div class="list-contacts__item"><a class="list-contacts__tel link" href="tel:88000000000">8 800 000 00 00</a>
+                  <p class="list-contacts__text">Регионы</p>
+                </div>
+              </div>
+              <div class="social-icons footer__item">
+                <h3 class="social-icons__title">Мы в соцсетях</h3>
+                <div class="social-icons__list"><a class="social-icons__item blue" href="#">
+                    <object class="object object--icon-fc social-icons__svg" type="image/svg+xml" data="assets/img/content/icon-fc.svg"></object></a><a class="social-icons__item pink" href="#">
+                    <object class="object object--icon-inst social-icons__svg" type="image/svg+xml" data="assets/img/content/icon-inst.svg"></object></a><a class="social-icons__item blue" href="#">
+                    <object class="object object--icon-vk social-icons__svg" type="image/svg+xml" data="assets/img/content/icon-vk.svg"></object></a><a class="social-icons__item pink" href="#">
+                    <object class="object object--icon-youtube social-icons__svg" type="image/svg+xml" data="assets/img/content/icon-youtube.svg"></object></a></div>
+                <p class="social-icons__text">Подпишись на обновления</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__nav">
+            <h3 class="footer__title title">Услуги</h3>
+            <div class="footer__content">
+              <div class="footer__footer-links footer-links footer-links--nav">
+                <div class="footer-links__block footer__item dropdown">
+                  <div class="dropdown__open footer-links__head"><a class="footer-links__category link" href="#">Имплантация</a>
+                    <svg class="svg svg--arrow-down dropdown__arrow footer-links__arrow">
+                      <use xlink:href="assets/img/svg/sprite.svg#arrow-down"></use>
+                    </svg>
+                  </div>
+                  <div class="dropdown__content footer-links__content"><a class="footer-links__link link" href="#">Зубы за 1 день</a><a class="footer-links__link link" href="#">All-on-4</a><a class="footer-links__link link" href="#">Одномоментная имплантация</a><a class="footer-links__link link" href="#">Скуловая имплантация Zygoma</a><a class="footer-links__link link" href="#">Дентальная имплантация</a><a class="footer-links__link link" href="#">Trefoil</a></div>
+                </div>
+                <div class="footer-links__block footer__item dropdown">
+                  <div class="dropdown__open footer-links__head"><a class="footer-links__category link" href="#">Протезирование</a>
+                    <svg class="svg svg--arrow-down dropdown__arrow footer-links__arrow">
+                      <use xlink:href="assets/img/svg/sprite.svg#arrow-down"></use>
+                    </svg>
+                  </div>
+                  <div class="dropdown__content footer-links__content"><a class="footer-links__link link" href="#">Несъемные зубные протезы</a><a class="footer-links__link link" href="#">Съемные зубные протезы</a><a class="footer-links__link link" href="#">Протезирование на имплантах</a><a class="footer-links__link link" href="#">Протезирование всей челюсти</a><a class="footer-links__link link" href="#">Зубные коронки</a></div>
+                </div>
+                <div class="footer-links__block footer__item dropdown">
+                  <div class="dropdown__open footer-links__head"><a class="footer-links__category link" href="#">Лечение зубов</a>
+                    <svg class="svg svg--arrow-down dropdown__arrow footer-links__arrow">
+                      <use xlink:href="assets/img/svg/sprite.svg#arrow-down"></use>
+                    </svg>
+                  </div>
+                  <div class="dropdown__content footer-links__content"><a class="footer-links__link link" href="#">Лечение кариеса</a><a class="footer-links__link link" href="#">Лечение каналов</a><a class="footer-links__link link" href="#">Лечение пульпита</a><a class="footer-links__link link" href="#">Удаление кисты зуба</a><a class="footer-links__link link" href="#">Лечение периодонтита</a></div>
+                </div>
+                <div class="footer-links__block footer__item dropdown">
+                  <div class="dropdown__open footer-links__head"><a class="footer-links__category link" href="#">Удаление зуба</a>
+                    <svg class="svg svg--arrow-down dropdown__arrow footer-links__arrow">
+                      <use xlink:href="assets/img/svg/sprite.svg#arrow-down"></use>
+                    </svg>
+                  </div>
+                  <div class="dropdown__content footer-links__content"><a class="footer-links__link link" href="#">Удаление зуба мудрости</a><a class="footer-links__link link" href="#">Удаление зуба</a><a class="footer-links__link link" href="#">Сложное удаление зуба</a><a class="footer-links__link link" href="#">Удаление коренного зуба</a></div>
+                </div>
+                <div class="footer-links__block footer__item footer-links__block--last">
+                  <div class="footer-links__head"><a class="footer-links__category link" href="#">Элайнеры</a></div>
+                  <div class="footer-links__head"><a class="footer-links__category link" href="#">Виниры</a></div>
+                </div>
+                <div class="footer-links__block footer__item dropdown">
+                  <div class="dropdown__open footer-links__head"><a class="footer-links__category link" href="#">Брекеты</a>
+                    <svg class="svg svg--arrow-down dropdown__arrow footer-links__arrow">
+                      <use xlink:href="assets/img/svg/sprite.svg#arrow-down"></use>
+                    </svg>
+                  </div>
+                  <div class="dropdown__content footer-links__content"><a class="footer-links__link link" href="#">Металлические</a><a class="footer-links__link link" href="#">Керамические</a><a class="footer-links__link link" href="#">Сапфировые</a></div>
+                </div>
+                <div class="footer-links__block footer__item dropdown">
+                  <div class="dropdown__open footer-links__head"><a class="footer-links__category link" href="#">Диагностика</a>
+                    <svg class="svg svg--arrow-down dropdown__arrow footer-links__arrow">
+                      <use xlink:href="assets/img/svg/sprite.svg#arrow-down"></use>
+                    </svg>
+                  </div>
+                  <div class="dropdown__content footer-links__content"><a class="footer-links__link link" href="#">Компьютерная томография</a><a class="footer-links__link link" href="#">Панорамный снимок</a></div>
+                </div>
+                <div class="footer-links__block footer__item dropdown">
+                  <div class="dropdown__open footer-links__head"><a class="footer-links__category link" href="#">Чистка зубов</a>
+                    <svg class="svg svg--arrow-down dropdown__arrow footer-links__arrow">
+                      <use xlink:href="assets/img/svg/sprite.svg#arrow-down"></use>
+                    </svg>
+                  </div>
+                  <div class="dropdown__content footer-links__content"><a class="footer-links__link link" href="#">Air Flow + ультразвук</a><a class="footer-links__link link" href="#">Удаление зубного камня</a><a class="footer-links__link link" href="#">Ультразвуковая чистка зубов</a><a class="footer-links__link link" href="#">Air Flow </a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__item footer__copyright">
+              <p>© «Эспадент». 2019 <br>Все права защищены</p>
+            </div>
+            <div class="footer__item footer__others-links other-links"><a class="other-links__link other-links__link--mobile text-underline--hover" href="#"> <span>Лицензии</span></a><a class="other-links__link other-links__link--mobile text-underline--hover" href="#"> <span>Реквизиты</span></a><a class="other-links__link footer__link text-underline" href="#"><span>
+                   Политика обработки <br>персональных данных</span></a></div>
+            <div class="footer__item"><a class="footer__logo logo" href="/">
+                <object class="object object--logo logo__svg logo__svg--big" type="image/svg+xml" data="assets/img/content/logo.svg"></object></a></div>
+            <div class="footer__item footer__info"> 
+              <p>Лицензия № ЛО-77-01-017996 <br>от 29.04.2019 для ООО «Имплант-24»</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <script src="assets/js/vendors.min.js"></script><script src="assets/js/main.min.js"></script></body>
+</html>

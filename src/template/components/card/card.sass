@@ -1,43 +1,169 @@
 .card
-  background: #FFFFFF
-  border-radius: 25px
+  background: linear-gradient(109.14deg, #F3F7FB -4.47%, #DEE8F4 97.39%)
   box-shadow: 1px 2px 10px rgba(220, 220, 220, 0.5)
-  padding: 53px 24px 33px
   position: relative
-  max-width: 369px
-  overflow: hidden
+  box-sizing: border-box
+  border-radius: 10px
+  transition: transform $trst
+  padding: 17px 5px 21px 16px
+  width: 146px
+  +min(768)
+    padding: 30px 20px 28px
+    border-radius: 25px
+    background: #FFFFFF
+    width: 269px
+    overflow: hidden
+  +min(991)
+    width: 100%
+    max-width: 369px
+    padding: 53px 24px 33px
   &:before
     content: ''
-    display: block
+    display: none
     right: 0
     top: 0
     background-image: linear-gradient(109.14deg, rgba(243, 247, 251, 0.9) -4.47%, rgba(222, 232, 244, 0.9) 97.39%)
-    width: 119px
+    width: 56px
     height: 155%
-    clip-path: polygon(70% 0, 100% 0, 100% 100%, 0 100%)
+    clip-path: polygon(53% 0, 100% 0, 100% 100%, 0 100%)
     position: absolute
+    +min(768)
+      display: block
+    +min(991)
+      width: 80px
+      clip-path: polygon(70% 0, 100% 0, 100% 100%, 0 100%)
+    +min(1200)
+      width: 119px
+  &:hover
+    +min(991)
+      transform: translateY(-10px)
   &__content
     z-index: 1
     position: relative
   &__title
-    margin-bottom: 13px
+    margin-bottom: 5px
+    +min(768)
+      margin-bottom: 8px
+    +min(991)
+      margin-bottom: 13px
   &__text
-    max-width: 272px
-  &__svg
-    +size(44)
+    font-size: 14px
+    line-height: 21px
+    max-width: 210px
+    +min(768)
+      font-size: 16px
+      line-height: 22px
+    +min(991)
+      max-width: 222px
+    +min(1200)
+      max-width: 272px
+  &__icon
+    background-image: linear-gradient(88.87deg, #0AB5DB 10.59%, #0075FF 98.77%)
+    border-radius: 50%
     position: absolute
-    top: 29px
-    right: 25px
+    top: -20px
+    right: 7px
+    transform: scale(0.8)
+    +size(44)
+    +min(768)
+      top: 19px
+      right: 15px
+    +min(991)
+      transform: none
+      top: 29px
+      right: 25px
+  &__svg
+    +absolute-center
+    color: white
+    &.svg--star
+      +size(26)
+    &.svg--success
+      +size(24, 18)
+    &.svg--percent
+      +size(20)
+    &.svg--pluse
+      +size(22)
+    &.svg--map
+      +size(19,23)
   &__line
-    top: 31px
-    left: 25px
+    top: 21px
+    left: 20px
     position: absolute
     width: 61px
     height: 3px
     background-image: linear-gradient(88.87deg, #0AB5DB 10.59%, #0075FF 98.77%)
     border-radius: 20px
-    &--red
-      background-image: linear-gradient(88.87deg, #FF3DA6 0.33%, #FF3D57 98.77%)
-    &--orange
-      background-image: linear-gradient(88.87deg, #FFAF22 0.33%, #FE8E68 98.77%)
+    display: none
+    +min(768)
+      display: block
+    +min(991)
+      top: 31px
+      left: 25px
+  &--red
+    .card__line,
+    .card__icon
+      +min(768)
+        background-image: linear-gradient(88.87deg, #FF3DA6 0.33%, #FF3D57 98.77%)
+  &--orange
+    .card__line,
+    .card__icon
+      +min(768)
+        background-image: linear-gradient(88.87deg, #FFAF22 0.33%, #FE8E68 98.77%)
+  &--pink
+    .card__line,
+    .card__icon
+      +min(768)
+        background-image: linear-gradient(88.87deg, #FF3DA6 0.33%, #FF3D57 98.77%)
+
+      
+.card-features
+  background: #FFFFFF
+  box-shadow: 1px 2px 5px rgba(2, 10, 79, 0.15)
+  border-radius: 15px
+  margin-left: 40px
+  padding: 33px 15px 30px 65px
+  box-sizing: border-box
+  position: relative
+  height: 100%
+  min-height: 131px
+  &__title
+    font-weight: 500
+  &__img
+    top: -17px 
+    left: -46px
+    position: absolute
+  &__btn
+    bottom: -20px
+    right: 23px
+    position: absolute
+    background: #FFFFFF
+    box-shadow: 1px 2px 5px rgba(2, 10, 79, 0.15)
+    border-radius: 100px
+    height: 40px
+    padding: 0 14px
+    display: flex
+    align-items: center
+  &__icon
+    +size(16)
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+    text-align: center
+    margin-right: 7px
+    letter-spacing: 0.02em
+    color: white
+    border-radius: 50%
+    background: linear-gradient(88.87deg, #FF3DA6 0.33%, #FF3D57 98.77%)
+  &:before
+    content: ''
+    display: block
+    left: 0
+    top: 0
+    bottom: 0
+    background-image: linear-gradient(109.14deg, #F3F7FB -4.47%, #DEE8F4 97.39%)
+    width: 57px
+    height: 100%
+    opacity: 0.4
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0 100%)
+    position: absolute
     

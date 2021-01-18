@@ -1,0 +1,174 @@
+.services
+  background-image: linear-gradient(109.14deg, #F3F7FB -4.47%, #DEE8F4 97.39%)
+  padding: 36px 0 44px
+  overflow: hidden
+  +min(540)
+    padding: 50px 0 55px
+  +min(991)
+    padding: 100px 0 80px
+  +min(991)
+    padding: 175px 0 153px
+  &__title
+    margin-bottom: 25px
+    text-align: center
+    +min(540)
+      text-align: left
+  &__button
+    width: 100%
+    +min(540)
+      display: none
+  &__slider
+    display: flex
+    flex-direction: column
+    +min(540)
+      display: block
+  &__item
+    margin-bottom: 12px
+    +min(540)
+      margin-bottom: 0
+
+  .slick-slide
+    padding: 0 15px
+    &>div
+      height: 100%
+  &__item
+    height: 100%
+  .slick-list
+    margin-left: -15px
+    margin-right: -15px
+    overflow: visible
+    
+  .slick-track
+    +min(540)
+      display: flex !important
+  .slick-slide
+    +min(540)
+      height: inherit !important
+.service-card
+  background: #FFFFFF
+  border-radius: 10px
+  position: relative
+  padding: 17px 15px 11px
+  box-sizing: border-box
+  height: 100%
+  width: 100%
+  overflow: hidden
+  +min(540)
+    width: 270px
+    padding: 30px 17px 180px
+  &__title
+    font-weight: 500
+    margin-bottom: 13px
+    line-height: 27px
+    +min(540)
+      margin-bottom: 25px
+      font-size: 18px
+    &:before
+      margin-bottom: 1px
+      content: ''
+      display: inline-block
+      margin-right: 8px
+      +size(10)
+      border-radius: 50%
+      background-image: linear-gradient(88.87deg, #1BADCD 0.33%, #06B7DE 98.77%)
+      +min(540)
+        display: none
+  &__list
+    flex-direction: row
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    max-width: 240px
+    +min(540)
+      max-width: none
+      flex-direction: column
+  &__img
+    position: absolute
+    right: 0
+    bottom: 0
+    width: 80px
+    height: 125px
+    +min(540)
+      bottom: 0
+      left: 0
+      width: 230px
+      height: 150px
+    img
+      +absolute-center
+      max-width: 160px
+      max-height: 160px
+      +min(540)
+        max-width: 220px
+        max-height: 200px
+  &__item
+    font-weight: normal
+    padding: 0 18px
+    background: linear-gradient(109.14deg, #F3F7FB -4.47%, #DEE8F4 97.39%)
+    box-shadow: 1px 2px 5px rgba(0, 52, 82, 0.05)
+    border-radius: 7px
+    margin-bottom: 22px
+    margin-right: 14px
+    font-size: 14px
+    line-height: 31px
+    display: none
+    &:last-child
+      +min(540)
+        margin-bottom: 0
+    +min(540)
+      font-size: 16px
+      line-height: 33px
+      display: block
+      margin-right: 0px
+    &:nth-child(2n)
+      margin-right: 0
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3)
+      display: block
+    &:hover
+      color: white
+      background-image: linear-gradient(88.87deg, #0AB5DB 10.59%, #0075FF 98.77%)
+      
+  &:before
+    display: block
+    content: ''
+    right: 0
+    top: 0
+    bottom: 0
+    background-image: linear-gradient(88.87deg, #0AB5DB 10.59%, #0075FF 98.77%)
+    opacity: 0.9
+    width: 90px
+    clip-path: polygon(0 100%, 70% 0,100% 0, 100% 100%, 0 100%)
+    height: 100%
+    position: absolute
+    +min(540)
+      top: auto
+      width: 100%
+      height: 170px
+      right: 0
+      left: 0
+      clip-path: polygon(0 70%, 100% 0, 100% 100%, 0 100%)
+      bottom: 0
+  &--pink
+    &:before
+      background-image: linear-gradient(88.87deg, #FF3DA6 0.33%, #FF3D57 98.77%)
+    .service-card__item:hover
+      background-image: linear-gradient(88.87deg, #FF3DA6 0.33%, #FF3D57 98.77%)
+    .service-card__title:before
+      background-image: linear-gradient(88.87deg, #FF3DA6 0.33%, #FF3D57 98.77%)
+  &--orange
+    &:before
+      background-image: linear-gradient(88.87deg, #FFAF22 0.33%, #FE8E68 98.77%)
+    .service-card__item:hover
+      background-image: linear-gradient(88.87deg, #FFAF22 0.33%, #FE8E68 98.77%)
+    .service-card__title:before
+      background-image: linear-gradient(88.87deg, #FFAF22 0.33%, #FE8E68 98.77%)
+  &--dark-blue
+    &:before
+      background-image: linear-gradient(48.29deg, #0542EA 9.91%, #0078CE 95.37%)
+    .service-card__item:hover
+      background-image: linear-gradient(48.29deg, #0542EA 9.91%, #0078CE 95.37%)
+    .service-card__title:before
+      background-image: linear-gradient(48.29deg, #0542EA 9.91%, #0078CE 95.37%)
+      
+    

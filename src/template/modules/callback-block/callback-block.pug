@@ -1,0 +1,19 @@
+section.callback-block.section
+  .wrap
+    .callback-block__inner.section__inner
+      .callback-block__content
+        h2.callback-block__title.title Запишитесь прямо сейчас
+        p.callback-block__text На бесплатный осмотр и консультацию
+        p.callback-block__text.callback-block__info Наш менеджер свяжется с вами, проконсультирует и поможет выбрать удобное время приёма.
+        a.callback-block__btn.btn.btn--fill(href="/") Записаться на приём
+        form.callback-block__mobile-form.mobile-form(action="/" method="post")
+          input.mobile-form__input.input(type="text" name="phone" placeholder="Ваш телефон")
+          button.mobile-form__btn.btn.btn--fill Записаться
+        .callback-block__contacts.contacts
+          p.contacts__desc Позвонить самостоятельно
+          a.contacts__tel.link(href="tel:+74993703799") 
+            +obj('tel', 'contacts__tel-svg')
+            | +7 499 370 37 99
+      .callback-block__img
+        img(src="assets/img/content/callback-block.png" alt="callback-block")
+      

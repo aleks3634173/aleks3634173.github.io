@@ -1,0 +1,69 @@
+.quotation
+  padding: 45px 0 78px
+  +min(768)
+    padding: 45px 0 55px
+  +min(991)
+    padding: 52px 0 45px
+  &__inner
+    box-shadow: 1px 2px 5px rgba(2, 10, 79, 0.15)
+    border-radius: 25px
+    position: relative
+    display: flex
+    padding: 45px 24px 42px
+    background-color: white
+    +min(768)
+      padding: 45px 30px 42px
+      background: linear-gradient(109.14deg, #F3F7FB -4.47%, #DEE8F4 97.39%)
+    +min(991)
+      padding: 45px 30px 42px
+  &__quety
+    position: absolute
+    top: -28px
+    left: 26px
+    +size(49, 63)
+    +min(1200)
+      +size(56, 56)
+      
+  &__title
+    font-weight: bold
+    margin-bottom: 17px
+    font-size: 16px
+    line-height: 25px
+    color: #102F52
+    +min(1200)
+      font-size: 18px
+      line-height: 22px
+      color: #040E28
+  &__text
+    margin-bottom: 68px
+    +min(768)
+      max-width: 85%
+      margin-bottom: 30px
+    +min(1200)
+      line-height: 23px
+      max-width: none
+      margin-bottom: 23px
+  &__content
+    max-width: 680px
+  &__img
+    position: absolute
+    bottom: 0
+    right: -20px
+    display: flex
+    align-items: center
+    max-width: 195px
+    +min(991)
+      right: -40px
+      max-width: none
+    +min(1200)
+      right: 0
+  &__author
+    font-weight: 500
+    color: #0E57A9
+    max-width: 157px
+    font-size: 14px
+    line-height: 20px
+    +min(768)
+      max-width: none
+      font-size: 16px
+      line-height: 22px

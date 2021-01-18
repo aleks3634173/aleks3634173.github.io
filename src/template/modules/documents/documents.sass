@@ -1,0 +1,98 @@
+.documents
+  padding: 0px 0 45px
+  +min(768)
+    padding: 56px 0 35px
+  +min(991)
+    padding: 85px 0 45px
+  &__inner
+    display: flex
+    flex-direction: column
+    +min(1200)
+      flex-direction: row
+  &__content
+    margin-bottom: 20px
+    +min(768)
+      margin-bottom: 40px
+    +min(1200)
+      width: 22.0769230769%
+      margin-right: 3%
+      margin-top: 10px
+    p
+      max-width: 500px
+  &__slick-arrows
+    display: none
+    +min(1200)
+      display: flex
+  &__list
+    padding-bottom: 70px
+    position: relative
+    +min(1200)
+      padding-bottom: 0
+      width: 74.9230769231%
+  &__title
+    margin-bottom: 10px
+    +min(768)
+      margin-bottom: 20px
+    br
+      display: none
+      +min(1200)
+        display: block
+  &__img
+    height: 264px
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      max-height: 100%
+  &__item
+    display: flex
+    max-width: 240px
+    flex-direction: column
+    align-items: center
+    text-align: center
+    width: 100%
+    +min(1200)
+      padding: 0 10px
+  &__text
+    margin-top: 22px
+    font-weight: 500
+    +min(540)
+      margin-top: 47px
+    +min(768)
+      margin-top: 67px
+  &__slick-arrows
+    margin-top: 46px
+    
+  .slick-slide
+    padding: 0 20px
+  .slick-list
+    margin-left: -20px
+    margin-right: -20px
+  .slick-dots
+    position: absolute
+    bottom: 10px
+    left: 0
+    li.slick-active
+      background: #102F52
+    li 
+      border-color: #102F52
+  .slick-slide.slick-current
+    .gallery-panel__item
+      border: 1px solid #4898F2
+      border-radius: 25px
+      opacity: 1
+  .slick-counter
+    border: 1px solid #647A93
+    box-sizing: border-box
+    border-radius: 20px
+    font-size: 15px
+    line-height: 24px
+    text-align: center
+    color: #102F52
+    opacity: 0.6
+    padding: 0 10px
+    position: absolute
+    bottom: 0px
+    right: 0
+    +min(1200)
+      display: none

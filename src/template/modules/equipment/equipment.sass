@@ -1,0 +1,77 @@
+.equipment
+  background: linear-gradient(109.14deg, #F3F7FB -4.47%, #DEE8F4 97.39%)
+  padding: 52px 0 61px
+  +min(768)
+    padding: 63px 0 80px
+  +min(991)
+    padding: 67px 0 100px
+  &__content-slider
+    margin-bottom: 42px
+    margin-top: 57px
+    +min(991)
+      margin-bottom: 30px
+      margin-top: 61px
+  &__gallery-panel
+    +min(1200)
+      margin-bottom: -128px
+  &__section-header
+    align-items: center
+    +min(991)
+      align-items: flex-start
+    
+.content-slider
+  &__item
+    display: flex
+    align-items: center
+    flex-direction: column
+    +min(991)
+      flex-direction: row
+      background: #FFFFFF
+      box-shadow: 1px 2px 10px rgba(220, 220, 220, 0.5)
+      border-radius: 20px
+  .slick-slide
+    padding: 0 20px
+    opacity: 0
+    transition: opacity $trst
+    +min(991)
+      opacity: 1
+  .slick-current
+    opacity: 1
+  .slick-list
+    margin-left: -20px
+    margin-right: -20px
+  &__title
+    margin-bottom: 17px
+    +min(991)
+      margin-bottom: 20px
+  &__text
+    +min(991)
+      margin-bottom: 15px
+  &__img
+    position: relative
+    max-width: 361px
+    width: 100%
+    height: 352px
+    +min(991)
+      max-width: none
+      width: 55.5555555556%
+    img
+      +absolute-center
+      height: 100%
+    img.content-slider__img-bg
+      width: 521px
+      height: 247px
+      max-width: none
+      +min(991)
+        max-width: 90%
+  &__content
+    text-align: center
+    +min(991)
+      text-align: left
+      width: 44.4444444444%
+    ul
+      display: none
+      +min(991)
+        display: block
+    
+    

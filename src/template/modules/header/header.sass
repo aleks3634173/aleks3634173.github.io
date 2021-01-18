@@ -6,7 +6,7 @@
   width: 100%
   padding: 20px 0 20px
   color: #FFFFFF
-  z-index: 5
+  z-index: 10
   &__inner
     display: flex
     align-items: center
@@ -15,10 +15,20 @@
   &__right
     display: flex
     align-items: center
+  &__center
+    display: none
+    +min(1200)
+      display: flex
   &__tel
     opacity: 0.8
     margin-right: 30px
     transition: opacity $trst linear
+    display: none
+    margin-top: 4px
+    +min(991)
+      display: flex
+    +min(1200)
+      margin-top: 0px
     &:hover
       opacity: .65
     &:active
@@ -26,19 +36,43 @@
   &__btn-search
     cursor: pointer
     transition: opacity $trst linear
-    &:hover
-      opacity: .65
-    &:active
+    display: none
+    margin-top: 3px
+    margin-right: 6px
+    +min(1200)
+      margin-top: 0
+      margin-right: 0
       opacity: .8
+      display: flex
+    &:hover
+      opacity: .45
+    &:active
+      opacity: .6
+    &--mobile
+      display: block
+      +min(1200)
+        display: none
   &__nav
     margin-right: 10px
+    display: none
+    +min(1200)
+      display: flex
   &__btn
     font-weight: normal
     line-height: 40px
     height: 40px
+    display: none
+    +min(1200)
+      display: flex
+  &__burger
+    display: block
+    +min(1200)
+      display: none
 .btn-search
   &__svg
-    +size(22)
+    +size(24)
+    +min(1200)
+      +size(22)
 .nav
   display: flex
   align-items: center
@@ -76,12 +110,183 @@
     &:active
       opacity: .8
 .logo
-  font-size: 0
-  line-height: 0
   transition: opacity $trst linear
+  display: inline-flex
   &:hover
     opacity: .65
   &:active
     opacity: .8
   &__svg
-    +size(142, 25)
+    +size(121, 23)
+    +min(991)
+      +size(142, 25)
+    &--big
+      +size(170, 31)
+.search-form
+  display: none
+  transform: translateY(-100%)
+  animation: moveDownY .5s ease-in-out 1 backwards
+  box-shadow: 0px 7px 20px rgba(46, 46, 54, 0.1)
+  position: absolute
+  width: 100%
+  top: 0
+  background-color: white
+  left: 0
+  right: 0
+  z-index: 9
+  margin: 0
+  padding: 20px 0
+  height: auto
+  &.active
+    transform: translateY(0%)
+    display: block
+  &.disabled
+    transform: translateY(-100%)
+    animation: moveUpY .5s ease-in-out 1 backwards
+  &__close
+    position: absolute
+    font-size: 0
+    line-height: 0
+    cursor: pointer
+    transform: translateY(-50%)
+    right: 0
+    top: 50%
+    &-svg
+      +size(20)
+      color: #d8d8d8
+      transition: opacity $trst
+      +min(768)
+       +size(25)
+      &:hover
+        opacity: 0.8
+  &__inner
+    position: relative
+  &__input
+    width: 100%
+    border-bottom: 1px solid #d9dee4
+    height: 35px
+    font-size: 18px
+    color: black
+    box-sizing: border-box
+    padding: 0 40px 0 10px
+    +min(768)
+      padding: 0 30px 0 20px
+      height: 40px
+    &::placeholder
+      color: #d9dee4
+.burger
+  position: relative
+  width: 26px
+  height: 11px
+  &::before,
+  &::after 
+      content: ''
+      display: block
+      width: 26px
+      border-radius: 3px
+      height: 2px
+      background-color: #fff
+      position: absolute
+      top: 0
+      right: 0
+      transition: 1s ease
+  &::after 
+      top: 10px
+      width: 17px
+  &.active
+    &::before 
+      transform: translateY(5px) rotate(405deg)
+    &::after 
+      width: 26px
+      transform: translateY(-5px) rotate(-405deg)
+.mobile-menu
+  display: none
+  transform: translateY(-100%)
+  animation: moveDownY .5s ease-in-out 1 backwards
+  box-shadow: 0px 7px 20px rgba(46, 46, 54, 0.1)
+  position: absolute
+  width: 100%
+  top: 0
+  left: 0
+  right: 0
+  z-index: 8
+  margin: 0
+  padding: 72px 0 10px
+  height: 100vh
+  height: calc(var(--vh, 1vh) * 100)
+  background: linear-gradient(89.46deg, #0AB5DB 10.59%, #0075FF 98.77%)
+  color: white
+  overflow-y: auto
+  box-sizing: border-box
+  +min(1200)
+    display: none
+  &.active
+    transform: translateY(0%)
+    display: block
+    +min(1200)
+      display: none
+  &.disabled
+    transform: translateY(-100%)
+    animation: moveUpY .5s ease-in-out 1 backwards
+  &__inner
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 10px 0 20px
+  ul
+    flex-direction: column
+    width: 100%
+    +min(540)
+      flex-direction: row
+      flex-wrap: wrap
+  li
+    margin-right: 0
+    width: 100%
+    margin-bottom: 5px
+    +min(540)
+      width: 49%
+      margin-right: 1%
+    +min(991)
+      width: 32%
+      margin-right: 2%
+      margin-bottom: 10px
+    &:nth-child(3n)
+      +min(991)
+          margin-right: 0
+      
+    &:last-child
+      +min(540)  
+        margin-right: 0
+    a
+      background: rgba(243, 247, 251, .1)
+      font-size: 18px
+      padding: 21px 16px
+      font-weight: 300
+      display: inline-block
+      width: 100%
+      border-radius: 8px
+  &__nav
+    width: 100%
+    max-width: 320px
+    +min(540)
+      max-width: none
+  &__tel
+    margin: 30px 0
+    font-size: 24px
+    +min(991)
+      display: none
+  &__btn
+    max-width: 320px
+    width: 100%
+    +min(991)
+      margin-top: 10px
+@keyframes moveDownY
+ 0%  
+  transform: translateY(-100%)
+ 100%  
+  transform: translateY(0)
+@keyframes moveUpY
+ 0%  
+  transform: translateY(0)
+ 100%  
+  transform: translateY(-100%)
