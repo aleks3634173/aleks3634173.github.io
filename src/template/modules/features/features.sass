@@ -1,32 +1,97 @@
 .features
-  background-image: linear-gradient(109.14deg, #F3F7FB -4.47%, #DEE8F4 97.39%)
-  padding: 124px 0 36px
   position: relative
   z-index: 1
+  overflow: hidden
+  padding: 30px 0 0px
+  +min(540)
+    padding: 30px 0 0px
+  +min(991)
+    background-image: linear-gradient(109.14deg, #F3F7FB -4.47%, #DEE8F4 97.39%)
+    padding: 134px 0 0px
+  +min(1200)
+    overflow: visible
+  &__block
+    padding-bottom: 36px
+    margin-top: 35px
+    padding-top: 30px
+    background-image: linear-gradient(109.14deg, #F3F7FB -4.47%, #DEE8F4 97.39%)
+    +min(768)
+      margin-top: 45px
+      padding-top: 30px
+    +min(991)
+      margin-top: 0
+      padding-top: 32px
+      background: none
+    
+  .section-header--left
+    flex-direction: column
+    +min(991)
+      justify-content: space-between
+      flex-direction: row
+  .section-header__block
+    margin-top: 10px
+    +min(991)
+      margin-top: 0
   &__safety-list
-    margin-bottom: 80px
-    margin-top: 32px
+    margin-bottom: 46px
     &:last-child
       margin-bottom: 0
+    +min(768)
+      margin-bottom: 60px
+    +min(1200)
+      margin-bottom: 80px
+    .card
+      background: white
+      width: 369px
+      &__text
+        max-width: 272px
+    .slick-slide
+      padding: 16px 4px 0px
+      +min(768)
+        padding: 15px 15px 0px
+    .slick-list
+      overflow: visible
+      margin-left: -4px
+      margin-right: -4px
+      +min(768)
+        margin-left: -15px
+        margin-right: -15px
+      +min(1200)
+      
+        overflow: hidden
+    
+    .slick-track
+      display: flex !important
+    .slick-slide
+      height: inherit !important
+      & > div,
+      & > div > div
+        height: 100%
   &__list
-    margin-top: 68px
+    margin-top: 32px
     display: flex
     flex-wrap: wrap
-    margin-bottom: -154px
+    +min(1200)
+      margin-bottom: -154px
+      margin-top: 68px
+
+    .slick-slide
+      padding: 17px 9px 22px
+    .slick-list
+      margin-left: -9px
+      margin-right: -9px
+      overflow: visible
+      +min(1200)
+        overflow: hidden
   &__item
-    width: calc((100% - 25px * 3) / 4)
-    margin-right: 25px
-    margin-bottom: 76px
+    +min(1200)
+      width: calc((100% - 25px * 3) / 4)
+      margin-right: 25px
+      margin-bottom: 76px
     &:nth-child(4n)
       margin-right: 0
     
-.safety-list
-  display: flex
-  &__item
-    width: calc((100% - 25px * 2) / 3)
-    margin-right: 25px
-    &:nth-child(3n)
-      margin-right: 0
+
       
 .features-line
   padding: 45px 0

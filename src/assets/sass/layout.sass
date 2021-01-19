@@ -101,6 +101,19 @@ textarea
   &--dark
     span
       background-image: linear-gradient(109.14deg, #F3F7FB -4.47%, #DEE8F4 97.39%)
+  &--white
+    span
+      --uiAnimatedUnderlineWidth: var(--animatedUnderlineWidth, 100%)
+      --uiAnimatedUnderlineHeight: var(--animatedUnderlineHeight, 60%)
+      --uiAnimatedUnderlineBgColor: var(--animatedUnderlineBgColor, white)
+      --uiAnimatedUnderlinePositionX: var(--animatedUnderlinePositionX, left)
+      --uiAnimatedUnderlinePositionY: var(--animatedUnderlinePositionY, 102%)
+      --rLinkDisplay: inline
+      background-image: linear-gradient(0, var(--uiAnimatedUnderlineBgColor) 0, var(--uiAnimatedUnderlineBgColor))
+      background-size: var(--uiAnimatedUnderlineWidth) var(--uiAnimatedUnderlineHeight)
+      background-position: var(--uiAnimatedUnderlinePositionX) var(--uiAnimatedUnderlinePositionY)
+      background-repeat: no-repeat
+      transition: background $trst
 
   
 .text-content
@@ -664,6 +677,7 @@ textarea
     +min(1200)
       padding: 0
       padding-left: 30px
+      margin-bottom: 0
     .slick-track
       +min(768)
         display: flex !important
@@ -809,9 +823,9 @@ textarea
       &__left
         svg
           transform: rotate(-90deg)
-.section
-  overflow: hidden
+
 .section-block
+  overflow: hidden
   background-image: linear-gradient(109.14deg, #F3F7FB -4.47%, #DEE8F4 97.39%)
   +min(768)
     background-image: none
