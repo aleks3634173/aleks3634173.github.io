@@ -170,8 +170,8 @@ $(document).ready(function() {
           slidesToScroll: 1,
           arrows: false,
           dots: true,
+          centerMode: true,
           variableWidth: true,
-          centerMode: true
         }
       },
       {
@@ -181,6 +181,8 @@ $(document).ready(function() {
           slidesToScroll: 1,
           arrows: false,
           dots: true,
+          centerMode: true,
+          variableWidth: true,
         }
       }
     ]
@@ -233,6 +235,7 @@ $(document).ready(function() {
     dots: false,
     arrows: false,
     asNavFor: '#equipment-gallery-panel',
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 1200,
@@ -438,6 +441,7 @@ $(document).ready(function() {
     dots: false,
     arrows: false,
     asNavFor: '.panel-slider',
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 1200,
@@ -700,6 +704,7 @@ $(document).ready(function() {
     dots: false,
     arrows: false,
     asNavFor: '#gallery-panel-history',
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 1200,
@@ -754,6 +759,17 @@ $(document).ready(function() {
           }
         },
         {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: false,
+            adaptiveHeight: true,
+            variableWidth: true
+          }
+        },
+        {
           breakpoint: 768,
           settings: {
             slidesToShow: 1,
@@ -761,6 +777,7 @@ $(document).ready(function() {
             arrows: false,
             dots: false,
             adaptiveHeight: true,
+            variableWidth: true
           }
         },
       
@@ -850,6 +867,16 @@ $(document).ready(function() {
           variableWidth: true,
           centerMode: true,
         }
+      },
+      {
+        breakpoint: 540,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true,
+          variableWidth: true,
+        }
       }
     ]
   });
@@ -910,7 +937,7 @@ $(document).ready(function() {
       {
         breakpoint: 991,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
           dots: false,
@@ -932,6 +959,12 @@ $(document).ready(function() {
     ]
   });
   $(".features__list").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    variableWidth: true,
+    infinite: false,
     responsive: [
       {
         breakpoint: 2000,
@@ -945,29 +978,29 @@ $(document).ready(function() {
           arrows: false,
           dots: false,
           variableWidth: true,
-          infinite: false
+          infinite: true
         }
       },
       {
         breakpoint: 991,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          arrows: false,
-          dots: false,
-          variableWidth: true,
-          infinite: false
-        }
-      },
-      {
-        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
           dots: false,
           variableWidth: true,
-          infinite: false
+          infinite: true
+        }
+      },
+      {
+        breakpoint: 540,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: false,
+          variableWidth: true,
+          infinite: true
         }
       },
     ]

@@ -60,11 +60,7 @@
       position: absolute
       transform: translateX(-50%)
       z-index: 3
-      left: 50px
-      +min(540)
-        left: calc(50% - 200px)
-      +min(768)
-        left: calc(50% - 115px)
+      left: calc(50% - 115px)
       
     width: 100%
     +min(991)
@@ -209,16 +205,16 @@
   margin-right: -20px
   margin-bottom: 175px
   width: calc(100% + 20px)
+  width: 355px
   +min(540)
     margin-left: 0
     border-radius: 12px
-    width: 100%
+    width: 355px
     margin-bottom: 135px
     padding: 27px 16px 105px
   +min(768)
     margin-bottom: 200px
     padding: 27px 16px 81px
-    width: 355px
   +min(991)
     width: auto
     margin-right: 0
@@ -246,6 +242,8 @@
     font-weight: 500
     margin-bottom: 8px
     max-width: 140px
+    position: relative
+    z-index: 2
     +min(540)
       max-width: 160px
     +min(768)
